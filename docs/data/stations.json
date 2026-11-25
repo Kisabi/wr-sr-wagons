@@ -1,0 +1,6 @@
+{
+  "note": "Пресеты длин станций, м. Дополняйте / Station length presets, m. Add more as needed.",
+  "stations": [
+    { "id": "customs_big", "ru": "Большая таможня", "en": "Large customs", "length_m": 115 }
+  ]
+}

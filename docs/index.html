@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WR:SR Wagon MinMax</title>
+<meta name="description" content="Калькулятор выгодности вагонов на метр станции для Workers &amp; Resources: Soviet Republic">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1 id="t-title"></h1>
+  <button id="lang" type="button" aria-label="Language">EN</button>
+</header>
+<main>
+  <p id="t-intro" class="intro"></p>
+
+  <section class="controls" aria-label="settings">
+    <label><span id="l-station"></span>
+      <input id="station" type="number" min="1" step="1" value="115" inputmode="decimal">
+    </label>
+    <label><span id="l-preset"></span>
+      <select id="preset"></select>
+    </label>
+    <label><span id="l-cargo"></span>
+      <select id="cargo"></select>
+    </label>
+    <label><span id="l-year"></span>
+      <input id="year" type="number" min="1900" max="2100" step="1" value="1990" inputmode="numeric">
+    </label>
+    <label><span id="l-gap"></span>
+      <input id="gap" type="number" min="0" step="0.1" value="0" inputmode="decimal">
+    </label>
+    <label><span id="l-reserved"></span>
+      <input id="reserved" type="number" min="0" step="1" value="0" inputmode="decimal">
+    </label>
+    <label class="check"><input id="all" type="checkbox"> <span id="l-all"></span></label>
+  </section>
+
+  <p id="status" class="status" aria-live="polite"></p>
+
+  <div class="table-wrap">
+    <table id="result">
+      <thead><tr id="head"></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <details class="how">
+    <summary id="t-how-title"></summary>
+    <div id="t-how"></div>
+  </details>
+</main>
+<footer id="footer"></footer>
+<script src="calc.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+:root { --bg:#14171a; --panel:#1d2227; --line:#2e353c; --text:#e6e9ec; --muted:#9aa4ad; --accent:#e0a526; --best:#2f6f4a; }
+@media (prefers-color-scheme: light) {
+  :root { --bg:#f4f5f6; --panel:#fff; --line:#d6dade; --text:#1b1f23; --muted:#5d6670; --accent:#a56d00; --best:#cfe9d9; }
+}
+* { box-sizing: border-box; }
+body { margin:0; font:15px/1.5 system-ui, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); }
+header { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:14px 20px; border-bottom:1px solid var(--line); }
+h1 { margin:0; font-size:20px; }
+#lang { background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:6px; padding:6px 12px; cursor:pointer; font:inherit; }
+main { max-width:1000px; margin:0 auto; padding:16px 20px 32px; }
+.intro { color:var(--muted); margin-top:0; }
+.controls { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:14px; }
+.controls label { display:flex; flex-direction:column; gap:4px; font-size:13px; color:var(--muted); }
+.controls .check { flex-direction:row; align-items:center; gap:8px; align-self:end; }
+input[type=number], select { background:var(--bg); color:var(--text); border:1px solid var(--line); border-radius:6px; padding:7px 9px; font:inherit; width:100%; }
+.status { color:var(--muted); font-size:13px; }
+.table-wrap { overflow-x:auto; background:var(--panel); border:1px solid var(--line); border-radius:8px; }
+table { border-collapse:collapse; width:100%; }
+th, td { padding:8px 12px; text-align:right; border-bottom:1px solid var(--line); white-space:nowrap; }
+th:first-child, td:first-child { text-align:left; white-space:normal; }
+th { font-size:12px; color:var(--muted); font-weight:600; position:sticky; top:0; background:var(--panel); }
+tr.best td { background:var(--best); }
+td .bar { display:block; height:4px; border-radius:2px; background:var(--accent); margin-top:4px; }
+td small { color:var(--muted); }
+.how { margin-top:20px; color:var(--muted); }
+.how summary { cursor:pointer; color:var(--text); }
+footer { text-align:center; color:var(--muted); font-size:12px; padding:16px; border-top:1px solid var(--line); }
+footer a { color:var(--accent); }
