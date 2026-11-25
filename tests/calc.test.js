@@ -24,6 +24,28 @@ test("округление вверх может сделать длинный �
   assert.strictEqual(r[0].total, 550);
   assert.strictEqual(r[1].total, 540);
 });
+test("плотность вагона: 14 м / 60 ед. = 4.29", () => {
+  const r = C.evaluate({ id: "a", length_m: 14, capacity: 60 }, 115);
+  assert.strictEqual(Number(r.density.toFixed(2)), 4.29);
+  assert.strictEqual(r.perMeter, undefined);
+});
+test("выступ: станция 115 м, вагон 14 м -> n=9, состав 126, выступ 11", () => {
+  const r = C.evaluate({ id: "a", length_m: 14, capacity: 60 }, 115);
+  assert.strictEqual(r.count, 9);
+  assert.strictEqual(r.trainLength, 126);
+  assert.strictEqual(r.overhang, 11);
+});
+test("выступ: станция 28 м, вагон 14 м -> n=2, выступа нет", () => {
+  const r = C.evaluate({ id: "a", length_m: 14, capacity: 60 }, 28);
+  assert.strictEqual(r.count, 2);
+  assert.strictEqual(r.overhang, 0);
+});
+test("при равном «всего» выигрывает меньший выступ, затем меньшая длина", () => {
+  const a = { id: "a", length_m: 10, capacity: 60 }; // 115 м -> 12 шт, 720, выступ 5
+  const b = { id: "b", length_m: 14, capacity: 80 }; // 9 шт, 720, выступ 11
+  const r = C.rank([b, a], 115);
+  assert.strictEqual(r[0].wagon.id, "a");
+});
 test("отбор: грузовой и не purchase_excluded, годы не важны", () => {
   const ok = { cargo: "X", capacity: 10, length_m: 12 };
   assert.ok(C.isListed(ok));

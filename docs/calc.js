@@ -38,12 +38,15 @@
     opts = opts || {};
     var n = wagonsOnStation(stationLen, w.length_m, opts.gap);
     var total = n * w.capacity;
+    var trainLength = n * w.length_m + Math.max(0, n - 1) * (opts.gap || 0);
     return {
       wagon: w,
       count: n,
       total: total,                              // вместимость за один заход
-      perMeter: stationLen > 0 ? total / stationLen : 0, // на метр станции
-      trainLength: n * w.length_m + Math.max(0, n - 1) * (opts.gap || 0)
+      density: w.capacity / w.length_m,          // вместимость на метр вагона
+      trainLength: trainLength,
+      // на сколько метров состав выходит за станцию (убираем шум float)
+      overhang: Math.max(0, Math.round((trainLength - stationLen) * 1e6) / 1e6)
     };
   }
 
@@ -51,7 +54,8 @@
   function rank(wagons, stationLen, opts) {
     return wagons.map(function (w) { return evaluate(w, stationLen, opts); })
       .sort(function (a, b) {
-        return b.total - a.total || a.wagon.length_m - b.wagon.length_m ||
+        return b.total - a.total || a.overhang - b.overhang ||
+          a.wagon.length_m - b.wagon.length_m ||
           (a.wagon.id < b.wagon.id ? -1 : 1);
       });
   }

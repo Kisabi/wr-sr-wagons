@@ -4,30 +4,30 @@
 
   var T = {
     ru: {
-      title: "WR:SR — выгода вагона на метр станции",
+      title: "WR:SR — выгода вагонов для станции заданной длины",
       intro: "Введите длину станции, и калькулятор покажет, какой вагон за один заход увезёт больше всего. Сравнивать нужно вагоны одного типа груза.",
       station: "Длина станции, м", preset: "Станция", presetNone: "— своя длина —",
       cargo: "Тип груза", gap: "Зазор между вагонами, м", names: "Язык названий вагонов",
-      cols: ["Вагон", "Валюта покупки", "Годы выпуска", "Длина, м", "Вместимость", "Вагонов на станции", "Всего за заход", "На метр станции"],
+      cols: ["Вагон", "Валюта покупки", "Годы выпуска", "Длина, м", "Вместимость", "Вагонов на станции", "Всего за заход", "Вместимость на метр вагона", "Выступ за станцию, м"],
       status: function (n, meta) { return "Показано вагонов: " + n + ". Данные игры: сборка " + (meta.game_build || "?") + ", обновлено " + meta.extracted_at + "."; },
       empty: "Нет вагонов под выбранные условия.",
       howTitle: "Как считается",
-      how: "<p>Вагон, который хотя бы частично попал на станцию, грузится вместе с остальными, поэтому число вагонов округляется вверх: <code>n = ⌈длина станции / (длина вагона + зазор)⌉</code>.</p><p>«Всего за заход» = <code>n × вместимость</code>. «На метр станции» = это значение, делённое на длину станции. Лучший вариант выделен цветом.</p><p>Длины берутся из моделей игры и могут отличаться от реальных на доли метра. Цена вагона не учитывается: в игре она зависит от стоимости ресурсов.</p>",
+      how: "<p>Вагон, который хотя бы частично попал на станцию, грузится вместе с остальными, поэтому число вагонов округляется вверх: <code>n = ⌈длина станции / (длина вагона + зазор)⌉</code>.</p><p>«Всего за заход» = <code>n × вместимость</code>. «Вместимость на метр вагона» = <code>вместимость / длина вагона</code>: это плотность самого вагона, она не зависит от станции. «Выступ за станцию» — на сколько метров последний вагон выходит за границу станции из-за округления вверх (<code>длина состава − длина станции</code>, где длина состава = <code>n × длина вагона + (n − 1) × зазор</code>); если выступа нет, показано «—». Прежняя колонка «на метр станции» убрана: она пропорциональна «Всего за заход» и только дублировала её. Сортировка: по «Всего за заход» (по убыванию), при равенстве — по меньшему выступу, затем по меньшей длине. Лучший вариант выделен цветом.</p><p>Длины берутся из моделей игры и могут отличаться от реальных на доли метра. Цена вагона не учитывается: в игре она зависит от стоимости ресурсов.</p>",
       footer: "Все изображения и данные принадлежат разработчикам игры Workers & Resources: Soviet Republic. Неофициальный фанатский проект, не связан с разработчиками.",
       steam: "Игра в Steam",
       takedown: "Если вы правообладатель и хотите убрать материалы — свяжитесь через GitHub Issues репозитория.",
       loadError: "Не удалось загрузить данные. Откройте сайт через http(s), а не как файл."
     },
     en: {
-      title: "WR:SR — wagon efficiency per station length",
+      title: "WR:SR — wagon efficiency for a given station length",
       intro: "Enter a station length to see which wagon carries the most per visit. Compare wagons of the same cargo type.",
       station: "Station length, m", preset: "Station", presetNone: "— custom length —",
       cargo: "Cargo type", gap: "Gap between wagons, m", names: "Wagon name language",
-      cols: ["Wagon", "Bought with", "Years", "Length, m", "Capacity", "Wagons at station", "Total per visit", "Per station metre"],
+      cols: ["Wagon", "Bought with", "Years", "Length, m", "Capacity", "Wagons at station", "Total per visit", "Capacity per wagon metre", "Overhang, m"],
       status: function (n, meta) { return "Showing " + n + " wagons. Game data: build " + (meta.game_build || "?") + ", updated " + meta.extracted_at + "."; },
       empty: "No wagons match the selected filters.",
       howTitle: "How it is calculated",
-      how: "<p>A wagon that is at least partly on the station is loaded together with the others, so the count is rounded up: <code>n = ⌈station length / (wagon length + gap)⌉</code>.</p><p>“Total per visit” = <code>n × capacity</code>. “Per station metre” is that value divided by the station length. The best option is highlighted.</p><p>Lengths come from the game models and may differ from real-life ones by fractions of a metre. Wagon price is not considered: in-game it depends on resource costs.</p>",
+      how: "<p>A wagon that is at least partly on the station is loaded together with the others, so the count is rounded up: <code>n = ⌈station length / (wagon length + gap)⌉</code>.</p><p>“Total per visit” = <code>n × capacity</code>. “Capacity per wagon metre” = <code>capacity / wagon length</code>: the density of the wagon itself, independent of the station. “Overhang” is how many metres the last wagon sticks out past the station boundary because of rounding up (<code>train length − station length</code>, where train length = <code>n × wagon length + (n − 1) × gap</code>); “—” means no overhang. The former “per station metre” column was removed: it is proportional to “Total per visit” and only duplicated it. Sorting: by “Total per visit” (descending), ties broken by smaller overhang, then by shorter length. The best option is highlighted.</p><p>Lengths come from the game models and may differ from real-life ones by fractions of a metre. Wagon price is not considered: in-game it depends on resource costs.</p>",
       footer: "All images and data belong to the developers of Workers & Resources: Soviet Republic. Unofficial fan project, not affiliated with the developers.",
       steam: "Game on Steam",
       takedown: "If you are a rights holder and want the materials removed, please get in touch via the repository's GitHub Issues.",
@@ -62,8 +62,8 @@
     return (w.names && w.names[l]) || w.name_str || w.id;
   }
   var CURRENCY = {
-    rub: { sym: "₽", ru: "Советская сторона", en: "Soviet" },
-    usd: { sym: "$", ru: "Западная", en: "Western" }
+    rub: { sym: "₽", ru: "Советский", en: "Soviet" },
+    usd: { sym: "$", ru: "Западный", en: "Western" }
   };
   function currencyLabel(w) {
     var c = CURRENCY[w.currency];
@@ -122,7 +122,7 @@
     var tbody = document.querySelector("#result tbody");
     $("status").textContent = t().status(shown.length, state.data.meta);
     if (!(station > 0) || !shown.length) {
-      tbody.innerHTML = "<tr><td colspan='8'>" + t().empty + "</td></tr>"; return;
+      tbody.innerHTML = "<tr><td colspan='9'>" + t().empty + "</td></tr>"; return;
     }
     var rows = C.rank(shown, station, { gap: gap });
     rows.forEach(function (r) { r.name = wagonName(r.wagon); });
@@ -134,7 +134,8 @@
         "<td>" + currencyLabel(w) + "</td><td>" + C.formatYears(w, state.lang) + "</td>" +
         "<td>" + fmt(w.length_m) + "</td><td>" + fmt(w.capacity) + "</td><td>" + r.count + "</td>" +
         "<td>" + fmt(r.total) + "<span class='bar' style='width:" + Math.round(r.total / max * 100) + "%'></span></td>" +
-        "<td>" + fmt(r.perMeter) + "</td></tr>";
+        "<td>" + fmt(r.density) + "</td>" +
+        "<td>" + (r.overhang > 0 ? fmt(r.overhang) : "—") + "</td></tr>";
     }).join("");
   }
 
