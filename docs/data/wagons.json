@@ -22,7 +22,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 14.83,
    "width_m": 2.84,
-   "height_m": 3.71
+   "height_m": 3.71,
+   "names": {
+    "en": "Budd 2200-Series Reversed",
+    "ru": "Budd 2200-Series Reversed",
+    "pl": "Budd 2200-Series Reversed",
+    "uk": "Budd 2200-Series Reversed"
+   }
   },
   {
    "id": "ej460_wagon",
@@ -39,7 +45,13 @@
    "country": 39000,
    "length_m": 25.65,
    "width_m": 3.21,
-   "height_m": 4.28
+   "height_m": 4.28,
+   "names": {
+    "en": "VV 063",
+    "ru": "VV 063",
+    "pl": "VV 063",
+    "uk": "VV 063"
+   }
   },
   {
    "id": "russian_vagon_eas_gravel",
@@ -57,7 +69,13 @@
    "cargo": "RESOURCE_TRANSPORT_GRAVEL",
    "length_m": 14.08,
    "width_m": 3.05,
-   "height_m": 3.33
+   "height_m": 3.33,
+   "names": {
+    "en": "Eas open hopper",
+    "ru": "Полувагон Eas (навалочные грузы)",
+    "pl": "Eas ładunek masowy",
+    "uk": "Напіввагон Ес (навалочні вантажі)"
+   }
   },
   {
    "id": "russian_vagon_eas_open",
@@ -75,7 +93,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 14.08,
    "width_m": 3.05,
-   "height_m": 3.33
+   "height_m": 3.33,
+   "names": {
+    "en": "Eas open",
+    "ru": "Полувагон Eas",
+    "pl": "Eas otwarty",
+    "uk": "Напіввагон Еас"
+   }
   },
   {
    "id": "russian_vagon_eas_waste",
@@ -93,7 +117,13 @@
    "cargo": "RESOURCE_TRANSPORT_WASTE",
    "length_m": 14.08,
    "width_m": 3.05,
-   "height_m": 3.33
+   "height_m": 3.33,
+   "names": {
+    "en": "Eas waste",
+    "ru": "Полувагон Eas (отходы)",
+    "pl": "Eas śmieci",
+    "uk": "Напіввагон Еас (відходи)"
+   }
   },
   {
    "id": "russian_vagon_es_gravel",
@@ -111,7 +141,13 @@
    "cargo": "RESOURCE_TRANSPORT_GRAVEL",
    "length_m": 9.98,
    "width_m": 3.02,
-   "height_m": 2.74
+   "height_m": 2.74,
+   "names": {
+    "en": "Es open hopper",
+    "ru": "Полувагон Es (навалочные грузы)",
+    "pl": "Es ładunek masowy",
+    "uk": "Напіввагон Ес (навалочні вантажі)"
+   }
   },
   {
    "id": "russian_vagon_es_open",
@@ -129,7 +165,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 9.98,
    "width_m": 3.02,
-   "height_m": 2.74
+   "height_m": 2.74,
+   "names": {
+    "en": "Es open",
+    "ru": "Полувагон Es",
+    "pl": "Es otwarty",
+    "uk": "Напіввагон Ес"
+   }
   },
   {
    "id": "russian_vagon_es_waste",
@@ -147,7 +189,13 @@
    "cargo": "RESOURCE_TRANSPORT_WASTE",
    "length_m": 9.98,
    "width_m": 3.02,
-   "height_m": 2.74
+   "height_m": 2.74,
+   "names": {
+    "en": "Es waste",
+    "ru": "Полувагон Es (отходы)",
+    "pl": "Es śmieci",
+    "uk": "Напіввагон Ес (відходи)"
+   }
   },
   {
    "id": "w_100tOpenHopper",
@@ -167,7 +215,13 @@
    "cargo": "RESOURCE_TRANSPORT_GRAVEL",
    "length_m": 15.65,
    "width_m": 3.17,
-   "height_m": 3.76
+   "height_m": 3.76,
+   "names": {
+    "en": "Open hopper (90t)",
+    "ru": "Хоппер (90 т)",
+    "pl": "Węglarka otwarta (90 t)",
+    "uk": "Бункер 90 т"
+   }
   },
   {
    "id": "w_40ftPS1",
@@ -187,7 +241,13 @@
    "cargo": "RESOURCE_TRANSPORT_COVERED",
    "length_m": 13.75,
    "width_m": 3.19,
-   "height_m": 4.58
+   "height_m": 4.58,
+   "names": {
+    "en": "Boxcar 4900",
+    "ru": "Крытый вагон 4900",
+    "pl": "Wagon kryty 4900",
+    "uk": "Критий вагон ПС-1 40 фт"
+   }
   },
   {
    "id": "w_50ftPS1",
@@ -207,7 +267,13 @@
    "cargo": "RESOURCE_TRANSPORT_COVERED",
    "length_m": 16.81,
    "width_m": 3.19,
-   "height_m": 4.49
+   "height_m": 4.49,
+   "names": {
+    "en": "Boxcar 5077",
+    "ru": "Крытый вагон 5077",
+    "pl": "Wagon kryty 5077",
+    "uk": "Критий вагон ПС-1 50 фт"
+   }
   },
   {
    "id": "w_50tconverted",
@@ -227,7 +293,13 @@
    "cargo": "RESOURCE_TRANSPORT_COVERED",
    "length_m": 11.72,
    "width_m": 3.19,
-   "height_m": 3.66
+   "height_m": 3.66,
+   "names": {
+    "en": "Covered hopper (50t)",
+    "ru": "Крытый хоппер (50 т)",
+    "pl": "Węglarka kryta (50 t)",
+    "uk": "Критий бункер 50 т"
+   }
   },
   {
    "id": "w_50tOpenHopper",
@@ -247,7 +319,13 @@
    "cargo": "RESOURCE_TRANSPORT_GRAVEL",
    "length_m": 11.72,
    "width_m": 3.19,
-   "height_m": 3.39
+   "height_m": 3.39,
+   "names": {
+    "en": "Open hopper (50t)",
+    "ru": "Хоппер (50 т)",
+    "pl": "Węglarka otwarta (50 t)",
+    "uk": "Бункер 50 т"
+   }
   },
   {
    "id": "w_66centerbeam",
@@ -267,7 +345,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 22.11,
    "width_m": 2.8,
-   "height_m": 3.83
+   "height_m": 3.83,
+   "names": {
+    "en": "Centerbeam (20m)",
+    "ru": "Платформа-панелевоз (20 м)",
+    "pl": "Centerbeam (20 m)",
+    "uk": "Платформа-панелевоз 20 м"
+   }
   },
   {
    "id": "w_70tOpenHopper",
@@ -287,7 +371,13 @@
    "cargo": "RESOURCE_TRANSPORT_GRAVEL",
    "length_m": 12.54,
    "width_m": 3.17,
-   "height_m": 3.76
+   "height_m": 3.76,
+   "names": {
+    "en": "Open hopper (70t)",
+    "ru": "Хоппер (70 т)",
+    "pl": "Węglarka otwarta (70 t)",
+    "uk": "Бункер 70 т"
+   }
   },
   {
    "id": "w_73centerbeam",
@@ -307,7 +397,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 24.23,
    "width_m": 2.8,
-   "height_m": 4.56
+   "height_m": 4.56,
+   "names": {
+    "en": "Centerbeam (22m)",
+    "ru": "Платформа-панелевоз (22 м)",
+    "pl": "Centerbeam (22 m)",
+    "uk": "Платформа-панелевоз 22 м"
+   }
   },
   {
    "id": "w_80thopper",
@@ -327,7 +423,13 @@
    "cargo": "RESOURCE_TRANSPORT_COVERED",
    "length_m": 16.81,
    "width_m": 3.24,
-   "height_m": 4.39
+   "height_m": 4.39,
+   "names": {
+    "en": "4180 open hopper ",
+    "ru": "Крытый хоппер 4180",
+    "pl": "Węglarka kryta 4180",
+    "uk": "Критий бункер ГА-4180"
+   }
   },
   {
    "id": "w_ACF506",
@@ -347,7 +449,13 @@
    "cargo": "RESOURCE_TRANSPORT_COVERED",
    "length_m": 16.9,
    "width_m": 3.28,
-   "height_m": 4.47
+   "height_m": 4.47,
+   "names": {
+    "en": "Boxcar 5300",
+    "ru": "Крытый вагон 5300",
+    "pl": "Wagon kryty 5300",
+    "uk": "Критий вагон АКФ-5300 50 фт"
+   }
   },
   {
    "id": "w_ACFF7081",
@@ -367,7 +475,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 17.54,
    "width_m": 2.79,
-   "height_m": 3.04
+   "height_m": 3.04,
+   "names": {
+    "en": "Container wagon (40ft)",
+    "ru": "Платформа-контейнеровоз Ф-70-81",
+    "pl": "Wagon kontenerowy F-70-81",
+    "uk": "Платформа-контейнеровоз Ф70-81 40 фт"
+   }
   },
   {
    "id": "w_Backpacker",
@@ -387,7 +501,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 17.68,
    "width_m": 2.87,
-   "height_m": 1.69
+   "height_m": 1.69,
+   "names": {
+    "en": "Container wagon (40ft)",
+    "ru": "Платформа-контейнеровоз (40 фт.)",
+    "pl": "Wagon kontenerowy (40 ft)",
+    "uk": "Платформа-контейнеровоз 40 фт"
+   }
   },
   {
    "id": "w_CoilCarCovered",
@@ -407,7 +527,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 14.07,
    "width_m": 3.04,
-   "height_m": 4.31
+   "height_m": 4.31,
+   "names": {
+    "en": "G41-C covered",
+    "ru": "Вагон для рулонной стали Г-41 (крытый)",
+    "pl": "G41 wagon do zwojów (kryty)",
+    "uk": "Вагон для рулонної сталі Г-41 критий"
+   }
   },
   {
    "id": "w_CoilCarOpen",
@@ -427,7 +553,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 14.07,
    "width_m": 2.98,
-   "height_m": 2.22
+   "height_m": 2.22,
+   "names": {
+    "en": "G41-C open",
+    "ru": "Вагон для рулонной стали Г-41 (открытый)",
+    "pl": "G41 wagon do zwojów (otwarty)",
+    "uk": "Вагон для рулонної сталі Г-41 відкритий"
+   }
   },
   {
    "id": "w_CWBhopper",
@@ -446,7 +578,13 @@
    "cargo": "RESOURCE_TRANSPORT_COVERED",
    "length_m": 17.95,
    "width_m": 3.12,
-   "height_m": 4.47
+   "height_m": 4.47,
+   "names": {
+    "en": "4550 open hopper",
+    "ru": "Крытый хоппер 4550",
+    "pl": "Węglarka kryta 4550",
+    "uk": "Зерновоз КВБ-4550"
+   }
   },
   {
    "id": "w_MaxiIV",
@@ -466,7 +604,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 20.22,
    "width_m": 2.74,
-   "height_m": 1.81
+   "height_m": 1.81,
+   "names": {
+    "en": "Container wagon (53ft)",
+    "ru": "Платформа-контейнеровоз (53 фт.)",
+    "pl": "Wagon kontenerowy (53 ft)",
+    "uk": "Платформа-контейнеровоз М-4 53 фт"
+   }
   },
   {
    "id": "25d49",
@@ -484,7 +628,13 @@
    "country": 39006,
    "length_m": 6.77,
    "width_m": 2.87,
-   "height_m": 4.22
+   "height_m": 4.22,
+   "names": {
+    "en": "25D49 (Ol49) Tender",
+    "ru": "Тендер 25Д49 (ОЛ-49)",
+    "pl": "25D49 (Ol49) Tender",
+    "uk": "Тендер 25D49 (ОЛ-49)"
+   }
   },
   {
    "id": "32d43",
@@ -502,7 +652,13 @@
    "country": 39006,
    "length_m": 9.14,
    "width_m": 3.06,
-   "height_m": 4.0
+   "height_m": 4.0,
+   "names": {
+    "en": "32D43 (Ty45) Tender",
+    "ru": "Тендер 32Д43 (ТИ-45) ",
+    "pl": "32D43 (Ty45) Tender",
+    "uk": "Тендер 32D43 (ТИ-45)"
+   }
   },
   {
    "id": "34d44",
@@ -520,7 +676,13 @@
    "country": 39006,
    "length_m": 8.84,
    "width_m": 2.87,
-   "height_m": 4.0
+   "height_m": 4.0,
+   "names": {
+    "en": "34D44 (Pm2) Tender",
+    "ru": "Тендер 34Д44 (ПМ-2)",
+    "pl": "34D44 (Pm2) Tender",
+    "uk": "Тендер 34D44 (ПМ-2)"
+   }
   },
   {
    "id": "bbotender",
@@ -537,7 +699,13 @@
    "available_to": 1962,
    "length_m": 7.96,
    "width_m": 3.05,
-   "height_m": 3.96
+   "height_m": 3.96,
+   "names": {
+    "en": "BBÖ 214",
+    "ru": "BBÖ 214",
+    "pl": "BBÖ 214",
+    "uk": "BBÖ 214"
+   }
   },
   {
    "id": "Ci28",
@@ -554,7 +722,13 @@
    "country": 39003,
    "length_m": 13.91,
    "width_m": 3.12,
-   "height_m": 3.85
+   "height_m": 3.85,
+   "names": {
+    "en": "Donnerbüchse Ci-28",
+    "ru": "Donnerbüchse Ci-28",
+    "pl": "Donnerbüchse Ci-28",
+    "uk": "Donnerbüchse Ci-28"
+   }
   },
   {
    "id": "Dresden",
@@ -572,7 +746,13 @@
    "country": 39003,
    "length_m": 12.06,
    "width_m": 3.09,
-   "height_m": 4.04
+   "height_m": 4.04,
+   "names": {
+    "en": "Dresden Gl",
+    "ru": "Dresden Gl",
+    "pl": "Dresden Gl",
+    "uk": "Dresden Gl"
+   }
   },
   {
    "id": "Essen",
@@ -590,7 +770,13 @@
    "country": 39003,
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "names": {
+    "en": "Essen Om полувагон",
+    "ru": "Essen Om полувагон",
+    "pl": "Essen Om полувагон",
+    "uk": "Essen Om полувагон"
+   }
   },
   {
    "id": "EssenO",
@@ -608,7 +794,13 @@
    "country": 39003,
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "names": {
+    "en": "Essen Om бортовой",
+    "ru": "Essen Om бортовой",
+    "pl": "Essen Om бортовой",
+    "uk": "Essen Om бортовой"
+   }
   },
   {
    "id": "EssenW",
@@ -626,7 +818,13 @@
    "country": 39003,
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "names": {
+    "en": "Essen Om мусоровоз",
+    "ru": "Essen Om мусоровоз",
+    "pl": "Essen Om мусоровоз",
+    "uk": "Essen Om мусоровоз"
+   }
   },
   {
    "id": "Etender",
@@ -644,7 +842,13 @@
    "country": 39011,
    "length_m": 10.27,
    "width_m": 3.31,
-   "height_m": 4.64
+   "height_m": 4.64,
+   "names": {
+    "en": "Э обр. 1912/1928/1931",
+    "ru": "Э обр. 1912/1928/1931",
+    "pl": "Э обр. 1912/1928/1931",
+    "uk": "Э обр. 1912/1928/1931"
+   }
   },
   {
    "id": "FDtender",
@@ -662,7 +866,13 @@
    "country": 39011,
    "length_m": 14.63,
    "width_m": 3.3,
-   "height_m": 4.5
+   "height_m": 4.5,
+   "names": {
+    "en": "ФД",
+    "ru": "ФД",
+    "pl": "ФД",
+    "uk": "ФД"
+   }
   },
   {
    "id": "Hannover",
@@ -680,7 +890,13 @@
    "country": 39003,
    "length_m": 9.1,
    "width_m": 3.07,
-   "height_m": 3.52
+   "height_m": 3.52,
+   "names": {
+    "en": "Hannover Gk",
+    "ru": "Hannover Gk",
+    "pl": "Hannover Gk",
+    "uk": "Hannover Gk"
+   }
   },
   {
    "id": "IStender",
@@ -698,7 +914,13 @@
    "country": 39011,
    "length_m": 14.63,
    "width_m": 3.3,
-   "height_m": 4.5
+   "height_m": 4.5,
+   "names": {
+    "en": "ИС",
+    "ru": "ИС",
+    "pl": "ИС",
+    "uk": "ИС"
+   }
   },
   {
    "id": "Kassel",
@@ -716,7 +938,13 @@
    "country": 39003,
    "length_m": 9.1,
    "width_m": 3.09,
-   "height_m": 3.52
+   "height_m": 3.52,
+   "names": {
+    "en": "Kassel G",
+    "ru": "Kassel G",
+    "pl": "Kassel G",
+    "uk": "Kassel G"
+   }
   },
   {
    "id": "KasselHorse",
@@ -734,7 +962,13 @@
    "country": 39003,
    "length_m": 9.1,
    "width_m": 3.09,
-   "height_m": 3.52
+   "height_m": 3.52,
+   "names": {
+    "en": "Kassel G",
+    "ru": "Kassel G",
+    "pl": "Kassel G",
+    "uk": "Kassel G"
+   }
   },
   {
    "id": "Klagenfurt",
@@ -752,7 +986,13 @@
    "country": 39003,
    "length_m": 10.04,
    "width_m": 2.98,
-   "height_m": 2.96
+   "height_m": 2.96,
+   "names": {
+    "en": "Klagenfurt Ommu полувагон",
+    "ru": "Klagenfurt Ommu полувагон",
+    "pl": "Klagenfurt Ommu полувагон",
+    "uk": "Klagenfurt Ommu полувагон"
+   }
   },
   {
    "id": "KlagenfurtO",
@@ -770,7 +1010,13 @@
    "country": 39003,
    "length_m": 10.04,
    "width_m": 2.98,
-   "height_m": 2.96
+   "height_m": 2.96,
+   "names": {
+    "en": "Klagenfurt Ommu бортовой",
+    "ru": "Klagenfurt Ommu бортовой",
+    "pl": "Klagenfurt Ommu бортовой",
+    "uk": "Klagenfurt Ommu бортовой"
+   }
   },
   {
    "id": "KlagenfurtW",
@@ -788,7 +1034,13 @@
    "country": 39003,
    "length_m": 10.04,
    "width_m": 2.98,
-   "height_m": 2.96
+   "height_m": 2.96,
+   "names": {
+    "en": "Klagenfurt Ommu мусоровоз",
+    "ru": "Klagenfurt Ommu мусоровоз",
+    "pl": "Klagenfurt Ommu мусоровоз",
+    "uk": "Klagenfurt Ommu мусоровоз"
+   }
   },
   {
    "id": "Konigsberg",
@@ -806,7 +1058,13 @@
    "country": 39003,
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "names": {
+    "en": "Konigsberg Om полувагон",
+    "ru": "Konigsberg Om полувагон",
+    "pl": "Konigsberg Om полувагон",
+    "uk": "Konigsberg Om полувагон"
+   }
   },
   {
    "id": "KonigsbergO",
@@ -824,7 +1082,13 @@
    "country": 39003,
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "names": {
+    "en": "Konigsberg Om бортовой",
+    "ru": "Konigsberg Om бортовой",
+    "pl": "Konigsberg Om бортовой",
+    "uk": "Konigsberg Om бортовой"
+   }
   },
   {
    "id": "KonigsbergW",
@@ -842,7 +1106,13 @@
    "country": 39003,
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "names": {
+    "en": "Konigsberg Om мусоровоз",
+    "ru": "Konigsberg Om мусоровоз",
+    "pl": "Konigsberg Om мусоровоз",
+    "uk": "Konigsberg Om мусоровоз"
+   }
   },
   {
    "id": "Oppeln",
@@ -860,7 +1130,13 @@
    "country": 39003,
    "length_m": 9.11,
    "width_m": 3.09,
-   "height_m": 4.04
+   "height_m": 4.04,
+   "names": {
+    "en": "Oppeln Gs",
+    "ru": "Oppeln Gs",
+    "pl": "Oppeln Gs",
+    "uk": "Oppeln Gs"
+   }
   },
   {
    "id": "otuatender",
@@ -877,7 +1153,13 @@
    "country": 39006,
    "length_m": 7.51,
    "width_m": 2.72,
-   "height_m": 3.79
+   "height_m": 3.79,
+   "names": {
+    "en": "Pm3 Tender",
+    "ru": "Тендер ПМ-3",
+    "pl": "Tender Pm3",
+    "uk": "Тендер ПМ-3"
+   }
   },
   {
    "id": "russian_metro_ABv",
@@ -893,7 +1175,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 19.0,
    "width_m": 2.75,
-   "height_m": 3.72
+   "height_m": 3.72,
+   "names": {
+    "en": "Метро А",
+    "ru": "Метро А",
+    "pl": "Метро А",
+    "uk": "Метро А"
+   }
   },
   {
    "id": "russian_service_BR_kassel",
@@ -910,7 +1198,13 @@
    "country": 39003,
    "length_m": 9.1,
    "width_m": 3.09,
-   "height_m": 3.52
+   "height_m": 3.52,
+   "names": {
+    "en": "Kassel G Construction Car",
+    "ru": "Kassel G Construction Car",
+    "pl": "Kassel G Construction Car",
+    "uk": "Kassel G Construction Car"
+   }
   },
   {
    "id": "russian_service_dampfdrehkran_vagon",
@@ -925,7 +1219,13 @@
    "country": 39004,
    "length_m": 8.08,
    "width_m": 2.62,
-   "height_m": 2.0
+   "height_m": 2.0,
+   "names": {
+    "en": "Weimar Dampfkran vagon2",
+    "ru": "Вагон-кран \"Веймар-2\"",
+    "pl": "Weimar Dampfkran Vagon 2",
+    "uk": "Вагон-кран \"Веймар-2\""
+   }
   },
   {
    "id": "russian_service_manual_machine_vagon",
@@ -941,7 +1241,13 @@
    "empty_weight": 3,
    "length_m": 3.93,
    "width_m": 1.89,
-   "height_m": 0.56
+   "height_m": 0.56,
+   "names": {
+    "en": "Manual track builder",
+    "ru": "Ручная дрезина",
+    "pl": "Drezyna ręczna",
+    "uk": "Ручна дрезина"
+   }
   },
   {
    "id": "russian_service_tbm_9p_vagon",
@@ -958,7 +1264,13 @@
    "country": 39011,
    "length_m": 14.18,
    "width_m": 3.01,
-   "height_m": 3.9
+   "height_m": 3.9,
+   "names": {
+    "en": "Ya3 railcar",
+    "ru": "Ya3 railcar",
+    "pl": "Ya3 railcar",
+    "uk": "Ya3 railcar"
+   }
   },
   {
    "id": "russian_service_tbm_9p_vagon2",
@@ -975,7 +1287,13 @@
    "country": 39011,
    "length_m": 14.18,
    "width_m": 3.01,
-   "height_m": 2.48
+   "height_m": 2.48,
+   "names": {
+    "en": "Ya3 railcar",
+    "ru": "Ya3 railcar",
+    "pl": "Ya3 railcar",
+    "uk": "Ya3 railcar"
+   }
   },
   {
    "id": "russian_service_weimar_vagon",
@@ -990,7 +1308,13 @@
    "country": 39004,
    "length_m": 8.63,
    "width_m": 2.62,
-   "height_m": 2.01
+   "height_m": 2.01,
+   "names": {
+    "en": "Weimar Dampfkran vagon",
+    "ru": "Вагон-кран \"Веймар\"",
+    "pl": "Wagon żurawia parowego Weimar",
+    "uk": "Вагон-кран \"Веймар\""
+   }
   },
   {
    "id": "russian_service_weimar_vagon2",
@@ -1007,7 +1331,13 @@
    "country": 39004,
    "length_m": 8.08,
    "width_m": 2.62,
-   "height_m": 2.0
+   "height_m": 2.0,
+   "names": {
+    "en": "Weimar Dampfkran vagon2",
+    "ru": "Вагон-кран \"Веймар-2\"",
+    "pl": "Wagon 2. żurawia parowego Weimar",
+    "uk": "Вагон-кран \"Веймар-2\""
+   }
   },
   {
    "id": "russian_service_ya3_vagon",
@@ -1024,7 +1354,13 @@
    "country": 39011,
    "length_m": 14.18,
    "width_m": 3.01,
-   "height_m": 1.87
+   "height_m": 1.87,
+   "names": {
+    "en": "Я3 кран",
+    "ru": "Я3 кран",
+    "pl": "Я3 кран",
+    "uk": "Я3 кран"
+   }
   },
   {
    "id": "russian_service_ya3_vagon2",
@@ -1041,7 +1377,13 @@
    "country": 39011,
    "length_m": 14.18,
    "width_m": 3.01,
-   "height_m": 1.87
+   "height_m": 1.87,
+   "names": {
+    "en": "Я3 кран",
+    "ru": "Я3 кран",
+    "pl": "Я3 кран",
+    "uk": "Я3 кран"
+   }
   },
   {
    "id": "russian_steam_ov_tender",
@@ -1056,7 +1398,13 @@
    "empty_weight": 18.6,
    "length_m": 6.67,
    "width_m": 3.24,
-   "height_m": 3.12
+   "height_m": 3.12,
+   "names": {
+    "en": "Ов",
+    "ru": "Ов",
+    "pl": "Ов",
+    "uk": "Ов"
+   }
   },
   {
    "id": "russian_steam_p36_tender",
@@ -1070,7 +1418,13 @@
    "country": 39006,
    "length_m": 13.93,
    "width_m": 3.19,
-   "height_m": 4.55
+   "height_m": 4.55,
+   "names": {
+    "en": "П36",
+    "ru": "П36",
+    "pl": "П36",
+    "uk": "П36"
+   }
   },
   {
    "id": "russian_steam_su_tender",
@@ -1084,7 +1438,13 @@
    "country": 39006,
    "length_m": 10.04,
    "width_m": 3.14,
-   "height_m": 4.87
+   "height_m": 4.87,
+   "names": {
+    "en": "Су250",
+    "ru": "Су250",
+    "pl": "Су250",
+    "uk": "Су250"
+   }
   },
   {
    "id": "russian_tram_bakuemu_v",
@@ -1100,7 +1460,13 @@
    "country": 39011,
    "length_m": 18.72,
    "width_m": 3.2,
-   "height_m": 4.15
+   "height_m": 4.15,
+   "names": {
+    "en": "МВПС Баку — Сураханы",
+    "ru": "МВПС Баку — Сураханы",
+    "pl": "МВПС Баку — Сураханы",
+    "uk": "МВПС Баку — Сураханы"
+   }
   },
   {
    "id": "russian_vagon_2axle",
@@ -1117,7 +1483,13 @@
    "empty_weight": 27,
    "length_m": 16.02,
    "width_m": 3.3,
-   "height_m": 4.83
+   "height_m": 4.83,
+   "names": {
+    "en": "Early 2-axle",
+    "ru": "Ранний 2-осный",
+    "pl": "Early 2-axle",
+    "uk": "Ранній 2-вісний"
+   }
   },
   {
    "id": "russian_vagon_4axle",
@@ -1134,7 +1506,13 @@
    "empty_weight": 42,
    "length_m": 21.89,
    "width_m": 3.27,
-   "height_m": 4.81
+   "height_m": 4.81,
+   "names": {
+    "en": "Early 4-axle",
+    "ru": "Ранний 4-осный",
+    "pl": "Early 4-axle",
+    "uk": "Ранній 4-вісний"
+   }
   },
   {
    "id": "SOtender",
@@ -1152,7 +1530,13 @@
    "country": 39011,
    "length_m": 7.97,
    "width_m": 2.93,
-   "height_m": 4.4
+   "height_m": 4.4,
+   "names": {
+    "en": "СО обр. 1928",
+    "ru": "СО обр. 1928",
+    "pl": "СО обр. 1928",
+    "uk": "СО обр. 1928"
+   }
   },
   {
    "id": "SSyms",
@@ -1170,7 +1554,13 @@
    "country": 39003,
    "length_m": 13.1,
    "width_m": 3.14,
-   "height_m": 2.3
+   "height_m": 2.3,
+   "names": {
+    "en": "Koln Ssyms",
+    "ru": "Koln Ssyms",
+    "pl": "Koln Ssyms",
+    "uk": "Koln Ssyms"
+   }
   },
   {
    "id": "SSys",
@@ -1188,7 +1578,13 @@
    "country": 39003,
    "length_m": 10.7,
    "width_m": 3.14,
-   "height_m": 2.3
+   "height_m": 2.3,
+   "names": {
+    "en": "Koln Ssys",
+    "ru": "Koln Ssys",
+    "pl": "Koln Ssys",
+    "uk": "Koln Ssys"
+   }
   },
   {
    "id": "Stuttgart",
@@ -1206,7 +1602,13 @@
    "country": 39003,
    "length_m": 11.5,
    "width_m": 3.0,
-   "height_m": 1.64
+   "height_m": 1.64,
+   "names": {
+    "en": "Stuttgart R",
+    "ru": "Stuttgart R",
+    "pl": "Stuttgart R",
+    "uk": "Stuttgart R"
+   }
   },
   {
    "id": "Villach",
@@ -1224,7 +1626,13 @@
    "country": 39003,
    "length_m": 10.1,
    "width_m": 2.97,
-   "height_m": 2.99
+   "height_m": 2.99,
+   "names": {
+    "en": "Villach Ommru полувагон",
+    "ru": "Villach Ommru полувагон",
+    "pl": "Villach Ommru полувагон",
+    "uk": "Villach Ommru полувагон"
+   }
   },
   {
    "id": "VillachO",
@@ -1242,7 +1650,13 @@
    "country": 39003,
    "length_m": 10.1,
    "width_m": 2.97,
-   "height_m": 2.99
+   "height_m": 2.99,
+   "names": {
+    "en": "Villach Ommru бортовой",
+    "ru": "Villach Ommru бортовой",
+    "pl": "Villach Ommru бортовой",
+    "uk": "Villach Ommru бортовой"
+   }
   },
   {
    "id": "VillachW",
@@ -1260,7 +1674,13 @@
    "country": 39003,
    "length_m": 10.1,
    "width_m": 2.97,
-   "height_m": 2.99
+   "height_m": 2.99,
+   "names": {
+    "en": "Villach Ommru мусоровоз",
+    "ru": "Villach Ommru мусоровоз",
+    "pl": "Villach Ommru мусоровоз",
+    "uk": "Villach Ommru мусоровоз"
+   }
   },
   {
    "id": "west_service_steamcrane_vagon",
@@ -1277,7 +1697,13 @@
    "country": 39004,
    "length_m": 12.67,
    "width_m": 3.03,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "names": {
+    "en": "Vagon",
+    "ru": "Вагон",
+    "pl": "Vagon",
+    "uk": "Вагон"
+   }
   },
   {
    "id": "west_service_steamcrane_vagon2",
@@ -1294,7 +1720,13 @@
    "country": 39004,
    "length_m": 12.67,
    "width_m": 2.99,
-   "height_m": 2.01
+   "height_m": 2.01,
+   "names": {
+    "en": "Vagon",
+    "ru": "Вагон",
+    "pl": "Vagon",
+    "uk": "Вагон"
+   }
   },
   {
    "id": "west_set_EN80_v_end",
@@ -1311,7 +1743,13 @@
    "country": 39006,
    "length_m": 14.05,
    "width_m": 2.44,
-   "height_m": 3.36
+   "height_m": 3.36,
+   "names": {
+    "en": "PKP class EN80",
+    "ru": "PKP class EN80",
+    "pl": "PKP class EN80",
+    "uk": "PKP class EN80"
+   }
   },
   {
    "id": "west_set_EN80_v_middle",
@@ -1329,7 +1767,13 @@
    "country": 39006,
    "length_m": 14.05,
    "width_m": 2.44,
-   "height_m": 3.36
+   "height_m": 3.36,
+   "names": {
+    "en": "PKP class EN80",
+    "ru": "PKP class EN80",
+    "pl": "PKP class EN80",
+    "uk": "PKP class EN80"
+   }
   },
   {
    "id": "Wismar",
@@ -1347,7 +1791,13 @@
    "country": 39003,
    "length_m": 8.86,
    "width_m": 2.82,
-   "height_m": 4.22
+   "height_m": 4.22,
+   "names": {
+    "en": "Wismar Z",
+    "ru": "Wismar Z",
+    "pl": "Wismar Z",
+    "uk": "Wismar Z"
+   }
   },
   {
    "id": "Wuppertal",
@@ -1365,7 +1815,13 @@
    "country": 39003,
    "length_m": 8.1,
    "width_m": 2.99,
-   "height_m": 3.09
+   "height_m": 3.09,
+   "names": {
+    "en": "Wuppertal K",
+    "ru": "Wuppertal K",
+    "pl": "Wuppertal K",
+    "uk": "Wuppertal K"
+   }
   },
   {
    "id": "russian_crane_vagon",
@@ -1378,7 +1834,13 @@
    "country": 39011,
    "length_m": 16.32,
    "width_m": 2.69,
-   "height_m": 1.37
+   "height_m": 1.37,
+   "names": {
+    "en": "GZ66 covered",
+    "ru": "ГЗ-66",
+    "pl": "GZ-66 ciężarówka",
+    "uk": "GZ66Шишига ГорАЗ-66 крита"
+   }
   },
   {
    "id": "russian_metro_717_5_vagon",
@@ -1394,7 +1856,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 19.44,
    "width_m": 2.93,
-   "height_m": 3.74
+   "height_m": 3.74,
+   "names": {
+    "en": "russian_metro_717_5_vagon",
+    "ru": "russian_metro_717_5_vagon",
+    "pl": "russian_metro_717_5_vagon",
+    "uk": "russian_metro_717_5_vagon"
+   }
   },
   {
    "id": "russian_metro_717_vagon",
@@ -1410,7 +1878,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 19.44,
    "width_m": 2.93,
-   "height_m": 3.74
+   "height_m": 3.74,
+   "names": {
+    "en": "russian_metro_717_vagon",
+    "ru": "russian_metro_717_vagon",
+    "pl": "russian_metro_717_vagon",
+    "uk": "russian_metro_717_vagon"
+   }
   },
   {
    "id": "russian_metro_720_vagon",
@@ -1426,7 +1900,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 19.39,
    "width_m": 2.89,
-   "height_m": 3.72
+   "height_m": 3.72,
+   "names": {
+    "en": "russian_metro_720_vagon",
+    "ru": "russian_metro_720_vagon",
+    "pl": "russian_metro_720_vagon",
+    "uk": "russian_metro_720_vagon"
+   }
   },
   {
    "id": "russian_metro_astra_vagon",
@@ -1442,7 +1922,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 19.43,
    "width_m": 3.23,
-   "height_m": 3.68
+   "height_m": 3.68,
+   "names": {
+    "en": "russian_metro_astra_vagon",
+    "ru": "russian_metro_astra_vagon",
+    "pl": "russian_metro_astra_vagon",
+    "uk": "russian_metro_astra_vagon"
+   }
   },
   {
    "id": "russian_metro_Ecs_vagon",
@@ -1458,7 +1944,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 19.44,
    "width_m": 2.93,
-   "height_m": 3.74
+   "height_m": 3.74,
+   "names": {
+    "en": "russian_metro_Ecs_vagon",
+    "ru": "russian_metro_Ecs_vagon",
+    "pl": "russian_metro_Ecs_vagon",
+    "uk": "russian_metro_Ecs_vagon"
+   }
   },
   {
    "id": "russian_metro_mfav_vagon",
@@ -1475,7 +1967,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 11.63,
    "width_m": 2.34,
-   "height_m": 2.73
+   "height_m": 2.73,
+   "names": {
+    "en": "russian_metro_mfav_vagon",
+    "ru": "russian_metro_mfav_vagon",
+    "pl": "russian_metro_mfav_vagon",
+    "uk": "russian_metro_mfav_vagon"
+   }
   },
   {
    "id": "russian_metro_mfav_vagon2",
@@ -1491,7 +1989,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 10.35,
    "width_m": 2.34,
-   "height_m": 2.89
+   "height_m": 2.89,
+   "names": {
+    "en": "russian_metro_mfav_vagon2",
+    "ru": "russian_metro_mfav_vagon2",
+    "pl": "russian_metro_mfav_vagon2",
+    "uk": "russian_metro_mfav_vagon2"
+   }
   },
   {
    "id": "russian_service_agmu_vagon",
@@ -1505,7 +2009,13 @@
    "country": 39011,
    "length_m": 9.6,
    "width_m": 2.93,
-   "height_m": 1.2
+   "height_m": 1.2,
+   "names": {
+    "en": "Дрезина АГМу",
+    "ru": "Дрезина АГМу",
+    "pl": "Дрезина АГМу",
+    "uk": "Дрезина АГМу"
+   }
   },
   {
    "id": "russian_service_dkgu5_vagon",
@@ -1519,7 +2029,13 @@
    "country": 39011,
    "length_m": 12.65,
    "width_m": 3.18,
-   "height_m": 1.8
+   "height_m": 1.8,
+   "names": {
+    "en": "Дрезина ДГКу-5",
+    "ru": "Дрезина ДГКу-5",
+    "pl": "Дрезина ДГКу-5",
+    "uk": "Дрезина ДГКу-5"
+   }
   },
   {
    "id": "russian_service_edk300_vagon",
@@ -1533,7 +2049,13 @@
    "country": 39004,
    "length_m": 17.29,
    "width_m": 3.14,
-   "height_m": 2.09
+   "height_m": 2.09,
+   "names": {
+    "en": "russian_service_edk300_vagon",
+    "ru": "russian_service_edk300_vagon",
+    "pl": "russian_service_edk300_vagon",
+    "uk": "russian_service_edk300_vagon"
+   }
   },
   {
    "id": "russian_service_edk300_vagon_2",
@@ -1547,7 +2069,13 @@
    "country": 39004,
    "length_m": 17.29,
    "width_m": 3.14,
-   "height_m": 1.86
+   "height_m": 1.86,
+   "names": {
+    "en": "russian_service_edk300_vagon_2",
+    "ru": "russian_service_edk300_vagon_2",
+    "pl": "russian_service_edk300_vagon_2",
+    "uk": "russian_service_edk300_vagon_2"
+   }
   },
   {
    "id": "russian_service_muv69_vagon",
@@ -1561,7 +2089,13 @@
    "country": 39000,
    "length_m": 7.74,
    "width_m": 2.91,
-   "height_m": 1.79
+   "height_m": 1.79,
+   "names": {
+    "en": "Дрезина MUV 69",
+    "ru": "Дрезина MUV 69",
+    "pl": "Дрезина MUV 69",
+    "uk": "Дрезина MUV 69"
+   }
   },
   {
    "id": "russian_service_tbm_kt1_platform",
@@ -1579,7 +2113,13 @@
    "consumption": 0,
    "length_m": 18.74,
    "width_m": 3.15,
-   "height_m": 4.91
+   "height_m": 4.91,
+   "names": {
+    "en": "Razici Stit KT1-5.6m",
+    "ru": "Razici Stit KT1-5.6m",
+    "pl": "Razici Stit KT1-5.6m",
+    "uk": "Razici Stit KT1-5.6m"
+   }
   },
   {
    "id": "russian_service_uk25_vagon",
@@ -1594,7 +2134,13 @@
    "country": 39011,
    "length_m": 19.03,
    "width_m": 3.45,
-   "height_m": 1.71
+   "height_m": 1.71,
+   "names": {
+    "en": "Путеукладчик УК-25",
+    "ru": "Путеукладчик УК-25",
+    "pl": "Путеукладчик УК-25",
+    "uk": "Путеукладчик УК-25"
+   }
   },
   {
    "id": "russian_set_d1_v",
@@ -1609,7 +2155,13 @@
    "country": 39011,
    "length_m": 25.74,
    "width_m": 3.15,
-   "height_m": 4.39
+   "height_m": 4.39,
+   "names": {
+    "en": "Д1",
+    "ru": "Д1",
+    "pl": "Д1",
+    "uk": "Д1"
+   }
   },
   {
    "id": "russian_set_dp_v",
@@ -1624,7 +2176,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 26.78,
    "width_m": 3.16,
-   "height_m": 4.08
+   "height_m": 4.08,
+   "names": {
+    "en": "ДП",
+    "ru": "ДП",
+    "pl": "ДП",
+    "uk": "ДП"
+   }
   },
   {
    "id": "russian_set_dr1a_v",
@@ -1642,7 +2200,13 @@
    "country": 39013,
    "length_m": 26.82,
    "width_m": 3.14,
-   "height_m": 4.25
+   "height_m": 4.25,
+   "names": {
+    "en": "ДР1",
+    "ru": "ДР1",
+    "pl": "ДР1",
+    "uk": "ДР1"
+   }
   },
   {
    "id": "russian_set_er1_v",
@@ -1657,7 +2221,13 @@
    "country": 39011,
    "length_m": 20.98,
    "width_m": 3.51,
-   "height_m": 4.23
+   "height_m": 4.23,
+   "names": {
+    "en": "ЭР1",
+    "ru": "ЭР1",
+    "pl": "ЭР1",
+    "uk": "ЭР1"
+   }
   },
   {
    "id": "russian_tram_102na_v",
@@ -1675,7 +2245,13 @@
    "country": 39006,
    "length_m": 11.05,
    "width_m": 2.34,
-   "height_m": 3.01
+   "height_m": 3.01,
+   "names": {
+    "en": "Konstal 102Na",
+    "ru": "Konstal 102Na",
+    "pl": "Konstal 102Na",
+    "uk": "Konstal 102Na"
+   }
   },
   {
    "id": "russian_tram_ganz_v1",
@@ -1694,7 +2270,13 @@
    "country": 39007,
    "length_m": 6.95,
    "width_m": 2.35,
-   "height_m": 2.85
+   "height_m": 2.85,
+   "names": {
+    "en": "Ganz CSMG",
+    "ru": "Ganz CSMG",
+    "pl": "Ganz CSMG",
+    "uk": "Ganz CSMG"
+   }
   },
   {
    "id": "russian_tram_ganz_v2",
@@ -1712,7 +2294,13 @@
    "country": 39007,
    "length_m": 11.91,
    "width_m": 2.42,
-   "height_m": 3.38
+   "height_m": 3.38,
+   "names": {
+    "en": "Ganz CSMG",
+    "ru": "Ganz CSMG",
+    "pl": "Ganz CSMG",
+    "uk": "Ganz CSMG"
+   }
   },
   {
    "id": "russian_tram_kt8_v",
@@ -1731,7 +2319,13 @@
    "country": 39000,
    "length_m": 10.12,
    "width_m": 2.5,
-   "height_m": 3.11
+   "height_m": 3.11,
+   "names": {
+    "en": "Tatra KT8D5",
+    "ru": "Tatra KT8D5",
+    "pl": "Tatra KT8D5",
+    "uk": "Tatra KT8D5"
+   }
   },
   {
    "id": "russian_tram_ktm_v",
@@ -1748,7 +2342,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 10.26,
    "width_m": 2.62,
-   "height_m": 3.3
+   "height_m": 3.3,
+   "names": {
+    "en": "КТП-1",
+    "ru": "КТП-1",
+    "pl": "КТП-1",
+    "uk": "КТП-1"
+   }
   },
   {
    "id": "russian_vagon_armen",
@@ -1766,7 +2366,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 24.48,
    "width_m": 3.26,
-   "height_m": 4.45
+   "height_m": 4.45,
+   "names": {
+    "en": "ЦМВ Ammendorf",
+    "ru": "ЦМВ Ammendorf",
+    "pl": "ЦМВ Ammendorf",
+    "uk": "ЦМВ Ammendorf"
+   }
   },
   {
    "id": "russian_vagon_box066",
@@ -1786,7 +2392,13 @@
    "bbox_back": 0.13,
    "length_m": 15.04,
    "width_m": 3.29,
-   "height_m": 4.54
+   "height_m": 4.54,
+   "names": {
+    "en": "Boxcar 11-066",
+    "ru": "Крытый вагон 11-066",
+    "pl": "Wagon kryty 11-066",
+    "uk": "Критий вагон 11-066"
+   }
   },
   {
    "id": "russian_vagon_box270",
@@ -1806,7 +2418,13 @@
    "bbox_back": 0.13,
    "length_m": 15.04,
    "width_m": 3.31,
-   "height_m": 4.54
+   "height_m": 4.54,
+   "names": {
+    "en": "Boxcar 11-270",
+    "ru": "Крытый вагон 11-270",
+    "pl": "Wagon kryty 11-270",
+    "uk": "Критий вагон 11-270"
+   }
   },
   {
    "id": "russian_vagon_box280",
@@ -1826,7 +2444,13 @@
    "country": 39011,
    "length_m": 16.78,
    "width_m": 3.31,
-   "height_m": 4.59
+   "height_m": 4.59,
+   "names": {
+    "en": "Boxcar 11-280",
+    "ru": "Крытый вагон 11-280",
+    "pl": "Wagon kryty 11-280",
+    "uk": "Критий вагон 11-280"
+   }
   },
   {
    "id": "russian_vagon_cement",
@@ -1846,7 +2470,13 @@
    "bbox_back": 0.13,
    "length_m": 11.87,
    "width_m": 3.44,
-   "height_m": 4.77
+   "height_m": 4.77,
+   "names": {
+    "en": "11-715 dry-bulk tank",
+    "ru": "Хоппер 11-715 для цемента",
+    "pl": "11-715 cement",
+    "uk": "11-715 цистерна для сипких вантажів"
+   }
   },
   {
    "id": "russian_vagon_cooler",
@@ -1862,7 +2492,13 @@
    "country": 39011,
    "length_m": 22.06,
    "width_m": 3.4,
-   "height_m": 5.08
+   "height_m": 5.08,
+   "names": {
+    "en": "GZ66 covered",
+    "ru": "ГЗ-66",
+    "pl": "GZ-66 ciężarówka",
+    "uk": "GZ66Шишига ГорАЗ-66 крита"
+   }
   },
   {
    "id": "russian_vagon_cooler_iso",
@@ -1882,7 +2518,13 @@
    "bbox_back": 0.13,
    "length_m": 22.25,
    "width_m": 3.24,
-   "height_m": 4.66
+   "height_m": 4.66,
+   "names": {
+    "en": "Изотермический вагон",
+    "ru": "Изотермический вагон",
+    "pl": "Изотермический вагон",
+    "uk": "Изотермический вагон"
+   }
   },
   {
    "id": "russian_vagon_cooler_zb5",
@@ -1902,7 +2544,13 @@
    "bbox_back": 0.13,
    "length_m": 22.2,
    "width_m": 3.91,
-   "height_m": 4.65
+   "height_m": 4.65,
+   "names": {
+    "en": "Вагон-рефрижератор АРВ",
+    "ru": "Вагон-рефрижератор АРВ",
+    "pl": "Вагон-рефрижератор АРВ",
+    "uk": "Вагон-рефрижератор АРВ"
+   }
   },
   {
    "id": "russian_vagon_covered",
@@ -1918,7 +2566,13 @@
    "country": 39011,
    "length_m": 14.95,
    "width_m": 3.24,
-   "height_m": 4.42
+   "height_m": 4.42,
+   "names": {
+    "en": "Boxcar",
+    "ru": "Крытый вагон",
+    "pl": "Wagon kryty",
+    "uk": "Критий вагон"
+   }
   },
   {
    "id": "russian_vagon_covered_uzd7889",
@@ -1936,7 +2590,13 @@
    "country": 39000,
    "length_m": 14.95,
    "width_m": 3.35,
-   "height_m": 3.93
+   "height_m": 3.93,
+   "names": {
+    "en": "Boxcar (livestock)",
+    "ru": "Скотовоз",
+    "pl": "Wagon kryty na żywiec",
+    "uk": "Вагон для худоби"
+   }
   },
   {
    "id": "russian_vagon_faccs_gravel",
@@ -1954,7 +2614,13 @@
    "cargo": "RESOURCE_TRANSPORT_GRAVEL",
    "length_m": 12.73,
    "width_m": 2.96,
-   "height_m": 3.96
+   "height_m": 3.96,
+   "names": {
+    "en": "Faccs open hopper",
+    "ru": "Хоппер Faccs",
+    "pl": "Węglarka Faccs",
+    "uk": "Бункер Факс"
+   }
   },
   {
    "id": "russian_vagon_falls_gravel",
@@ -1972,7 +2638,13 @@
    "cargo": "RESOURCE_TRANSPORT_GRAVEL",
    "length_m": 13.52,
    "width_m": 3.11,
-   "height_m": 4.0
+   "height_m": 4.0,
+   "names": {
+    "en": "Falls open hopper",
+    "ru": "Хоппер Falls",
+    "pl": "Węglarka Falls",
+    "uk": "Бункер Фолс"
+   }
   },
   {
    "id": "russian_vagon_gravel",
@@ -1990,7 +2662,13 @@
    "country": 39011,
    "length_m": 11.58,
    "width_m": 3.13,
-   "height_m": 3.96
+   "height_m": 3.96,
+   "names": {
+    "en": "Open hopper",
+    "ru": "Хоппер",
+    "pl": "Węglarka",
+    "uk": "Бункер"
+   }
   },
   {
    "id": "russian_vagon_gravel_12_132",
@@ -2010,7 +2688,13 @@
    "cargo": "RESOURCE_TRANSPORT_GRAVEL",
    "length_m": 13.84,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "names": {
+    "en": "12-132 open hopper",
+    "ru": "12-132 open hopper",
+    "pl": "12-132 open hopper",
+    "uk": "12-132 open hopper"
+   }
   },
   {
    "id": "russian_vagon_gravel_12_515",
@@ -2030,7 +2714,13 @@
    "cargo": "RESOURCE_TRANSPORT_GRAVEL",
    "length_m": 14.22,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "names": {
+    "en": "12-515 open hopper",
+    "ru": "12-515 open hopper",
+    "pl": "12-515 open hopper",
+    "uk": "12-515 open hopper"
+   }
   },
   {
    "id": "russian_vagon_open",
@@ -2048,7 +2738,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 19.83,
    "width_m": 3.44,
-   "height_m": 3.47
+   "height_m": 3.47,
+   "names": {
+    "en": "Flatcar",
+    "ru": "Платформа",
+    "pl": "Platforma kolejowa",
+    "uk": "Платформа"
+   }
   },
   {
    "id": "russian_vagon_open_12_132",
@@ -2068,7 +2764,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 13.84,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "names": {
+    "en": "12-132 open wagon",
+    "ru": "Полувагон 12-132",
+    "pl": "12-132 bez dachu",
+    "uk": "Платформа 12-132"
+   }
   },
   {
    "id": "russian_vagon_open_12_515",
@@ -2088,7 +2790,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 14.22,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "names": {
+    "en": "12-515 open wagon",
+    "ru": "Полувагон 12-515",
+    "pl": "12-515 bez dachu",
+    "uk": "Платформа 12-515"
+   }
   },
   {
    "id": "russian_vagon_open_13_401",
@@ -2108,7 +2816,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 14.78,
    "width_m": 3.18,
-   "height_m": 1.86
+   "height_m": 1.86,
+   "names": {
+    "en": "13-401 open wagon",
+    "ru": "Платформа 13-401",
+    "pl": "Otwarty wagon 13-401",
+    "uk": "Платформа 13-401"
+   }
   },
   {
    "id": "russian_vagon_open_13_4012",
@@ -2128,7 +2842,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 14.78,
    "width_m": 3.17,
-   "height_m": 1.86
+   "height_m": 1.86,
+   "names": {
+    "en": "13-4012 open wagon",
+    "ru": "Платформа 13-4012",
+    "pl": "Otwarty wagon 13-4012",
+    "uk": "Платформа 13-4012"
+   }
   },
   {
    "id": "russian_vagon_open_13_926",
@@ -2148,7 +2868,13 @@
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "length_m": 19.87,
    "width_m": 3.17,
-   "height_m": 1.86
+   "height_m": 1.86,
+   "names": {
+    "en": "13-926 open wagon",
+    "ru": "Платформа 13-926",
+    "pl": "Otwarty wagon 13-926",
+    "uk": "Платформа 13-926"
+   }
   },
   {
    "id": "russian_vagon_passanger",
@@ -2164,7 +2890,13 @@
    "country": 39011,
    "length_m": 25.96,
    "width_m": 3.58,
-   "height_m": 4.83
+   "height_m": 4.83,
+   "names": {
+    "en": "Passenger car",
+    "ru": "Пассажирский вагон",
+    "pl": "Wagon pasażerski",
+    "uk": "Пасажирський вагон"
+   }
   },
   {
    "id": "russian_vagon_raj_cement",
@@ -2182,7 +2914,13 @@
    "cargo": "RESOURCE_TRANSPORT_CEMENT",
    "length_m": 14.5,
    "width_m": 3.01,
-   "height_m": 4.69
+   "height_m": 4.69,
+   "names": {
+    "en": "Raj mixer wagon",
+    "ru": "Цементовоз Raj",
+    "pl": "Raj Cement",
+    "uk": "Бетонозмішувач Раж"
+   }
   },
   {
    "id": "russian_vagon_ric",
@@ -2199,7 +2937,13 @@
    "empty_weight": 36,
    "length_m": 24.83,
    "width_m": 3.03,
-   "height_m": 4.38
+   "height_m": 4.38,
+   "names": {
+    "en": "RIC passenger wagon",
+    "ru": "Вагон РИЦ",
+    "pl": "Wagon RIC",
+    "uk": "РІЦ пасажирський вагон"
+   }
   },
   {
    "id": "russian_vagon_rt200",
@@ -2216,7 +2960,13 @@
    "empty_weight": 45,
    "length_m": 27.33,
    "width_m": 3.15,
-   "height_m": 4.25
+   "height_m": 4.25,
+   "names": {
+    "en": "RT200 passenger wagon",
+    "ru": "Пассажирский вагон РТ-200",
+    "pl": "RT200 pasażerski",
+    "uk": "РТ-200 пасажирський вагон"
+   }
   },
   {
    "id": "russian_vagon_tank",
@@ -2232,7 +2982,13 @@
    "cargo": "RESOURCE_TRANSPORT_OIL",
    "length_m": 11.77,
    "width_m": 3.07,
-   "height_m": 4.27
+   "height_m": 4.27,
+   "names": {
+    "en": "Tank car",
+    "ru": "Цистерна",
+    "pl": "Cysterna",
+    "uk": "Цистерна"
+   }
   },
   {
    "id": "russian_vagon_tank_15_1443",
@@ -2252,7 +3008,13 @@
    "bbox_back": 0.13,
    "length_m": 12.08,
    "width_m": 3.2,
-   "height_m": 4.56
+   "height_m": 4.56,
+   "names": {
+    "en": "15-1443 tanker",
+    "ru": "Цистерна 15-1443",
+    "pl": "Cysterna 15 1443",
+    "uk": "15-1443 цистерна"
+   }
   },
   {
    "id": "russian_vagon_tank_15_1547",
@@ -2272,7 +3034,13 @@
    "bbox_back": 0.13,
    "length_m": 12.08,
    "width_m": 3.25,
-   "height_m": 4.5
+   "height_m": 4.5,
+   "names": {
+    "en": "15-1547 tanker",
+    "ru": "Цистерна 15-1547",
+    "pl": "Cysterna 15 1547",
+    "uk": "15-1547 цистерна"
+   }
   },
   {
    "id": "russian_vagon_tank_15_871",
@@ -2292,7 +3060,13 @@
    "bbox_back": 0.13,
    "length_m": 21.25,
    "width_m": 3.21,
-   "height_m": 4.7
+   "height_m": 4.7,
+   "names": {
+    "en": "15-871 tanker",
+    "ru": "Цистерна 15-871",
+    "pl": "Cysterna 15 871",
+    "uk": "15-871 цистерна"
+   }
   },
   {
    "id": "russian_vagon_tank_sewage",
@@ -2308,7 +3082,13 @@
    "cargo": "RESOURCE_TRANSPORT_SEWAGE",
    "length_m": 11.77,
    "width_m": 3.07,
-   "height_m": 4.27
+   "height_m": 4.27,
+   "names": {
+    "en": "Sewage vagon",
+    "ru": "Sewage vagon",
+    "pl": "Sewage vagon",
+    "uk": "Sewage vagon"
+   }
   },
   {
    "id": "russian_vagon_tank_water",
@@ -2324,7 +3104,13 @@
    "cargo": "RESOURCE_TRANSPORT_WATER",
    "length_m": 11.77,
    "width_m": 3.07,
-   "height_m": 4.27
+   "height_m": 4.27,
+   "names": {
+    "en": "Water vagon",
+    "ru": "Water vagon",
+    "pl": "Water vagon",
+    "uk": "Water vagon"
+   }
   },
   {
    "id": "russian_vagon_tvz50",
@@ -2341,7 +3127,13 @@
    "empty_weight": 54,
    "length_m": 24.45,
    "width_m": 3.21,
-   "height_m": 4.66
+   "height_m": 4.66,
+   "names": {
+    "en": "TV50 passenger wagon",
+    "ru": "ТВ-50",
+    "pl": "TV 50",
+    "uk": "Калінін Т-50"
+   }
   },
   {
    "id": "russian_vagon_tvz61",
@@ -2358,7 +3150,13 @@
    "empty_weight": 54,
    "length_m": 24.54,
    "width_m": 3.26,
-   "height_m": 4.49
+   "height_m": 4.49,
+   "names": {
+    "en": "TV61 passenger wagon",
+    "ru": "ТВ-61",
+    "pl": "TV 61",
+    "uk": "Калінін Т-61"
+   }
   },
   {
    "id": "russian_vagon_waste_12_132",
@@ -2378,7 +3176,13 @@
    "cargo": "RESOURCE_TRANSPORT_WASTE",
    "length_m": 13.84,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "names": {
+    "en": "12-132 waste",
+    "ru": "12-132 waste",
+    "pl": "12-132 waste",
+    "uk": "12-132 waste"
+   }
   },
   {
    "id": "russian_vagon_waste_12_515",
@@ -2398,7 +3202,13 @@
    "cargo": "RESOURCE_TRANSPORT_WASTE",
    "length_m": 14.22,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "names": {
+    "en": "12-515 open hopper",
+    "ru": "12-515 open hopper",
+    "pl": "12-515 open hopper",
+    "uk": "12-515 open hopper"
+   }
   },
   {
    "id": "russian_vagon_ywagen",
@@ -2415,7 +3225,13 @@
    "empty_weight": 35,
    "length_m": 25.31,
    "width_m": 2.88,
-   "height_m": 4.29
+   "height_m": 4.29,
+   "names": {
+    "en": "ЦМВ UIC-Y",
+    "ru": "ЦМВ UIC-Y",
+    "pl": "ЦМВ UIC-Y",
+    "uk": "ЦМВ UIC-Y"
+   }
   },
   {
    "id": "west_metro_ma51_vagon",
@@ -2433,7 +3249,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 15.06,
    "width_m": 2.63,
-   "height_m": 3.51
+   "height_m": 3.51,
+   "names": {
+    "en": "west_metro_ma51_vagon",
+    "ru": "west_metro_ma51_vagon",
+    "pl": "west_metro_ma51_vagon",
+    "uk": "west_metro_ma51_vagon"
+   }
   },
   {
    "id": "west_metro_ma51_vagon2",
@@ -2449,7 +3271,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 13.31,
    "width_m": 2.63,
-   "height_m": 3.51
+   "height_m": 3.51,
+   "names": {
+    "en": "west_metro_ma51_vagon2",
+    "ru": "west_metro_ma51_vagon2",
+    "pl": "west_metro_ma51_vagon2",
+    "uk": "west_metro_ma51_vagon2"
+   }
   },
   {
    "id": "west_metro_tube_vagon",
@@ -2465,7 +3293,13 @@
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "length_m": 15.24,
    "width_m": 2.73,
-   "height_m": 3.01
+   "height_m": 3.01,
+   "names": {
+    "en": "west_metro_tube_vagon",
+    "ru": "west_metro_tube_vagon",
+    "pl": "west_metro_tube_vagon",
+    "uk": "west_metro_tube_vagon"
+   }
   },
   {
    "id": "west_vagon_cement",
@@ -2480,7 +3314,13 @@
    "cargo": "RESOURCE_TRANSPORT_CEMENT",
    "length_m": 8.49,
    "width_m": 2.73,
-   "height_m": 4.04
+   "height_m": 4.04,
+   "names": {
+    "en": "Cement tank",
+    "ru": "Вагон для цемента",
+    "pl": "Wagon zbiornikowy",
+    "uk": "Цементовоз"
+   }
   }
  ]
 }

@@ -28,3 +28,10 @@ test("у доступных вагонов годы заданы коррект�
     assert.ok(w.available_to >= w.available_from, w.id);
   }
 });
+
+test("у грузовых вагонов есть названия на всех языках", () => {
+  for (const w of cargo) {
+    assert.ok(w.names, w.id);
+    for (const l of ["en", "ru", "pl", "uk"]) assert.ok(w.names[l] && w.names[l].length > 0, `${w.id}: ${l}`);
+  }
+});

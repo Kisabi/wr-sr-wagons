@@ -8,7 +8,7 @@
       intro: "Введите длину станции, и калькулятор покажет, какой вагон за один заход увезёт больше всего. Сравнивать нужно вагоны одного типа груза.",
       station: "Длина станции, м", preset: "Станция", presetNone: "— своя длина —",
       cargo: "Тип груза", year: "Год", gap: "Зазор между вагонами, м", reserved: "Занято локомотивом, м",
-      all: "Показать все (в т.ч. недоступные для покупки)",
+      all: "Показать все (в т.ч. недоступные для покупки)", names: "Язык названий вагонов",
       cols: ["Вагон", "Длина, м", "Вместимость", "Вагонов на станции", "Всего за заход", "На метр станции"],
       status: function (n, total, meta) { return "Показано вагонов: " + n + " из " + total + ". Данные игры: сборка " + (meta.game_build || "?") + ", обновлено " + meta.extracted_at + "."; },
       empty: "Нет вагонов под выбранные условия.",
@@ -22,7 +22,7 @@
       intro: "Enter a station length to see which wagon carries the most per visit. Compare wagons of the same cargo type.",
       station: "Station length, m", preset: "Station", presetNone: "— custom length —",
       cargo: "Cargo type", year: "Year", gap: "Gap between wagons, m", reserved: "Taken by locomotive, m",
-      all: "Show all (including non-purchasable)",
+      all: "Show all (including non-purchasable)", names: "Wagon name language",
       cols: ["Wagon", "Length, m", "Capacity", "Wagons at station", "Total per visit", "Per station metre"],
       status: function (n, total, meta) { return "Showing " + n + " of " + total + " wagons. Game data: build " + (meta.game_build || "?") + ", updated " + meta.extracted_at + "."; },
       empty: "No wagons match the selected filters.",
@@ -55,7 +55,10 @@
   function t() { return T[state.lang]; }
   function li() { return state.lang === "ru" ? 0 : 1; }
   function fmt(x) { return Number(x.toFixed(2)).toLocaleString(state.lang === "ru" ? "ru-RU" : "en-US"); }
-  function wagonName(w) { return w.name_str || w.id; }
+  function wagonName(w) {
+    var l = $("namelang").value; if (l === "auto") l = state.lang;
+    return (w.names && w.names[l]) || w.name_str || w.id;
+  }
   function cargoName(c) { return CARGO[c] ? CARGO[c][li()] : c.replace("RESOURCE_TRANSPORT_", ""); }
 
   function applyTexts() {
@@ -66,7 +69,7 @@
     $("l-station").textContent = x.station; $("l-preset").textContent = x.preset;
     $("l-cargo").textContent = x.cargo; $("l-year").textContent = x.year;
     $("l-gap").textContent = x.gap; $("l-reserved").textContent = x.reserved;
-    $("l-all").textContent = x.all;
+    $("l-all").textContent = x.all; $("l-names").textContent = x.names;
     $("t-how-title").textContent = x.howTitle; $("t-how").innerHTML = x.how;
     $("footer").textContent = x.footer;
     $("lang").textContent = state.lang === "ru" ? "EN" : "RU";
@@ -110,6 +113,7 @@
       tbody.innerHTML = "<tr><td colspan='6'>" + t().empty + "</td></tr>"; return;
     }
     var rows = C.rank(shown, station, { gap: gap, reserved: reserved });
+    rows.forEach(function (r) { r.name = wagonName(r.wagon); });
     var max = rows[0].total || 1;
     tbody.innerHTML = rows.map(function (r, i) {
       var w = r.wagon, years = typeof w.available_from === "number" ? w.available_from + "–" + (w.available_to >= 3000 ? "…" : w.available_to) : "";
@@ -130,7 +134,7 @@
   });
   $("preset").addEventListener("change", function () { if (this.value) { $("station").value = this.value; } render(); });
   $("station").addEventListener("input", function () { $("preset").value = ""; render(); });
-  ["cargo", "year", "gap", "reserved", "all"].forEach(function (id) { $(id).addEventListener("input", render); $(id).addEventListener("change", render); });
+  ["cargo", "year", "gap", "reserved", "all", "namelang"].forEach(function (id) { $(id).addEventListener("input", render); $(id).addEventListener("change", render); });
 
   applyTexts();
   Promise.all([load("data/wagons.json"), load("data/stations.json").catch(function () { return { stations: [] }; })])

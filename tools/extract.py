@@ -76,6 +76,39 @@ def nmf_size(path):
     return {"length_m": round(mx[2] - mn[2], 2), "width_m": round(mx[0] - mn[0], 2),
             "height_m": round(mx[1] - mn[1], 2)}
 
+LANGS = {"en": "English", "ru": "Russian", "pl": "Polish", "uk": "Ukrainian"}
+
+def load_btf(path):
+    """Файл локализации игры (.btf): заголовок из 3 слов, затем таблица
+    (id:4 байта, смещение:4, длина:2; всё big-endian), затем строки в UTF-16BE."""
+    b = path.read_bytes()
+    n = struct.unpack_from(">I", b, 0)[0]
+    base = 12 + n * 10
+    out = {}
+    for k in range(n):
+        sid, off, ln = struct.unpack_from(">IIH", b, 12 + k * 10)
+        out[sid] = b[base + off * 2: base + (off + ln) * 2].decode("utf-16-be", errors="replace")
+    return out
+
+def load_locales(media):
+    locs = {}
+    for code, name in LANGS.items():
+        f = media / f"soviet{name}.btf"
+        if f.exists():
+            locs[code] = load_btf(f)
+    return locs
+
+def localize(w, locs):
+    """Названия по языкам: перевод по NAME -> английский -> NAME_STR -> id папки."""
+    names = {}
+    nid = w.get("name_id")
+    for code in LANGS:
+        text = None
+        if isinstance(nid, int):
+            text = locs.get(code, {}).get(nid) or locs.get("en", {}).get(nid)
+        names[code] = text or w.get("name_str") or w["id"]
+    return names
+
 def game_build(game_root):
     acf = game_root.parent.parent / "appmanifest_784150.acf"
     if acf.exists():
@@ -93,6 +126,10 @@ def main():
     if not media.is_dir():
         sys.exit(f"Не найдена папка {media}")
 
+    locs = load_locales(media)
+    if "en" not in locs:
+        warnings_early = "нет файла локализации sovietEnglish.btf"
+        print("ВНИМАНИЕ:", warnings_early)
     wagons, warnings = [], []
     for ini in sorted(media.rglob("script.ini")):
         d = parse_ini(ini)
@@ -101,6 +138,7 @@ def main():
         folder = ini.parent
         w = {"id": folder.name, "path": folder.relative_to(media).as_posix()}
         w.update({k: v for k, v in d.items() if k != "type"})
+        w["names"] = localize(w, locs)
         nmf = folder / "main.nmf"
         size = nmf_size(nmf) if nmf.exists() else None
         if size:
