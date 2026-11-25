@@ -109,6 +109,13 @@ def localize(w, locs):
         names[code] = text or w.get("name_str") or w["id"]
     return names
 
+def localize_country(w, locs):
+    """Название страны по языкам: строка локализации COUNTRY, иначе английская."""
+    cid = w.get("country")
+    if not isinstance(cid, int):
+        return None
+    return {code: locs.get(code, {}).get(cid) or locs.get("en", {}).get(cid) or "" for code in LANGS}
+
 def game_build(game_root):
     acf = game_root.parent.parent / "appmanifest_784150.acf"
     if acf.exists():
@@ -118,6 +125,7 @@ def game_build(game_root):
     return None
 
 def main():
+    sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
     ap.add_argument("game_root", type=Path, help="папка игры (SovietRepublic)")
     ap.add_argument("--out", type=Path, default=Path(__file__).resolve().parent.parent / "docs" / "data" / "wagons.json")
@@ -139,6 +147,9 @@ def main():
         w = {"id": folder.name, "path": folder.relative_to(media).as_posix()}
         w.update({k: v for k, v in d.items() if k != "type"})
         w["names"] = localize(w, locs)
+        cn = localize_country(w, locs)
+        if cn:
+            w["country_names"] = cn
         nmf = folder / "main.nmf"
         size = nmf_size(nmf) if nmf.exists() else None
         if size:

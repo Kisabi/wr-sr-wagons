@@ -7,13 +7,12 @@
       title: "WR:SR — выгода вагона на метр станции",
       intro: "Введите длину станции, и калькулятор покажет, какой вагон за один заход увезёт больше всего. Сравнивать нужно вагоны одного типа груза.",
       station: "Длина станции, м", preset: "Станция", presetNone: "— своя длина —",
-      cargo: "Тип груза", year: "Год", gap: "Зазор между вагонами, м", reserved: "Занято локомотивом, м",
-      all: "Показать все (в т.ч. недоступные для покупки)", names: "Язык названий вагонов",
+      cargo: "Тип груза", gap: "Зазор между вагонами, м", names: "Язык названий вагонов",
       cols: ["Вагон", "Длина, м", "Вместимость", "Вагонов на станции", "Всего за заход", "На метр станции"],
-      status: function (n, total, meta) { return "Показано вагонов: " + n + " из " + total + ". Данные игры: сборка " + (meta.game_build || "?") + ", обновлено " + meta.extracted_at + "."; },
+      status: function (n, meta) { return "Показано вагонов: " + n + ". Данные игры: сборка " + (meta.game_build || "?") + ", обновлено " + meta.extracted_at + "."; },
       empty: "Нет вагонов под выбранные условия.",
       howTitle: "Как считается",
-      how: "<p>Вагон, который хотя бы частично попал на станцию, грузится вместе с остальными, поэтому число вагонов округляется вверх: <code>n = ⌈(длина станции − локомотив) / (длина вагона + зазор)⌉</code>.</p><p>«Всего за заход» = <code>n × вместимость</code>. «На метр станции» = это значение, делённое на длину станции. Лучший вариант выделен цветом.</p><p>Длины берутся из моделей игры и могут отличаться от реальных на доли метра. Цена вагона не учитывается: в игре она зависит от стоимости ресурсов.</p>",
+      how: "<p>Вагон, который хотя бы частично попал на станцию, грузится вместе с остальными, поэтому число вагонов округляется вверх: <code>n = ⌈длина станции / (длина вагона + зазор)⌉</code>.</p><p>«Всего за заход» = <code>n × вместимость</code>. «На метр станции» = это значение, делённое на длину станции. Лучший вариант выделен цветом.</p><p>Длины берутся из моделей игры и могут отличаться от реальных на доли метра. Цена вагона не учитывается: в игре она зависит от стоимости ресурсов.</p>",
       footer: "Неофициальный фанатский проект. Данные взяты из файлов игры Workers & Resources: Soviet Republic.",
       loadError: "Не удалось загрузить данные. Откройте сайт через http(s), а не как файл."
     },
@@ -21,13 +20,12 @@
       title: "WR:SR — wagon efficiency per station length",
       intro: "Enter a station length to see which wagon carries the most per visit. Compare wagons of the same cargo type.",
       station: "Station length, m", preset: "Station", presetNone: "— custom length —",
-      cargo: "Cargo type", year: "Year", gap: "Gap between wagons, m", reserved: "Taken by locomotive, m",
-      all: "Show all (including non-purchasable)", names: "Wagon name language",
+      cargo: "Cargo type", gap: "Gap between wagons, m", names: "Wagon name language",
       cols: ["Wagon", "Length, m", "Capacity", "Wagons at station", "Total per visit", "Per station metre"],
-      status: function (n, total, meta) { return "Showing " + n + " of " + total + " wagons. Game data: build " + (meta.game_build || "?") + ", updated " + meta.extracted_at + "."; },
+      status: function (n, meta) { return "Showing " + n + " wagons. Game data: build " + (meta.game_build || "?") + ", updated " + meta.extracted_at + "."; },
       empty: "No wagons match the selected filters.",
       howTitle: "How it is calculated",
-      how: "<p>A wagon that is at least partly on the station is loaded together with the others, so the count is rounded up: <code>n = ⌈(station length − locomotive) / (wagon length + gap)⌉</code>.</p><p>“Total per visit” = <code>n × capacity</code>. “Per station metre” is that value divided by the station length. The best option is highlighted.</p><p>Lengths come from the game models and may differ from real-life ones by fractions of a metre. Wagon price is not considered: in-game it depends on resource costs.</p>",
+      how: "<p>A wagon that is at least partly on the station is loaded together with the others, so the count is rounded up: <code>n = ⌈station length / (wagon length + gap)⌉</code>.</p><p>“Total per visit” = <code>n × capacity</code>. “Per station metre” is that value divided by the station length. The best option is highlighted.</p><p>Lengths come from the game models and may differ from real-life ones by fractions of a metre. Wagon price is not considered: in-game it depends on resource costs.</p>",
       footer: "Unofficial fan project. Data comes from the files of Workers & Resources: Soviet Republic.",
       loadError: "Could not load data. Open the site over http(s), not as a local file."
     }
@@ -67,9 +65,9 @@
     $("t-title").textContent = x.title; document.title = x.title;
     $("t-intro").textContent = x.intro;
     $("l-station").textContent = x.station; $("l-preset").textContent = x.preset;
-    $("l-cargo").textContent = x.cargo; $("l-year").textContent = x.year;
-    $("l-gap").textContent = x.gap; $("l-reserved").textContent = x.reserved;
-    $("l-all").textContent = x.all; $("l-names").textContent = x.names;
+    $("l-cargo").textContent = x.cargo;
+    $("l-gap").textContent = x.gap;
+    $("l-names").textContent = x.names;
     $("t-how-title").textContent = x.howTitle; $("t-how").innerHTML = x.how;
     $("footer").textContent = x.footer;
     $("lang").textContent = state.lang === "ru" ? "EN" : "RU";
@@ -89,7 +87,7 @@
     if (!state.data) return;
     var sel = $("cargo"), cur = sel.value;
     var kinds = {};
-    state.data.wagons.filter(C.isCargoWagon).forEach(function (w) { kinds[w.cargo] = true; });
+    state.data.wagons.filter(C.isListed).forEach(function (w) { kinds[w.cargo] = true; });
     var list = Object.keys(kinds).sort(function (a, b) { return cargoName(a).localeCompare(cargoName(b)); });
     sel.innerHTML = list.map(function (c) { return "<option value='" + c + "'>" + cargoName(c) + "</option>"; }).join("");
     sel.value = (cur && kinds[cur]) ? cur : (kinds.RESOURCE_TRANSPORT_OPEN ? "RESOURCE_TRANSPORT_OPEN" : list[0]);
@@ -99,26 +97,22 @@
 
   function render() {
     if (!state.data) return;
-    var station = parseFloat($("station").value), year = parseInt($("year").value, 10);
-    var gap = Math.max(0, parseFloat($("gap").value) || 0), reserved = Math.max(0, parseFloat($("reserved").value) || 0);
-    var all = $("all").checked, cargo = $("cargo").value;
+    var station = parseFloat($("station").value);
+    var gap = Math.max(0, parseFloat($("gap").value) || 0), cargo = $("cargo").value;
 
-    var pool = state.data.wagons.filter(C.isCargoWagon).filter(function (w) { return w.cargo === cargo; });
-    var shown = pool.filter(function (w) {
-      return all || (C.isBuyable(w) && (isNaN(year) || C.isAvailableInYear(w, year)));
-    });
+    var shown = state.data.wagons.filter(C.isListed).filter(function (w) { return w.cargo === cargo; });
     var tbody = document.querySelector("#result tbody");
-    $("status").textContent = t().status(shown.length, pool.length, state.data.meta);
+    $("status").textContent = t().status(shown.length, state.data.meta);
     if (!(station > 0) || !shown.length) {
       tbody.innerHTML = "<tr><td colspan='6'>" + t().empty + "</td></tr>"; return;
     }
-    var rows = C.rank(shown, station, { gap: gap, reserved: reserved });
+    var rows = C.rank(shown, station, { gap: gap });
     rows.forEach(function (r) { r.name = wagonName(r.wagon); });
     var max = rows[0].total || 1;
     tbody.innerHTML = rows.map(function (r, i) {
-      var w = r.wagon, years = typeof w.available_from === "number" ? w.available_from + "–" + (w.available_to >= 3000 ? "…" : w.available_to) : "";
+      var w = r.wagon;
       return "<tr" + (i === 0 && r.total > 0 ? " class='best'" : "") + ">" +
-        "<td>" + esc(wagonName(w)) + (years ? " <small>" + years + "</small>" : "") + "</td>" +
+        "<td>" + esc(wagonName(w)) + " <small>" + C.formatYears(w, state.lang) + "</small>" + "</td>" +
         "<td>" + fmt(w.length_m) + "</td><td>" + fmt(w.capacity) + "</td><td>" + r.count + "</td>" +
         "<td>" + fmt(r.total) + "<span class='bar' style='width:" + Math.round(r.total / max * 100) + "%'></span></td>" +
         "<td>" + fmt(r.perMeter) + "</td></tr>";
@@ -134,7 +128,7 @@
   });
   $("preset").addEventListener("change", function () { if (this.value) { $("station").value = this.value; } render(); });
   $("station").addEventListener("input", function () { $("preset").value = ""; render(); });
-  ["cargo", "year", "gap", "reserved", "all", "namelang"].forEach(function (id) { $(id).addEventListener("input", render); $(id).addEventListener("change", render); });
+  ["cargo", "gap", "namelang"].forEach(function (id) { $(id).addEventListener("input", render); $(id).addEventListener("change", render); });
 
   applyTexts();
   Promise.all([load("data/wagons.json"), load("data/stations.json").catch(function () { return { stations: [] }; })])

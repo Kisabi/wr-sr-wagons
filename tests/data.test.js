@@ -23,9 +23,15 @@ test("у грузовых вагонов разумные длина и вмес
     assert.ok(w.capacity > 0 && w.capacity < 1000, `${w.id}: вместимость ${w.capacity}`);
   }
 });
-test("у доступных вагонов годы заданы корректно", () => {
-  for (const w of data.wagons.filter(C.isBuyable)) {
-    assert.ok(w.available_to >= w.available_from, w.id);
+test("если годы заданы, они корректны", () => {
+  for (const w of data.wagons.filter(C.isListed)) {
+    if (typeof w.available_from === "number") assert.ok(w.available_to >= w.available_from, w.id);
+  }
+});
+test("у вагонов со страной есть country_names на всех языках", () => {
+  for (const w of data.wagons.filter(x => typeof x.country === "number")) {
+    assert.ok(w.country_names, w.id);
+    for (const l of ["en", "ru", "pl", "uk"]) assert.ok(w.country_names[l], `${w.id}: ${l}`);
   }
 });
 

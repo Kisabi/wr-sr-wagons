@@ -7,34 +7,36 @@
     return !!w.cargo && w.capacity > 0 && w.length_m > 0;
   }
 
-  /** Вагон «обычный»: его можно купить и у него заданы годы доступности. */
-  function isBuyable(w) {
-    return !w.purchase_excluded && typeof w.available_from === "number";
+  /** Единое правило отбора: грузовой вагон, который не исключён из покупки. Годы не учитываются. */
+  function isListed(w) {
+    return isCargoWagon(w) && !w.purchase_excluded;
   }
 
-  function isAvailableInYear(w, year) {
-    if (typeof w.available_from !== "number") return false;
-    return year >= w.available_from && year <= w.available_to;
+  /** Подпись годов доступности: «1962–1998», «с 1962» / «from 1962» (если до >= 3000), «—» (если годов нет). */
+  function formatYears(w, lang) {
+    if (typeof w.available_from !== "number") return "—";
+    if (typeof w.available_to !== "number" || w.available_to >= 3000)
+      return (lang === "en" ? "from " : "с ") + w.available_from;
+    return w.available_from + "–" + w.available_to;
   }
 
   /**
    * Сколько вагонов одновременно помещается на станции.
    * Правило игры: вагон, который частично заходит на станцию, тоже грузится -> округление вверх.
    * stationLen — длина станции, м; wagonLen — длина вагона, м;
-   * gap — зазор между вагонами, м; reserved — длина, занятая локомотивом, м.
+   * gap — зазор между вагонами, м.
    */
-  function wagonsOnStation(stationLen, wagonLen, gap, reserved) {
-    gap = gap || 0; reserved = reserved || 0;
-    var free = stationLen - reserved;
-    if (!(free > 0) || !(wagonLen > 0)) return 0;
+  function wagonsOnStation(stationLen, wagonLen, gap) {
+    gap = gap || 0;
+    if (!(stationLen > 0) || !(wagonLen > 0)) return 0;
     // 1e-9 защищает от погрешности float: 28/14 должно быть ровно 2, а не 3
-    return Math.ceil(free / (wagonLen + gap) - 1e-9);
+    return Math.ceil(stationLen / (wagonLen + gap) - 1e-9);
   }
 
   /** Результат для одного вагона на станции заданной длины. */
   function evaluate(w, stationLen, opts) {
     opts = opts || {};
-    var n = wagonsOnStation(stationLen, w.length_m, opts.gap, opts.reserved);
+    var n = wagonsOnStation(stationLen, w.length_m, opts.gap);
     var total = n * w.capacity;
     return {
       wagon: w,
@@ -54,7 +56,7 @@
       });
   }
 
-  var api = { isCargoWagon: isCargoWagon, isBuyable: isBuyable, isAvailableInYear: isAvailableInYear,
+  var api = { isCargoWagon: isCargoWagon, isListed: isListed, formatYears: formatYears,
     wagonsOnStation: wagonsOnStation, evaluate: evaluate, rank: rank };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.WagonCalc = api;

@@ -8,15 +8,13 @@ test("пример из описания: 115 м и вагон 14 м -> 9 ваг
 test("точное деление не округляется вверх: 28 / 14 = 2", () => {
   assert.strictEqual(C.wagonsOnStation(28, 14), 2);
 });
-test("зазор и локомотив уменьшают/увеличивают число", () => {
-  assert.strictEqual(C.wagonsOnStation(100, 10, 0, 0), 10);
-  assert.strictEqual(C.wagonsOnStation(100, 10, 2, 0), 9);   // 100/12 = 8.33 -> 9
-  assert.strictEqual(C.wagonsOnStation(100, 10, 0, 20), 8);  // 80/10
+test("зазор между вагонами уменьшает число", () => {
+  assert.strictEqual(C.wagonsOnStation(100, 10, 0), 10);
+  assert.strictEqual(C.wagonsOnStation(100, 10, 2), 9);   // 100/12 = 8.33 -> 9
 });
 test("некорректные входные данные дают 0", () => {
   assert.strictEqual(C.wagonsOnStation(0, 14), 0);
   assert.strictEqual(C.wagonsOnStation(10, 0), 0);
-  assert.strictEqual(C.wagonsOnStation(10, 14, 0, 50), 0);
 });
 test("округление вверх может сделать длинный вагон выгоднее", () => {
   const a = { id: "a", length_m: 14, capacity: 60 }; // 9 шт -> 540
@@ -26,10 +24,19 @@ test("округление вверх может сделать длинный �
   assert.strictEqual(r[0].total, 550);
   assert.strictEqual(r[1].total, 540);
 });
-test("доступность по годам", () => {
-  const w = { available_from: 1960, available_to: 1990 };
-  assert.ok(C.isAvailableInYear(w, 1960));
-  assert.ok(C.isAvailableInYear(w, 1990));
-  assert.ok(!C.isAvailableInYear(w, 1991));
-  assert.ok(!C.isAvailableInYear({}, 1970));
+test("отбор: грузовой и не purchase_excluded, годы не важны", () => {
+  const ok = { cargo: "X", capacity: 10, length_m: 12 };
+  assert.ok(C.isListed(ok));
+  assert.ok(C.isListed({ ...ok, available_from: 2100, available_to: 2200 }));
+  assert.ok(!C.isListed({ ...ok, purchase_excluded: true }));
+  assert.ok(!C.isListed({ ...ok, cargo: undefined }));
+  assert.ok(!C.isListed({ ...ok, capacity: 0 }));
+  assert.ok(!C.isListed({ ...ok, length_m: 0 }));
+});
+test("формат годов", () => {
+  assert.strictEqual(C.formatYears({ available_from: 1962, available_to: 1998 }, "ru"), "1962–1998");
+  assert.strictEqual(C.formatYears({ available_from: 1962, available_to: 3000 }, "ru"), "с 1962");
+  assert.strictEqual(C.formatYears({ available_from: 1962, available_to: 9999 }, "en"), "from 1962");
+  assert.strictEqual(C.formatYears({}, "ru"), "—");
+  assert.strictEqual(C.formatYears({}, "en"), "—");
 });
