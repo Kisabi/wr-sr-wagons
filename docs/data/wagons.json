@@ -10,8 +10,6 @@
    "path": "cwc/vehicles/2200reverse",
    "group": "TRAINGROUP_METRO",
    "purchase_excluded": true,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "name_str": "Budd 2200-Series Reversed",
    "cost_usd": 4300,
    "empty_weight": 21,
@@ -32,9 +30,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 14.83,
-   "width_m": 2.84,
-   "height_m": 3.71,
+   "length_m": 14.627,
+   "width_m": 2.837,
+   "height_m": 3.713,
    "currency": "usd"
   },
   {
@@ -62,9 +60,9 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 25.65,
+   "length_m": 25.652,
    "width_m": 3.21,
-   "height_m": 4.28,
+   "height_m": 4.284,
    "currency": "rub"
   },
   {
@@ -93,9 +91,9 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 14.08,
-   "width_m": 3.05,
-   "height_m": 3.33,
+   "length_m": 14.081,
+   "width_m": 3.052,
+   "height_m": 3.335,
    "currency": "rub",
    "preview": "img/russian_vagon_eas_gravel.webp"
   },
@@ -125,9 +123,9 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 14.08,
-   "width_m": 3.05,
-   "height_m": 3.33,
+   "length_m": 14.081,
+   "width_m": 3.052,
+   "height_m": 3.335,
    "currency": "rub",
    "preview": "img/russian_vagon_eas_open.webp"
   },
@@ -157,9 +155,9 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 14.08,
-   "width_m": 3.05,
-   "height_m": 3.33,
+   "length_m": 14.081,
+   "width_m": 3.052,
+   "height_m": 3.335,
    "currency": "rub",
    "preview": "img/russian_vagon_eas_waste.webp"
   },
@@ -189,9 +187,9 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 9.98,
-   "width_m": 3.02,
-   "height_m": 2.74,
+   "length_m": 9.977,
+   "width_m": 3.017,
+   "height_m": 2.741,
    "currency": "rub",
    "preview": "img/russian_vagon_es_gravel.webp"
   },
@@ -221,9 +219,9 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 9.98,
-   "width_m": 3.02,
-   "height_m": 2.74,
+   "length_m": 9.977,
+   "width_m": 3.017,
+   "height_m": 2.741,
    "currency": "rub",
    "preview": "img/russian_vagon_es_open.webp"
   },
@@ -253,9 +251,9 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 9.98,
-   "width_m": 3.02,
-   "height_m": 2.74,
+   "length_m": 9.977,
+   "width_m": 3.017,
+   "height_m": 2.741,
    "currency": "rub",
    "preview": "img/russian_vagon_es_waste.webp"
   },
@@ -265,8 +263,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5658,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 92,
@@ -287,9 +283,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 15.65,
-   "width_m": 3.17,
-   "height_m": 3.76,
+   "length_m": 15.454,
+   "width_m": 3.172,
+   "height_m": 3.761,
    "currency": "usd",
    "preview": "img/w_100tOpenHopper.webp"
   },
@@ -299,8 +295,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5650,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 55,
@@ -321,9 +315,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 13.75,
-   "width_m": 3.19,
-   "height_m": 4.58,
+   "length_m": 13.55,
+   "width_m": 3.192,
+   "height_m": 4.583,
    "currency": "usd",
    "preview": "img/w_40ftPS1.webp"
   },
@@ -333,8 +327,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5651,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 78,
@@ -355,9 +347,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 16.81,
-   "width_m": 3.19,
-   "height_m": 4.49,
+   "length_m": 16.611,
+   "width_m": 3.192,
+   "height_m": 4.489,
    "currency": "usd",
    "preview": "img/w_50ftPS1.webp"
   },
@@ -367,8 +359,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5652,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 69,
@@ -389,9 +379,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 11.72,
-   "width_m": 3.19,
-   "height_m": 3.66,
+   "length_m": 11.52,
+   "width_m": 3.194,
+   "height_m": 3.655,
    "currency": "usd",
    "preview": "img/w_50tconverted.webp"
   },
@@ -401,8 +391,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5653,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 53,
@@ -423,9 +411,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 11.72,
-   "width_m": 3.19,
-   "height_m": 3.39,
+   "length_m": 11.52,
+   "width_m": 3.194,
+   "height_m": 3.392,
    "currency": "usd",
    "preview": "img/w_50tOpenHopper.webp"
   },
@@ -435,8 +423,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5654,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 90,
@@ -457,9 +443,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 22.11,
-   "width_m": 2.8,
-   "height_m": 3.83,
+   "length_m": 21.915,
+   "width_m": 2.803,
+   "height_m": 4.555,
    "currency": "usd",
    "preview": "img/w_66centerbeam.webp"
   },
@@ -469,8 +455,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5655,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 72,
@@ -491,9 +475,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 12.54,
-   "width_m": 3.17,
-   "height_m": 3.76,
+   "length_m": 12.341,
+   "width_m": 3.172,
+   "height_m": 3.761,
    "currency": "usd",
    "preview": "img/w_70tOpenHopper.webp"
   },
@@ -503,8 +487,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5656,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 102,
@@ -525,9 +507,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 24.23,
-   "width_m": 2.8,
-   "height_m": 4.56,
+   "length_m": 24.034,
+   "width_m": 2.803,
+   "height_m": 4.555,
    "currency": "usd",
    "preview": "img/w_73centerbeam.webp"
   },
@@ -537,8 +519,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5657,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 102,
@@ -559,9 +539,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 16.81,
-   "width_m": 3.24,
-   "height_m": 4.39,
+   "length_m": 16.606,
+   "width_m": 3.237,
+   "height_m": 4.392,
    "currency": "usd",
    "preview": "img/w_80thopper.webp"
   },
@@ -571,8 +551,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5659,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 89.4,
@@ -593,9 +571,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 16.9,
-   "width_m": 3.28,
-   "height_m": 4.47,
+   "length_m": 16.695,
+   "width_m": 3.284,
+   "height_m": 4.471,
    "currency": "usd",
    "preview": "img/w_ACF506.webp"
   },
@@ -605,8 +583,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5660,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 62,
@@ -627,9 +603,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 17.54,
+   "length_m": 17.336,
    "width_m": 2.79,
-   "height_m": 3.04,
+   "height_m": 3.038,
    "currency": "usd",
    "preview": "img/w_ACFF7081.webp"
   },
@@ -639,8 +615,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5661,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 72,
@@ -661,9 +635,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 17.68,
-   "width_m": 2.87,
-   "height_m": 1.69,
+   "length_m": 17.48,
+   "width_m": 2.871,
+   "height_m": 1.689,
    "currency": "usd",
    "preview": "img/w_Backpacker.webp"
   },
@@ -673,8 +647,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5662,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 110,
@@ -695,9 +667,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 14.07,
-   "width_m": 3.04,
-   "height_m": 4.31,
+   "length_m": 13.87,
+   "width_m": 3.044,
+   "height_m": 4.308,
    "currency": "usd",
    "preview": "img/w_CoilCarCovered.webp"
   },
@@ -707,8 +679,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5663,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 110,
@@ -729,9 +699,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 14.07,
-   "width_m": 2.98,
-   "height_m": 2.22,
+   "length_m": 13.87,
+   "width_m": 2.977,
+   "height_m": 2.216,
    "currency": "usd",
    "preview": "img/w_CoilCarOpen.webp"
   },
@@ -741,8 +711,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5664,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 115,
@@ -756,9 +724,9 @@
     "pl": "Węglarka kryta 4550",
     "uk": "Зерновоз КВБ-4550"
    },
-   "length_m": 17.95,
-   "width_m": 3.12,
-   "height_m": 4.47,
+   "length_m": 17.754,
+   "width_m": 3.123,
+   "height_m": 4.469,
    "currency": "usd",
    "preview": "img/w_CWBhopper.webp"
   },
@@ -768,8 +736,6 @@
    "group": "TRAINGROUP_VAGON",
    "purchase_excluded": false,
    "name_id": 5665,
-   "bbox_fwd": -0.1,
-   "bbox_back": 0.1,
    "cost_usd": 4300,
    "consumption": 0,
    "capacity": 82,
@@ -790,9 +756,9 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 20.22,
-   "width_m": 2.74,
-   "height_m": 1.81,
+   "length_m": 20.023,
+   "width_m": 2.735,
+   "height_m": 1.809,
    "currency": "usd",
    "preview": "img/w_MaxiIV.webp"
   },
@@ -804,7 +770,6 @@
    "name_id": 91017,
    "cost_rub": 2585,
    "empty_weight": 15,
-   "bbox_fwd": 0,
    "consumption": 0,
    "capacity": 37,
    "available_from": 1951,
@@ -823,8 +788,8 @@
     "uk": "Польща"
    },
    "length_m": 6.77,
-   "width_m": 2.87,
-   "height_m": 4.22,
+   "width_m": 2.871,
+   "height_m": 4.224,
    "currency": "rub"
   },
   {
@@ -835,7 +800,6 @@
    "name_id": 91018,
    "cost_rub": 3200,
    "empty_weight": 21,
-   "bbox_fwd": -0.66,
    "consumption": 0,
    "capacity": 68,
    "available_from": 1946,
@@ -853,9 +817,9 @@
     "pl": "Polska",
     "uk": "Польща"
    },
-   "length_m": 9.14,
-   "width_m": 3.06,
-   "height_m": 4.0,
+   "length_m": 8.477,
+   "width_m": 3.058,
+   "height_m": 3.998,
    "currency": "rub"
   },
   {
@@ -866,7 +830,6 @@
    "name_id": 91019,
    "cost_rub": 3200,
    "empty_weight": 40,
-   "bbox_fwd": -0.62,
    "consumption": 0,
    "capacity": 58,
    "available_from": 1930,
@@ -884,9 +847,9 @@
     "pl": "Polska",
     "uk": "Польща"
    },
-   "length_m": 8.84,
-   "width_m": 2.87,
-   "height_m": 4.0,
+   "length_m": 8.216,
+   "width_m": 2.871,
+   "height_m": 3.998,
    "currency": "rub"
   },
   {
@@ -897,7 +860,6 @@
    "name_str": "BBÖ 214",
    "cost_usd": 2305,
    "empty_weight": 20,
-   "bbox_fwd": -0.85,
    "consumption": 0,
    "capacity": 44,
    "available_from": 1928,
@@ -908,9 +870,9 @@
     "pl": "BBÖ 214",
     "uk": "BBÖ 214"
    },
-   "length_m": 7.96,
-   "width_m": 3.05,
-   "height_m": 3.96,
+   "length_m": 7.111,
+   "width_m": 3.048,
+   "height_m": 3.964,
    "currency": "usd"
   },
   {
@@ -938,9 +900,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 13.91,
+   "length_m": 13.905,
    "width_m": 3.12,
-   "height_m": 3.85,
+   "height_m": 4.092,
    "currency": "rub",
    "preview": "img/Ci28.webp"
   },
@@ -971,8 +933,8 @@
     "uk": "Німеччина"
    },
    "length_m": 12.06,
-   "width_m": 3.09,
-   "height_m": 4.04,
+   "width_m": 3.093,
+   "height_m": 4.039,
    "currency": "rub",
    "preview": "img/Dresden.webp"
   },
@@ -1002,9 +964,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 9.1,
-   "width_m": 2.97,
-   "height_m": 2.8,
+   "length_m": 9.095,
+   "width_m": 2.973,
+   "height_m": 2.946,
    "currency": "rub",
    "preview": "img/Essen.webp"
   },
@@ -1034,9 +996,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 9.1,
-   "width_m": 2.97,
-   "height_m": 2.8,
+   "length_m": 9.095,
+   "width_m": 2.973,
+   "height_m": 2.946,
    "currency": "rub",
    "preview": "img/EssenO.webp"
   },
@@ -1066,9 +1028,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 9.1,
-   "width_m": 2.97,
-   "height_m": 2.8,
+   "length_m": 9.095,
+   "width_m": 2.973,
+   "height_m": 2.946,
    "currency": "rub",
    "preview": "img/EssenW.webp"
   },
@@ -1080,7 +1042,6 @@
    "name_str": "Э обр. 1912/1928/1931",
    "cost_rub": 1890,
    "empty_weight": 24,
-   "bbox_fwd": -1.18,
    "consumption": 0,
    "capacity": 49,
    "available_from": 1912,
@@ -1098,9 +1059,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 10.27,
-   "width_m": 3.31,
-   "height_m": 4.64,
+   "length_m": 9.094,
+   "width_m": 3.314,
+   "height_m": 4.642,
    "currency": "rub"
   },
   {
@@ -1111,7 +1072,6 @@
    "name_str": "ФД",
    "cost_rub": 2875,
    "empty_weight": 34,
-   "bbox_fwd": -1.77,
    "consumption": 0,
    "capacity": 64,
    "available_from": 1931,
@@ -1129,9 +1089,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 14.63,
-   "width_m": 3.3,
-   "height_m": 4.5,
+   "length_m": 12.858,
+   "width_m": 3.303,
+   "height_m": 4.498,
    "currency": "rub"
   },
   {
@@ -1160,9 +1120,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 9.1,
-   "width_m": 3.07,
-   "height_m": 3.52,
+   "length_m": 9.099,
+   "width_m": 3.068,
+   "height_m": 3.516,
    "currency": "rub",
    "preview": "img/Hannover.webp"
   },
@@ -1174,7 +1134,6 @@
    "name_str": "ИС",
    "cost_rub": 2475,
    "empty_weight": 34,
-   "bbox_fwd": -1.7,
    "consumption": 0,
    "capacity": 64,
    "available_from": 1931,
@@ -1192,9 +1151,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 14.63,
+   "length_m": 12.928,
    "width_m": 3.3,
-   "height_m": 4.5,
+   "height_m": 4.498,
    "currency": "rub"
   },
   {
@@ -1223,9 +1182,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 9.1,
-   "width_m": 3.09,
-   "height_m": 3.52,
+   "length_m": 9.099,
+   "width_m": 3.093,
+   "height_m": 3.516,
    "currency": "rub",
    "preview": "img/Kassel.webp"
   },
@@ -1255,9 +1214,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 9.1,
-   "width_m": 3.09,
-   "height_m": 3.52,
+   "length_m": 9.099,
+   "width_m": 3.093,
+   "height_m": 3.516,
    "currency": "rub",
    "preview": "img/KasselHorse.webp"
   },
@@ -1287,9 +1246,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 10.04,
-   "width_m": 2.98,
-   "height_m": 2.96,
+   "length_m": 10.035,
+   "width_m": 2.977,
+   "height_m": 2.956,
    "currency": "rub",
    "preview": "img/Klagenfurt.webp"
   },
@@ -1319,9 +1278,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 10.04,
-   "width_m": 2.98,
-   "height_m": 2.96,
+   "length_m": 10.035,
+   "width_m": 2.977,
+   "height_m": 2.956,
    "currency": "rub",
    "preview": "img/KlagenfurtO.webp"
   },
@@ -1351,9 +1310,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 10.04,
-   "width_m": 2.98,
-   "height_m": 2.96,
+   "length_m": 10.035,
+   "width_m": 2.977,
+   "height_m": 2.956,
    "currency": "rub",
    "preview": "img/KlagenfurtW.webp"
   },
@@ -1383,9 +1342,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 9.1,
-   "width_m": 2.97,
-   "height_m": 2.8,
+   "length_m": 9.095,
+   "width_m": 2.973,
+   "height_m": 2.946,
    "currency": "rub",
    "preview": "img/Konigsberg.webp"
   },
@@ -1415,9 +1374,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 9.1,
-   "width_m": 2.97,
-   "height_m": 2.8,
+   "length_m": 9.095,
+   "width_m": 2.973,
+   "height_m": 2.946,
    "currency": "rub",
    "preview": "img/KonigsbergO.webp"
   },
@@ -1447,9 +1406,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 9.1,
-   "width_m": 2.97,
-   "height_m": 2.8,
+   "length_m": 9.095,
+   "width_m": 2.973,
+   "height_m": 2.946,
    "currency": "rub",
    "preview": "img/KonigsbergW.webp"
   },
@@ -1479,9 +1438,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 9.11,
-   "width_m": 3.09,
-   "height_m": 4.04,
+   "length_m": 9.105,
+   "width_m": 3.093,
+   "height_m": 4.039,
    "currency": "rub",
    "preview": "img/Oppeln.webp"
   },
@@ -1510,8 +1469,8 @@
     "pl": "Polska",
     "uk": "Польща"
    },
-   "length_m": 7.51,
-   "width_m": 2.72,
+   "length_m": 7.506,
+   "width_m": 2.716,
    "height_m": 3.79,
    "currency": "rub"
   },
@@ -1539,9 +1498,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 19.0,
-   "width_m": 2.75,
-   "height_m": 3.72,
+   "length_m": 19.004,
+   "width_m": 2.749,
+   "height_m": 3.724,
    "currency": null
   },
   {
@@ -1569,9 +1528,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 9.1,
-   "width_m": 3.09,
-   "height_m": 3.52,
+   "length_m": 9.099,
+   "width_m": 3.093,
+   "height_m": 3.516,
    "currency": "rub"
   },
   {
@@ -1598,8 +1557,8 @@
     "uk": "НДР"
    },
    "length_m": 8.08,
-   "width_m": 2.62,
-   "height_m": 2.0,
+   "width_m": 2.621,
+   "height_m": 2.004,
    "currency": "rub"
   },
   {
@@ -1627,8 +1586,8 @@
     "uk": "НДР"
    },
    "length_m": 3.93,
-   "width_m": 1.89,
-   "height_m": 0.56,
+   "width_m": 1.886,
+   "height_m": 0.558,
    "currency": "rub"
   },
   {
@@ -1636,8 +1595,6 @@
    "path": "dlc3/vehicles/russian_service_tbm_9p_vagon",
    "group": null,
    "purchase_excluded": true,
-   "bbox_fwd": -0.5,
-   "bbox_back": -0.5,
    "name_str": "Ya3 railcar",
    "cost_rub": 3000,
    "empty_weight": 18.4,
@@ -1656,8 +1613,8 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 14.18,
-   "width_m": 3.01,
+   "length_m": 14.181,
+   "width_m": 3.008,
    "height_m": 3.9,
    "currency": "rub"
   },
@@ -1666,8 +1623,6 @@
    "path": "dlc3/vehicles/russian_service_tbm_9p_vagon2",
    "group": null,
    "purchase_excluded": true,
-   "bbox_fwd": -0.5,
-   "bbox_back": -0.5,
    "name_str": "Ya3 railcar",
    "cost_rub": 3000,
    "empty_weight": 18.4,
@@ -1686,8 +1641,8 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 14.18,
-   "width_m": 3.01,
+   "length_m": 14.181,
+   "width_m": 3.008,
    "height_m": 2.48,
    "currency": "rub"
   },
@@ -1714,9 +1669,9 @@
     "pl": "NRD",
     "uk": "НДР"
    },
-   "length_m": 8.63,
-   "width_m": 2.62,
-   "height_m": 2.01,
+   "length_m": 8.626,
+   "width_m": 2.621,
+   "height_m": 2.013,
    "currency": "rub"
   },
   {
@@ -1724,8 +1679,6 @@
    "path": "dlc3/vehicles/russian_service_weimar_vagon2",
    "group": null,
    "purchase_excluded": true,
-   "bbox_fwd": -0.5,
-   "bbox_back": -0.5,
    "name_id": 91180,
    "cost_rub": 3000,
    "empty_weight": 13,
@@ -1745,8 +1698,8 @@
     "uk": "НДР"
    },
    "length_m": 8.08,
-   "width_m": 2.62,
-   "height_m": 2.0,
+   "width_m": 2.621,
+   "height_m": 2.004,
    "currency": "rub"
   },
   {
@@ -1754,8 +1707,6 @@
    "path": "dlc3/vehicles/russian_service_ya3_vagon",
    "group": null,
    "purchase_excluded": true,
-   "bbox_fwd": -0.5,
-   "bbox_back": -0.5,
    "name_str": "Я3 кран",
    "cost_rub": 3000,
    "empty_weight": 18.4,
@@ -1774,9 +1725,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 14.18,
-   "width_m": 3.01,
-   "height_m": 1.87,
+   "length_m": 14.181,
+   "width_m": 3.008,
+   "height_m": 1.865,
    "currency": "rub"
   },
   {
@@ -1784,8 +1735,6 @@
    "path": "dlc3/vehicles/russian_service_ya3_vagon2",
    "group": null,
    "purchase_excluded": true,
-   "bbox_fwd": -0.5,
-   "bbox_back": -0.5,
    "name_str": "Я3 кран",
    "cost_rub": 3000,
    "empty_weight": 18.4,
@@ -1804,9 +1753,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 14.18,
-   "width_m": 3.01,
-   "height_m": 1.87,
+   "length_m": 14.181,
+   "width_m": 3.008,
+   "height_m": 1.865,
    "currency": "rub"
   },
   {
@@ -1832,9 +1781,9 @@
     "pl": "Rosja",
     "uk": "Росія"
    },
-   "length_m": 6.67,
-   "width_m": 3.24,
-   "height_m": 3.12,
+   "length_m": 6.669,
+   "width_m": 3.238,
+   "height_m": 3.118,
    "currency": "rub"
   },
   {
@@ -1861,7 +1810,7 @@
    },
    "length_m": 13.93,
    "width_m": 3.19,
-   "height_m": 4.55,
+   "height_m": 4.551,
    "currency": "rub"
   },
   {
@@ -1887,8 +1836,8 @@
     "uk": "Польща"
    },
    "length_m": 10.04,
-   "width_m": 3.14,
-   "height_m": 4.87,
+   "width_m": 3.136,
+   "height_m": 4.869,
    "currency": "rub"
   },
   {
@@ -1915,9 +1864,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 18.72,
-   "width_m": 3.2,
-   "height_m": 4.15,
+   "length_m": 18.724,
+   "width_m": 3.195,
+   "height_m": 4.146,
    "currency": null
   },
   {
@@ -1945,8 +1894,8 @@
     "pl": "Rosja",
     "uk": "Росія"
    },
-   "length_m": 16.02,
-   "width_m": 3.3,
+   "length_m": 16.018,
+   "width_m": 3.298,
    "height_m": 4.83,
    "currency": "rub",
    "preview": "img/russian_vagon_2axle.webp"
@@ -1976,9 +1925,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 21.89,
+   "length_m": 21.887,
    "width_m": 3.27,
-   "height_m": 4.81,
+   "height_m": 4.813,
    "currency": "rub",
    "preview": "img/russian_vagon_4axle.webp"
   },
@@ -1990,7 +1939,6 @@
    "name_str": "СО обр. 1928",
    "cost_rub": 1890,
    "empty_weight": 24,
-   "bbox_fwd": -0.42,
    "consumption": 0,
    "capacity": 49,
    "available_from": 1924,
@@ -2008,9 +1956,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 7.97,
-   "width_m": 2.93,
-   "height_m": 4.4,
+   "length_m": 7.552,
+   "width_m": 2.931,
+   "height_m": 4.398,
    "currency": "rub"
   },
   {
@@ -2039,9 +1987,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 13.1,
-   "width_m": 3.14,
-   "height_m": 2.3,
+   "length_m": 13.099,
+   "width_m": 3.137,
+   "height_m": 2.301,
    "currency": "rub",
    "preview": "img/SSyms.webp"
   },
@@ -2071,9 +2019,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 10.7,
-   "width_m": 3.14,
-   "height_m": 2.3,
+   "length_m": 10.699,
+   "width_m": 3.137,
+   "height_m": 2.301,
    "currency": "rub",
    "preview": "img/SSys.webp"
   },
@@ -2103,9 +2051,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 11.5,
+   "length_m": 11.495,
    "width_m": 3.0,
-   "height_m": 1.64,
+   "height_m": 1.636,
    "currency": "rub",
    "preview": "img/Stuttgart.webp"
   },
@@ -2135,9 +2083,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 10.1,
-   "width_m": 2.97,
-   "height_m": 2.99,
+   "length_m": 10.095,
+   "width_m": 2.973,
+   "height_m": 2.988,
    "currency": "rub",
    "preview": "img/Villach.webp"
   },
@@ -2167,9 +2115,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 10.1,
-   "width_m": 2.97,
-   "height_m": 2.99,
+   "length_m": 10.095,
+   "width_m": 2.973,
+   "height_m": 2.988,
    "currency": "rub",
    "preview": "img/VillachO.webp"
   },
@@ -2199,9 +2147,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 10.1,
-   "width_m": 2.97,
-   "height_m": 2.99,
+   "length_m": 10.095,
+   "width_m": 2.973,
+   "height_m": 2.988,
    "currency": "rub",
    "preview": "img/VillachW.webp"
   },
@@ -2210,8 +2158,6 @@
    "path": "dlc3/vehicles/west_service_steamcrane_vagon",
    "group": null,
    "purchase_excluded": true,
-   "bbox_fwd": -0.05,
-   "bbox_back": -0.05,
    "name_id": 91219,
    "cost_usd": 3000,
    "empty_weight": 6,
@@ -2230,9 +2176,9 @@
     "pl": "NRD",
     "uk": "НДР"
    },
-   "length_m": 12.67,
-   "width_m": 3.03,
-   "height_m": 3.49,
+   "length_m": 12.667,
+   "width_m": 3.028,
+   "height_m": 3.488,
    "currency": "usd"
   },
   {
@@ -2240,8 +2186,6 @@
    "path": "dlc3/vehicles/west_service_steamcrane_vagon2",
    "group": null,
    "purchase_excluded": true,
-   "bbox_fwd": -0.05,
-   "bbox_back": -0.05,
    "name_id": 91219,
    "cost_usd": 3000,
    "empty_weight": 6,
@@ -2260,9 +2204,9 @@
     "pl": "NRD",
     "uk": "НДР"
    },
-   "length_m": 12.67,
-   "width_m": 2.99,
-   "height_m": 2.01,
+   "length_m": 12.667,
+   "width_m": 3.028,
+   "height_m": 3.488,
    "currency": "usd"
   },
   {
@@ -2291,8 +2235,8 @@
     "uk": "Польща"
    },
    "length_m": 14.05,
-   "width_m": 2.44,
-   "height_m": 3.36,
+   "width_m": 2.443,
+   "height_m": 3.357,
    "currency": "usd"
   },
   {
@@ -2303,7 +2247,6 @@
    "name_str": "PKP class EN80",
    "cost_usd": 4300,
    "empty_weight": 14,
-   "bbox_back": 0.1,
    "capacity": 77,
    "cargo": "RESOURCE_TRANSPORT_PASSANGER",
    "available_from": 1927,
@@ -2321,9 +2264,9 @@
     "pl": "Polska",
     "uk": "Польща"
    },
-   "length_m": 14.05,
-   "width_m": 2.44,
-   "height_m": 3.36,
+   "length_m": 13.95,
+   "width_m": 2.443,
+   "height_m": 3.357,
    "currency": "usd"
   },
   {
@@ -2352,9 +2295,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 8.86,
+   "length_m": 8.855,
    "width_m": 2.82,
-   "height_m": 4.22,
+   "height_m": 4.218,
    "currency": "rub",
    "preview": "img/Wismar.webp"
   },
@@ -2384,9 +2327,9 @@
     "pl": "Niemcy",
     "uk": "Німеччина"
    },
-   "length_m": 8.1,
-   "width_m": 2.99,
-   "height_m": 3.09,
+   "length_m": 8.095,
+   "width_m": 2.991,
+   "height_m": 3.086,
    "currency": "rub",
    "preview": "img/Wuppertal.webp"
   },
@@ -2411,9 +2354,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 16.32,
+   "length_m": 16.321,
    "width_m": 2.69,
-   "height_m": 1.37,
+   "height_m": 1.365,
    "currency": "rub"
   },
   {
@@ -2440,9 +2383,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 19.44,
-   "width_m": 2.93,
-   "height_m": 3.74,
+   "length_m": 19.443,
+   "width_m": 2.929,
+   "height_m": 3.737,
    "currency": null
   },
   {
@@ -2469,9 +2412,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 19.44,
-   "width_m": 2.93,
-   "height_m": 3.74,
+   "length_m": 19.443,
+   "width_m": 2.929,
+   "height_m": 3.737,
    "currency": null
   },
   {
@@ -2498,9 +2441,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 19.39,
-   "width_m": 2.89,
-   "height_m": 3.72,
+   "length_m": 19.393,
+   "width_m": 2.891,
+   "height_m": 3.719,
    "currency": null
   },
   {
@@ -2527,8 +2470,8 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 19.43,
-   "width_m": 3.23,
+   "length_m": 19.432,
+   "width_m": 3.232,
    "height_m": 3.68,
    "currency": null
   },
@@ -2556,9 +2499,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 19.44,
-   "width_m": 2.93,
-   "height_m": 3.74,
+   "length_m": 19.443,
+   "width_m": 2.929,
+   "height_m": 3.737,
    "currency": null
   },
   {
@@ -2566,8 +2509,6 @@
    "path": "trains/russian_metro_mfav_vagon",
    "group": "TRAINGROUP_METRO",
    "purchase_excluded": true,
-   "bbox_fwd": -1,
-   "bbox_back": 1,
    "name_id": "",
    "available_from": 1973,
    "available_to": 1999,
@@ -2586,9 +2527,9 @@
     "pl": "Węgry",
     "uk": "Угорщина"
    },
-   "length_m": 11.63,
-   "width_m": 2.34,
-   "height_m": 2.73,
+   "length_m": 9.634,
+   "width_m": 2.337,
+   "height_m": 2.729,
    "currency": null
   },
   {
@@ -2596,7 +2537,6 @@
    "path": "trains/russian_metro_mfav_vagon2",
    "group": "TRAINGROUP_METRO",
    "purchase_excluded": true,
-   "bbox_fwd": -1,
    "name_id": "",
    "available_from": 1973,
    "available_to": 1999,
@@ -2615,8 +2555,8 @@
     "pl": "Węgry",
     "uk": "Угорщина"
    },
-   "length_m": 10.35,
-   "width_m": 2.34,
+   "length_m": 9.351,
+   "width_m": 2.337,
    "height_m": 2.89,
    "currency": null
   },
@@ -2642,7 +2582,7 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 9.6,
+   "length_m": 9.597,
    "width_m": 2.93,
    "height_m": 1.2,
    "currency": "rub"
@@ -2669,9 +2609,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 12.65,
-   "width_m": 3.18,
-   "height_m": 1.8,
+   "length_m": 12.647,
+   "width_m": 3.184,
+   "height_m": 1.805,
    "currency": "rub"
   },
   {
@@ -2696,9 +2636,9 @@
     "pl": "NRD",
     "uk": "НДР"
    },
-   "length_m": 17.29,
-   "width_m": 3.14,
-   "height_m": 2.09,
+   "length_m": 17.293,
+   "width_m": 3.141,
+   "height_m": 2.087,
    "currency": "rub"
   },
   {
@@ -2723,9 +2663,9 @@
     "pl": "NRD",
     "uk": "НДР"
    },
-   "length_m": 17.29,
-   "width_m": 3.14,
-   "height_m": 1.86,
+   "length_m": 17.293,
+   "width_m": 3.141,
+   "height_m": 1.856,
    "currency": "rub"
   },
   {
@@ -2750,8 +2690,8 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 7.74,
-   "width_m": 2.91,
+   "length_m": 7.736,
+   "width_m": 2.912,
    "height_m": 1.79,
    "currency": "rub"
   },
@@ -2760,8 +2700,6 @@
    "path": "trains/russian_service_tbm_kt1_platform",
    "group": null,
    "purchase_excluded": true,
-   "bbox_fwd": -2.2,
-   "bbox_back": 0.5,
    "name_str": "Razici Stit KT1-5.6m",
    "cost_rub": 4300,
    "empty_weight": 170,
@@ -2781,9 +2719,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 18.74,
-   "width_m": 3.15,
-   "height_m": 4.91,
+   "length_m": 16.044,
+   "width_m": 3.149,
+   "height_m": 4.906,
    "currency": "rub"
   },
   {
@@ -2809,9 +2747,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 19.03,
-   "width_m": 3.45,
-   "height_m": 1.71,
+   "length_m": 19.032,
+   "width_m": 3.452,
+   "height_m": 4.043,
    "currency": "rub"
   },
   {
@@ -2837,9 +2775,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 25.74,
-   "width_m": 3.15,
-   "height_m": 4.39,
+   "length_m": 25.741,
+   "width_m": 3.154,
+   "height_m": 4.394,
    "currency": "rub"
   },
   {
@@ -2865,9 +2803,9 @@
     "pl": "Węgry",
     "uk": "Угорщина"
    },
-   "length_m": 26.78,
+   "length_m": 26.782,
    "width_m": 3.16,
-   "height_m": 4.08,
+   "height_m": 4.083,
    "currency": "rub"
   },
   {
@@ -2875,8 +2813,6 @@
    "path": "trains/russian_set_dr1a_v",
    "group": null,
    "purchase_excluded": true,
-   "bbox_back": 0.3,
-   "bbox_fwd": 0.3,
    "name_str": "ДР1",
    "cost_rub": 4300,
    "consumption": 0,
@@ -2896,9 +2832,9 @@
     "pl": "Łotewska SRR",
     "uk": "Латвійська РСР"
    },
-   "length_m": 26.82,
-   "width_m": 3.14,
-   "height_m": 4.25,
+   "length_m": 26.816,
+   "width_m": 3.144,
+   "height_m": 4.254,
    "currency": "rub"
   },
   {
@@ -2924,9 +2860,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 20.98,
-   "width_m": 3.51,
-   "height_m": 4.23,
+   "length_m": 20.979,
+   "width_m": 3.511,
+   "height_m": 4.234,
    "currency": "rub"
   },
   {
@@ -2935,7 +2871,6 @@
    "group": null,
    "purchase_excluded": true,
    "name_str": "Konstal 102Na",
-   "bbox_fwd": -1,
    "cost_rub": 4300,
    "empty_weight": 6,
    "capacity": 70,
@@ -2955,9 +2890,9 @@
     "pl": "Polska",
     "uk": "Польща"
    },
-   "length_m": 11.05,
-   "width_m": 2.34,
-   "height_m": 3.01,
+   "length_m": 10.053,
+   "width_m": 2.341,
+   "height_m": 3.011,
    "currency": "rub"
   },
   {
@@ -2965,8 +2900,6 @@
    "path": "trains/russian_tram_ganz_v1",
    "group": "TRAINGROUP_TRAM",
    "purchase_excluded": true,
-   "bbox_back": 0.4,
-   "bbox_fwd": -0.4,
    "name_str": "Ganz CSMG",
    "cost_rub": 4300,
    "empty_weight": 4.1,
@@ -2987,9 +2920,9 @@
     "pl": "Węgry",
     "uk": "Угорщина"
    },
-   "length_m": 6.95,
-   "width_m": 2.35,
-   "height_m": 2.85,
+   "length_m": 6.147,
+   "width_m": 2.346,
+   "height_m": 2.852,
    "currency": "rub"
   },
   {
@@ -2997,7 +2930,6 @@
    "path": "trains/russian_tram_ganz_v2",
    "group": "TRAINGROUP_TRAM",
    "purchase_excluded": true,
-   "bbox_fwd": -1.2,
    "name_str": "Ganz CSMG",
    "cost_rub": 4300,
    "empty_weight": 15.1,
@@ -3018,9 +2950,9 @@
     "pl": "Węgry",
     "uk": "Угорщина"
    },
-   "length_m": 11.91,
-   "width_m": 2.42,
-   "height_m": 3.38,
+   "length_m": 10.715,
+   "width_m": 2.415,
+   "height_m": 3.384,
    "currency": "rub"
   },
   {
@@ -3028,8 +2960,6 @@
    "path": "trains/russian_tram_kt8_v",
    "group": "TRAINGROUP_TRAM",
    "purchase_excluded": true,
-   "bbox_back": 1,
-   "bbox_fwd": -1,
    "name_str": "Tatra KT8D5",
    "cost_rub": 4300,
    "empty_weight": 1,
@@ -3050,7 +2980,7 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 10.12,
+   "length_m": 8.123,
    "width_m": 2.5,
    "height_m": 3.11,
    "currency": "rub"
@@ -3080,9 +3010,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 10.26,
-   "width_m": 2.62,
-   "height_m": 3.3,
+   "length_m": 10.263,
+   "width_m": 2.616,
+   "height_m": 3.148,
    "currency": "rub"
   },
   {
@@ -3111,9 +3041,9 @@
     "pl": "NRD",
     "uk": "НДР"
    },
-   "length_m": 24.48,
-   "width_m": 3.26,
-   "height_m": 4.45,
+   "length_m": 24.484,
+   "width_m": 3.258,
+   "height_m": 4.452,
    "currency": "rub",
    "preview": "img/russian_vagon_armen.webp"
   },
@@ -3131,8 +3061,6 @@
    "available_from": 1959,
    "available_to": 1986,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "names": {
     "en": "Boxcar 11-066",
     "ru": "Крытый вагон 11-066",
@@ -3145,9 +3073,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 15.04,
-   "width_m": 3.29,
-   "height_m": 4.54,
+   "length_m": 14.779,
+   "width_m": 3.294,
+   "height_m": 4.545,
    "currency": "rub",
    "preview": "img/russian_vagon_box066.webp"
   },
@@ -3165,8 +3093,6 @@
    "available_from": 1985,
    "available_to": 3000,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "names": {
     "en": "Boxcar 11-270",
     "ru": "Крытый вагон 11-270",
@@ -3179,9 +3105,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 15.04,
-   "width_m": 3.31,
-   "height_m": 4.54,
+   "length_m": 14.779,
+   "width_m": 3.306,
+   "height_m": 4.545,
    "currency": "rub",
    "preview": "img/russian_vagon_box270.webp"
   },
@@ -3198,8 +3124,6 @@
    "available_from": 1991,
    "available_to": 3000,
    "cargo": "RESOURCE_TRANSPORT_COVERED",
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "country": 39011,
    "names": {
     "en": "Boxcar 11-280",
@@ -3213,9 +3137,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 16.78,
-   "width_m": 3.31,
-   "height_m": 4.59,
+   "length_m": 16.519,
+   "width_m": 3.308,
+   "height_m": 4.594,
    "currency": "rub",
    "preview": "img/russian_vagon_box280.webp"
   },
@@ -3233,8 +3157,6 @@
    "available_from": 1959,
    "available_to": 3000,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "names": {
     "en": "11-715 dry-bulk tank",
     "ru": "Хоппер 11-715 для цемента",
@@ -3247,9 +3169,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 11.87,
-   "width_m": 3.44,
-   "height_m": 4.77,
+   "length_m": 11.609,
+   "width_m": 3.444,
+   "height_m": 4.769,
    "currency": "rub",
    "preview": "img/russian_vagon_cement.webp"
   },
@@ -3277,9 +3199,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 22.06,
+   "length_m": 22.059,
    "width_m": 3.4,
-   "height_m": 5.08,
+   "height_m": 5.079,
    "currency": "rub"
   },
   {
@@ -3296,8 +3218,6 @@
    "available_to": 1975,
    "country": 39004,
    "cargo": "RESOURCE_TRANSPORT_COOLER",
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "names": {
     "en": "Изотермический вагон",
     "ru": "Изотермический вагон",
@@ -3310,9 +3230,9 @@
     "pl": "NRD",
     "uk": "НДР"
    },
-   "length_m": 22.25,
-   "width_m": 3.24,
-   "height_m": 4.66,
+   "length_m": 21.989,
+   "width_m": 3.242,
+   "height_m": 4.656,
    "currency": "rub",
    "preview": "img/russian_vagon_cooler_iso.webp"
   },
@@ -3330,8 +3250,6 @@
    "available_to": 1999,
    "country": 39004,
    "cargo": "RESOURCE_TRANSPORT_COOLER",
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "names": {
     "en": "Вагон-рефрижератор АРВ",
     "ru": "Вагон-рефрижератор АРВ",
@@ -3344,9 +3262,9 @@
     "pl": "NRD",
     "uk": "НДР"
    },
-   "length_m": 22.2,
-   "width_m": 3.91,
-   "height_m": 4.65,
+   "length_m": 21.942,
+   "width_m": 3.906,
+   "height_m": 4.646,
    "currency": "rub",
    "preview": "img/russian_vagon_cooler_zb5.webp"
   },
@@ -3375,7 +3293,7 @@
     "uk": "СРСР"
    },
    "length_m": 14.95,
-   "width_m": 3.24,
+   "width_m": 3.244,
    "height_m": 4.42,
    "currency": "rub"
   },
@@ -3406,8 +3324,8 @@
     "uk": "Чехословаччина"
    },
    "length_m": 14.95,
-   "width_m": 3.35,
-   "height_m": 3.93,
+   "width_m": 3.353,
+   "height_m": 3.932,
    "currency": "rub"
   },
   {
@@ -3436,7 +3354,7 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 12.73,
+   "length_m": 12.725,
    "width_m": 2.96,
    "height_m": 3.96,
    "currency": "rub",
@@ -3468,9 +3386,9 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 13.52,
-   "width_m": 3.11,
-   "height_m": 4.0,
+   "length_m": 13.521,
+   "width_m": 3.108,
+   "height_m": 4.004,
    "currency": "rub",
    "preview": "img/russian_vagon_falls_gravel.webp"
   },
@@ -3500,9 +3418,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 11.58,
-   "width_m": 3.13,
-   "height_m": 3.96,
+   "length_m": 11.581,
+   "width_m": 3.126,
+   "height_m": 3.958,
    "currency": "rub"
   },
   {
@@ -3518,8 +3436,6 @@
    "available_from": 1959,
    "available_to": 1973,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "cargo": "RESOURCE_TRANSPORT_GRAVEL",
    "names": {
     "en": "12-132 open hopper",
@@ -3533,9 +3449,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 13.84,
-   "width_m": 3.07,
-   "height_m": 3.49,
+   "length_m": 13.579,
+   "width_m": 3.069,
+   "height_m": 3.486,
    "currency": "rub",
    "preview": "img/russian_vagon_gravel_12_132.webp"
   },
@@ -3552,8 +3468,6 @@
    "available_from": 1972,
    "available_to": 1998,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "cargo": "RESOURCE_TRANSPORT_GRAVEL",
    "names": {
     "en": "12-515 open hopper",
@@ -3567,9 +3481,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 14.22,
-   "width_m": 3.07,
-   "height_m": 3.49,
+   "length_m": 13.962,
+   "width_m": 3.069,
+   "height_m": 3.486,
    "currency": "rub",
    "preview": "img/russian_vagon_gravel_12_515.webp"
   },
@@ -3599,9 +3513,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 19.83,
-   "width_m": 3.44,
-   "height_m": 3.47,
+   "length_m": 19.828,
+   "width_m": 3.436,
+   "height_m": 3.472,
    "currency": "rub"
   },
   {
@@ -3617,8 +3531,6 @@
    "available_from": 1959,
    "available_to": 1973,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "names": {
     "en": "12-132 open wagon",
@@ -3632,9 +3544,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 13.84,
-   "width_m": 3.07,
-   "height_m": 3.49,
+   "length_m": 13.579,
+   "width_m": 3.069,
+   "height_m": 3.486,
    "currency": "rub",
    "preview": "img/russian_vagon_open_12_132.webp"
   },
@@ -3651,8 +3563,6 @@
    "available_from": 1972,
    "available_to": 1998,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "names": {
     "en": "12-515 open wagon",
@@ -3666,9 +3576,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 14.22,
-   "width_m": 3.07,
-   "height_m": 3.49,
+   "length_m": 13.962,
+   "width_m": 3.069,
+   "height_m": 3.486,
    "currency": "rub",
    "preview": "img/russian_vagon_open_12_515.webp"
   },
@@ -3685,8 +3595,6 @@
    "available_from": 1959,
    "available_to": 1984,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "names": {
     "en": "13-401 open wagon",
@@ -3700,9 +3608,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 14.78,
-   "width_m": 3.18,
-   "height_m": 1.86,
+   "length_m": 14.517,
+   "width_m": 3.178,
+   "height_m": 1.856,
    "currency": "rub",
    "preview": "img/russian_vagon_open_13_401.webp"
   },
@@ -3719,8 +3627,6 @@
    "available_from": 1983,
    "available_to": 3000,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "names": {
     "en": "13-4012 open wagon",
@@ -3734,9 +3640,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 14.78,
+   "length_m": 14.517,
    "width_m": 3.17,
-   "height_m": 1.86,
+   "height_m": 1.856,
    "currency": "rub",
    "preview": "img/russian_vagon_open_13_4012.webp"
   },
@@ -3753,8 +3659,6 @@
    "available_from": 1993,
    "available_to": 2007,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "cargo": "RESOURCE_TRANSPORT_OPEN",
    "names": {
     "en": "13-926 open wagon",
@@ -3768,9 +3672,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 19.87,
+   "length_m": 19.607,
    "width_m": 3.17,
-   "height_m": 1.86,
+   "height_m": 1.856,
    "currency": "rub",
    "preview": "img/russian_vagon_open_13_926.webp"
   },
@@ -3798,8 +3702,8 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 25.96,
-   "width_m": 3.58,
+   "length_m": 25.957,
+   "width_m": 3.581,
    "height_m": 4.83,
    "currency": "rub"
   },
@@ -3829,8 +3733,8 @@
     "pl": "Czechosłowacja",
     "uk": "Чехословаччина"
    },
-   "length_m": 14.5,
-   "width_m": 3.01,
+   "length_m": 14.498,
+   "width_m": 3.012,
    "height_m": 4.69,
    "currency": "rub",
    "preview": "img/russian_vagon_raj_cement.webp"
@@ -3860,9 +3764,9 @@
     "pl": "NRD",
     "uk": "НДР"
    },
-   "length_m": 24.83,
+   "length_m": 24.834,
    "width_m": 3.03,
-   "height_m": 4.38,
+   "height_m": 4.378,
    "currency": "rub",
    "preview": "img/russian_vagon_ric.webp"
   },
@@ -3891,9 +3795,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 27.33,
-   "width_m": 3.15,
-   "height_m": 4.25,
+   "length_m": 27.334,
+   "width_m": 3.154,
+   "height_m": 4.251,
    "currency": "rub",
    "preview": "img/russian_vagon_rt200.webp"
   },
@@ -3921,9 +3825,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 11.77,
-   "width_m": 3.07,
-   "height_m": 4.27,
+   "length_m": 11.773,
+   "width_m": 3.066,
+   "height_m": 4.271,
    "currency": "rub"
   },
   {
@@ -3940,8 +3844,6 @@
    "available_to": 1989,
    "country": 39011,
    "cargo": "RESOURCE_TRANSPORT_OIL",
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "names": {
     "en": "15-1443 tanker",
     "ru": "Цистерна 15-1443",
@@ -3954,9 +3856,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 12.08,
-   "width_m": 3.2,
-   "height_m": 4.56,
+   "length_m": 11.823,
+   "width_m": 3.199,
+   "height_m": 4.557,
    "currency": "rub",
    "preview": "img/russian_vagon_tank_15_1443.webp"
   },
@@ -3974,8 +3876,6 @@
    "available_to": 3000,
    "country": 39011,
    "cargo": "RESOURCE_TRANSPORT_OIL",
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "names": {
     "en": "15-1547 tanker",
     "ru": "Цистерна 15-1547",
@@ -3988,7 +3888,7 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 12.08,
+   "length_m": 11.823,
    "width_m": 3.25,
    "height_m": 4.5,
    "currency": "rub",
@@ -4008,8 +3908,6 @@
    "available_to": 1987,
    "country": 39011,
    "cargo": "RESOURCE_TRANSPORT_OIL",
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "names": {
     "en": "15-871 tanker",
     "ru": "Цистерна 15-871",
@@ -4022,9 +3920,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 21.25,
-   "width_m": 3.21,
-   "height_m": 4.7,
+   "length_m": 20.989,
+   "width_m": 3.213,
+   "height_m": 4.704,
    "currency": "rub",
    "preview": "img/russian_vagon_tank_15_871.webp"
   },
@@ -4052,9 +3950,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 11.77,
-   "width_m": 3.07,
-   "height_m": 4.27,
+   "length_m": 11.773,
+   "width_m": 3.066,
+   "height_m": 4.271,
    "currency": "rub"
   },
   {
@@ -4081,9 +3979,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 11.77,
-   "width_m": 3.07,
-   "height_m": 4.27,
+   "length_m": 11.773,
+   "width_m": 3.066,
+   "height_m": 4.271,
    "currency": "rub"
   },
   {
@@ -4111,9 +4009,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 24.45,
+   "length_m": 24.448,
    "width_m": 3.21,
-   "height_m": 4.66,
+   "height_m": 4.659,
    "currency": "rub",
    "preview": "img/russian_vagon_tvz50.webp"
   },
@@ -4142,9 +4040,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 24.54,
-   "width_m": 3.26,
-   "height_m": 4.49,
+   "length_m": 24.543,
+   "width_m": 3.258,
+   "height_m": 4.489,
    "currency": "rub",
    "preview": "img/russian_vagon_tvz61.webp"
   },
@@ -4161,8 +4059,6 @@
    "available_from": 1959,
    "available_to": 1973,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "cargo": "RESOURCE_TRANSPORT_WASTE",
    "names": {
     "en": "12-132 waste",
@@ -4176,9 +4072,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 13.84,
-   "width_m": 3.07,
-   "height_m": 3.49,
+   "length_m": 13.579,
+   "width_m": 3.069,
+   "height_m": 3.486,
    "currency": "rub",
    "preview": "img/russian_vagon_waste_12_132.webp"
   },
@@ -4195,8 +4091,6 @@
    "available_from": 1972,
    "available_to": 1998,
    "country": 39011,
-   "bbox_fwd": -0.13,
-   "bbox_back": 0.13,
    "cargo": "RESOURCE_TRANSPORT_WASTE",
    "names": {
     "en": "12-515 open hopper",
@@ -4210,9 +4104,9 @@
     "pl": "ZSRR",
     "uk": "СРСР"
    },
-   "length_m": 14.22,
-   "width_m": 3.07,
-   "height_m": 3.49,
+   "length_m": 13.962,
+   "width_m": 3.069,
+   "height_m": 3.486,
    "currency": "rub",
    "preview": "img/russian_vagon_waste_12_515.webp"
   },
@@ -4241,7 +4135,7 @@
     "pl": "NRD",
     "uk": "НДР"
    },
-   "length_m": 25.31,
+   "length_m": 25.313,
    "width_m": 2.88,
    "height_m": 4.29,
    "currency": "rub",
@@ -4252,8 +4146,6 @@
    "path": "trains/west_metro_ma51_vagon",
    "group": "TRAINGROUP_METRO",
    "purchase_excluded": true,
-   "bbox_fwd": -2.7,
-   "bbox_back": 2.7,
    "name_id": "",
    "empty_weight": 36,
    "available_from": 1951,
@@ -4273,9 +4165,9 @@
     "pl": "Francja",
     "uk": "Франція"
    },
-   "length_m": 15.06,
-   "width_m": 2.63,
-   "height_m": 3.51,
+   "length_m": 9.662,
+   "width_m": 2.634,
+   "height_m": 3.506,
    "currency": null
   },
   {
@@ -4302,9 +4194,9 @@
     "pl": "Francja",
     "uk": "Франція"
    },
-   "length_m": 13.31,
-   "width_m": 2.63,
-   "height_m": 3.51,
+   "length_m": 13.311,
+   "width_m": 2.634,
+   "height_m": 3.506,
    "currency": null
   },
   {
@@ -4331,9 +4223,9 @@
     "pl": "Wielka Brytania",
     "uk": "Сполучене Королівство"
    },
-   "length_m": 15.24,
-   "width_m": 2.73,
-   "height_m": 3.01,
+   "length_m": 15.238,
+   "width_m": 2.731,
+   "height_m": 3.011,
    "currency": null
   },
   {
@@ -4359,8 +4251,8 @@
     "pl": "USA",
     "uk": "США"
    },
-   "length_m": 8.49,
-   "width_m": 2.73,
+   "length_m": 8.487,
+   "width_m": 2.726,
    "height_m": 4.04,
    "currency": "usd",
    "preview": "img/west_vagon_cement.webp"

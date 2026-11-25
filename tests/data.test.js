@@ -55,3 +55,9 @@ test("превью вагонов существуют и меньше 40 КБ",
     assert.ok(fs.statSync(f).size < 40 * 1024, `${w.id}: ${fs.statSync(f).size} байт`);
   }
 });
+
+test("у каждого покупаемого грузового вагона length_m в диапазоне 3–40 м", () => {
+  const listed = data.wagons.filter(C.isListed);
+  assert.ok(listed.length > 50);
+  for (const w of listed) assert.ok(w.length_m >= 3 && w.length_m <= 40, `${w.id}: длина ${w.length_m}`);
+});

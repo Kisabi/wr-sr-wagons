@@ -15,6 +15,8 @@ git add docs/data/wagons.json docs/img && git commit -m "Update wagon data" && g
 
 Поле `currency` в `wagons.json` — валюта покупки: `"rub"` (₽, советская сторона) или `"usd"` ($, западная); определяется по `cost_rub` / `cost_usd`. Если заданы обе цены или ни одной — `null` и предупреждение при запуске. В калькуляторе показывается только подпись валюты, без цены. / `currency` is the purchase currency (`"rub"` Soviet / `"usd"` Western), derived from `cost_rub` / `cost_usd`; `null` plus a warning if both or neither exist. Only the label is shown, not the price.
 
+Длина, ширина и высота вагона (`length_m`, `width_m`, `height_m`) читаются из `bbox.bin` в папке вагона (6 float32: minX, minY, minZ, maxX, maxY, maxZ; длина = maxZ − minZ). Это размеры, которые использует игра; значения сверены с игрой. Без `bbox.bin` — запасной разбор `main.nmf` с предупреждением. / Wagon length/width/height come from `bbox.bin` in the wagon folder (6 little-endian float32; length = maxZ − minZ). These are the dimensions the game uses, checked against the game. Fallback: `main.nmf` parsing with a warning.
+
 Скрипт только читает папку игры и ничего в ней не меняет. / The script only reads the game folder.
 
 Файлы игры в репозиторий не добавляются, только числовые характеристики. / Game files are not included, only numeric stats.

@@ -62,3 +62,16 @@ test("формат годов", () => {
   assert.strictEqual(C.formatYears({}, "ru"), "—");
   assert.strictEqual(C.formatYears({}, "en"), "—");
 });
+
+test("сверка с игрой: 18 Falls по 13.521 м + ВЛ10 (32.396 м) = 275.774 -> 276", () => {
+  const len = 18 * 13.521 + 32.396;
+  assert.ok(Math.abs(len - 275.774) < 1e-6);
+  assert.strictEqual(Math.ceil(len), 276);
+  assert.strictEqual(Math.round(len), 276);
+});
+test("сверка с игрой: 20 вагонов 11-066 по 14.779 м + ВЛ10 = 327.976 -> 328", () => {
+  const len = 20 * 14.779 + 32.396;
+  assert.ok(Math.abs(len - 327.976) < 1e-6);
+  assert.strictEqual(Math.ceil(len), 328);
+  assert.strictEqual(Math.round(len), 328);
+});

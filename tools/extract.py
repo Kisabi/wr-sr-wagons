@@ -18,7 +18,6 @@ SCALAR_KEYS = {
     "RESOURCE_CAPACITY": "capacity", "MOVEMENT_EMPTY_WEIGHT": "empty_weight",
     "MOVEMENT_CONSPUMPTION": "consumption", "COUNTRY": "country",
     "RESOURCE_TRANSPORT_TYPE": "cargo",
-    "TRAIN_BBOX_FORWARD_CORRECTION": "bbox_fwd", "TRAIN_BBOX_BACKWARD_CORRECTION": "bbox_back",
 }
 
 def num(s):
@@ -68,14 +67,26 @@ def nmf_boxes(b):
             boxes.append(struct.unpack_from("<6f", b, o + 0x80))
     return boxes
 
+def size_from_box(mn, mx):
+    return {"length_m": round(mx[2] - mn[2], 3), "width_m": round(mx[0] - mn[0], 3),
+            "height_m": round(mx[1] - mn[1], 3)}
+
+def bbox_size(path):
+    """bbox.bin: 6 float32 LE (minX, minY, minZ, maxX, maxY, maxZ) — размеры, которые использует игра."""
+    b = path.read_bytes()
+    if len(b) < 24:
+        return None
+    v = struct.unpack_from("<6f", b, 0)
+    return size_from_box(v[:3], v[3:])
+
 def nmf_size(path):
+    """Запасной путь: bbox из main.nmf (без поправки габарита)."""
     boxes = nmf_boxes(path.read_bytes())
     if not boxes:
         return None
     mn = [min(x[i] for x in boxes) for i in range(3)]
     mx = [max(x[i + 3] for x in boxes) for i in range(3)]
-    return {"length_m": round(mx[2] - mn[2], 2), "width_m": round(mx[0] - mn[0], 2),
-            "height_m": round(mx[1] - mn[1], 2)}
+    return size_from_box(mn, mx)
 
 LANGS = {"en": "English", "ru": "Russian", "pl": "Polish", "uk": "Ukrainian"}
 
@@ -178,8 +189,14 @@ def main():
         cn = localize_country(w, locs)
         if cn:
             w["country_names"] = cn
-        nmf = folder / "main.nmf"
-        size = nmf_size(nmf) if nmf.exists() else None
+        bb, nmf = folder / "bbox.bin", folder / "main.nmf"
+        size = bbox_size(bb) if bb.exists() else None
+        if not size and nmf.exists():
+            size = nmf_size(nmf)
+            if size:
+                msg = f"{w['id']}: нет bbox.bin, размеры взяты из main.nmf (без поправки габарита)"
+                warnings.append(msg)
+                print("ВНИМАНИЕ:", msg)
         if size:
             w.update(size)
         else:
