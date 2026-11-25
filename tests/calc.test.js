@@ -8,10 +8,6 @@ test("пример из описания: 115 м и вагон 14 м -> 9 ваг
 test("точное деление не округляется вверх: 28 / 14 = 2", () => {
   assert.strictEqual(C.wagonsOnStation(28, 14), 2);
 });
-test("зазор между вагонами уменьшает число", () => {
-  assert.strictEqual(C.wagonsOnStation(100, 10, 0), 10);
-  assert.strictEqual(C.wagonsOnStation(100, 10, 2), 9);   // 100/12 = 8.33 -> 9
-});
 test("некорректные входные данные дают 0", () => {
   assert.strictEqual(C.wagonsOnStation(0, 14), 0);
   assert.strictEqual(C.wagonsOnStation(10, 0), 0);

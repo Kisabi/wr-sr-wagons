@@ -23,22 +23,20 @@
   /**
    * Сколько вагонов одновременно помещается на станции.
    * Правило игры: вагон, который частично заходит на станцию, тоже грузится -> округление вверх.
-   * stationLen — длина станции, м; wagonLen — длина вагона, м;
-   * gap — зазор между вагонами, м.
+   * stationLen — длина станции, м; wagonLen — длина вагона, м.
+   * Вагоны стоят вплотную (проверено в игре): зазора нет.
    */
-  function wagonsOnStation(stationLen, wagonLen, gap) {
-    gap = gap || 0;
+  function wagonsOnStation(stationLen, wagonLen) {
     if (!(stationLen > 0) || !(wagonLen > 0)) return 0;
     // 1e-9 защищает от погрешности float: 28/14 должно быть ровно 2, а не 3
-    return Math.ceil(stationLen / (wagonLen + gap) - 1e-9);
+    return Math.ceil(stationLen / wagonLen - 1e-9);
   }
 
   /** Результат для одного вагона на станции заданной длины. */
-  function evaluate(w, stationLen, opts) {
-    opts = opts || {};
-    var n = wagonsOnStation(stationLen, w.length_m, opts.gap);
+  function evaluate(w, stationLen) {
+    var n = wagonsOnStation(stationLen, w.length_m);
     var total = n * w.capacity;
-    var trainLength = n * w.length_m + Math.max(0, n - 1) * (opts.gap || 0);
+    var trainLength = n * w.length_m;
     return {
       wagon: w,
       count: n,
@@ -51,8 +49,8 @@
   }
 
   /** Отсортированный список результатов, лучшие первыми. */
-  function rank(wagons, stationLen, opts) {
-    return wagons.map(function (w) { return evaluate(w, stationLen, opts); })
+  function rank(wagons, stationLen) {
+    return wagons.map(function (w) { return evaluate(w, stationLen); })
       .sort(function (a, b) {
         return b.total - a.total || a.overhang - b.overhang ||
           a.wagon.length_m - b.wagon.length_m ||

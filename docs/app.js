@@ -7,12 +7,12 @@
       title: "WR:SR — выгода вагонов для станции заданной длины",
       intro: "Введите длину станции, и калькулятор покажет, какой вагон за один заход увезёт больше всего. Сравнивать нужно вагоны одного типа груза.",
       station: "Длина станции, м", preset: "Станция", presetNone: "— своя длина —",
-      cargo: "Тип груза", gap: "Зазор между вагонами, м", names: "Язык названий вагонов",
+      cargo: "Тип груза", names: "Язык названий вагонов", autoOpt: "Как в интерфейсе",
       cols: ["Вагон", "Валюта покупки", "Годы выпуска", "Длина, м", "Вместимость", "Вагонов на станции", "Всего за заход", "Вместимость на метр вагона", "Выступ за станцию, м"],
       status: function (n, meta) { return "Показано вагонов: " + n + ". Данные игры: сборка " + (meta.game_build || "?") + ", обновлено " + meta.extracted_at + "."; },
       empty: "Нет вагонов под выбранные условия.",
       howTitle: "Как считается",
-      how: "<p>Вагон, который хотя бы частично попал на станцию, грузится вместе с остальными, поэтому число вагонов округляется вверх: <code>n = ⌈длина станции / (длина вагона + зазор)⌉</code>.</p><p>«Всего за заход» = <code>n × вместимость</code>. «Вместимость на метр вагона» = <code>вместимость / длина вагона</code>: это плотность самого вагона, она не зависит от станции. «Выступ за станцию» — на сколько метров последний вагон выходит за границу станции из-за округления вверх (<code>длина состава − длина станции</code>, где длина состава = <code>n × длина вагона + (n − 1) × зазор</code>); если выступа нет, показано «—». Прежняя колонка «на метр станции» убрана: она пропорциональна «Всего за заход» и только дублировала её. Сортировка: по «Всего за заход» (по убыванию), при равенстве — по меньшему выступу, затем по меньшей длине. Лучший вариант выделен цветом.</p><p>Длина вагона берётся из файла bbox.bin в папке вагона (габарит, который использует игра) и сверена с игрой: 18 вагонов Falls + ВЛ10 дают 275,774 м, игра показывает 276. Цена вагона не учитывается: в игре она зависит от стоимости ресурсов.</p>",
+      how: "<p>Вагон, который хотя бы частично попал на станцию, грузится вместе с остальными, поэтому число вагонов округляется вверх: <code>n = ⌈длина станции / длина вагона⌉</code>.</p><p>«Всего за заход» = <code>n × вместимость</code>. «Вместимость на метр вагона» = <code>вместимость / длина вагона</code>: это плотность самого вагона, она не зависит от станции. «Выступ за станцию» — на сколько метров последний вагон выходит за границу станции из-за округления вверх (<code>длина состава − длина станции</code>, где длина состава = <code>n × длина вагона</code>); если выступа нет, показано «—». Прежняя колонка «на метр станции» убрана: она пропорциональна «Всего за заход» и только дублировала её. Сортировка: по «Всего за заход» (по убыванию), при равенстве — по меньшему выступу, затем по меньшей длине. Лучший вариант выделен цветом.</p><p>Длина вагона берётся из файла bbox.bin в папке вагона (габарит, который использует игра) и сверена с игрой: вагоны стоят вплотную, зазора между ними нет. Цена вагона не учитывается: в игре она зависит от стоимости ресурсов.</p>",
       footer: "Все изображения и данные принадлежат разработчикам игры Workers & Resources: Soviet Republic. Неофициальный фанатский проект, не связан с разработчиками.",
       steam: "Игра в Steam",
       takedown: "Если вы правообладатель и хотите убрать материалы — свяжитесь через GitHub Issues репозитория.",
@@ -22,12 +22,12 @@
       title: "WR:SR — wagon efficiency for a given station length",
       intro: "Enter a station length to see which wagon carries the most per visit. Compare wagons of the same cargo type.",
       station: "Station length, m", preset: "Station", presetNone: "— custom length —",
-      cargo: "Cargo type", gap: "Gap between wagons, m", names: "Wagon name language",
+      cargo: "Cargo type", names: "Wagon name language", autoOpt: "Same as interface",
       cols: ["Wagon", "Bought with", "Years", "Length, m", "Capacity", "Wagons at station", "Total per visit", "Capacity per wagon metre", "Overhang, m"],
       status: function (n, meta) { return "Showing " + n + " wagons. Game data: build " + (meta.game_build || "?") + ", updated " + meta.extracted_at + "."; },
       empty: "No wagons match the selected filters.",
       howTitle: "How it is calculated",
-      how: "<p>A wagon that is at least partly on the station is loaded together with the others, so the count is rounded up: <code>n = ⌈station length / (wagon length + gap)⌉</code>.</p><p>“Total per visit” = <code>n × capacity</code>. “Capacity per wagon metre” = <code>capacity / wagon length</code>: the density of the wagon itself, independent of the station. “Overhang” is how many metres the last wagon sticks out past the station boundary because of rounding up (<code>train length − station length</code>, where train length = <code>n × wagon length + (n − 1) × gap</code>); “—” means no overhang. The former “per station metre” column was removed: it is proportional to “Total per visit” and only duplicated it. Sorting: by “Total per visit” (descending), ties broken by smaller overhang, then by shorter length. The best option is highlighted.</p><p>Wagon length is read from bbox.bin in the wagon's folder (the dimensions the game itself uses) and checked against the game: 18 Falls wagons + a VL10 give 275.774 m, the game shows 276. Wagon price is not considered: in-game it depends on resource costs.</p>",
+      how: "<p>A wagon that is at least partly on the station is loaded together with the others, so the count is rounded up: <code>n = ⌈station length / wagon length⌉</code>.</p><p>“Total per visit” = <code>n × capacity</code>. “Capacity per wagon metre” = <code>capacity / wagon length</code>: the density of the wagon itself, independent of the station. “Overhang” is how many metres the last wagon sticks out past the station boundary because of rounding up (<code>train length − station length</code>, where train length = <code>n × wagon length</code>); “—” means no overhang. The former “per station metre” column was removed: it is proportional to “Total per visit” and only duplicated it. Sorting: by “Total per visit” (descending), ties broken by smaller overhang, then by shorter length. The best option is highlighted.</p><p>Wagon length is read from bbox.bin in the wagon's folder (the dimensions the game itself uses) and checked against the game: wagons stand flush, with no gap between them. Wagon price is not considered: in-game it depends on resource costs.</p>",
       footer: "All images and data belong to the developers of Workers & Resources: Soviet Republic. Unofficial fan project, not affiliated with the developers.",
       steam: "Game on Steam",
       takedown: "If you are a rights holder and want the materials removed, please get in touch via the repository's GitHub Issues.",
@@ -79,8 +79,8 @@
     $("t-intro").textContent = x.intro;
     $("l-station").textContent = x.station; $("l-preset").textContent = x.preset;
     $("l-cargo").textContent = x.cargo;
-    $("l-gap").textContent = x.gap;
     $("l-names").textContent = x.names;
+    $("o-auto").textContent = x.autoOpt;
     $("t-how-title").textContent = x.howTitle; $("t-how").innerHTML = x.how;
     $("footer").innerHTML = "<p>" + esc(x.footer) + " <a href='https://store.steampowered.com/app/784150' target='_blank' rel='noopener'>" + esc(x.steam) + "</a></p><p>" + esc(x.takedown) + "</p>";
     $("lang").textContent = state.lang === "ru" ? "EN" : "RU";
@@ -116,7 +116,7 @@
   function render() {
     if (!state.data) return;
     var station = parseFloat($("station").value);
-    var gap = Math.max(0, parseFloat($("gap").value) || 0), cargo = $("cargo").value;
+    var cargo = $("cargo").value;
 
     var shown = state.data.wagons.filter(C.isListed).filter(function (w) { return w.cargo === cargo; });
     var tbody = document.querySelector("#result tbody");
@@ -124,7 +124,7 @@
     if (!(station > 0) || !shown.length) {
       tbody.innerHTML = "<tr><td colspan='9'>" + t().empty + "</td></tr>"; return;
     }
-    var rows = C.rank(shown, station, { gap: gap });
+    var rows = C.rank(shown, station);
     rows.forEach(function (r) { r.name = wagonName(r.wagon); });
     var max = rows[0].total || 1;
     tbody.innerHTML = rows.map(function (r, i) {
@@ -148,7 +148,7 @@
   });
   $("preset").addEventListener("change", function () { if (this.value) { $("station").value = this.value; } render(); });
   $("station").addEventListener("input", function () { $("preset").value = ""; render(); });
-  ["cargo", "gap", "namelang"].forEach(function (id) { $(id).addEventListener("input", render); $(id).addEventListener("change", render); });
+  ["cargo", "namelang"].forEach(function (id) { $(id).addEventListener("input", render); $(id).addEventListener("change", render); });
 
   applyTexts();
   Promise.all([load("data/wagons.json"), load("data/stations.json").catch(function () { return { stations: [] }; })])
