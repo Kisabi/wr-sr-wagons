@@ -34,7 +34,8 @@
    },
    "length_m": 14.83,
    "width_m": 2.84,
-   "height_m": 3.71
+   "height_m": 3.71,
+   "currency": "usd"
   },
   {
    "id": "ej460_wagon",
@@ -63,7 +64,8 @@
    },
    "length_m": 25.65,
    "width_m": 3.21,
-   "height_m": 4.28
+   "height_m": 4.28,
+   "currency": "rub"
   },
   {
    "id": "russian_vagon_eas_gravel",
@@ -93,7 +95,9 @@
    },
    "length_m": 14.08,
    "width_m": 3.05,
-   "height_m": 3.33
+   "height_m": 3.33,
+   "currency": "rub",
+   "preview": "img/russian_vagon_eas_gravel.webp"
   },
   {
    "id": "russian_vagon_eas_open",
@@ -123,7 +127,9 @@
    },
    "length_m": 14.08,
    "width_m": 3.05,
-   "height_m": 3.33
+   "height_m": 3.33,
+   "currency": "rub",
+   "preview": "img/russian_vagon_eas_open.webp"
   },
   {
    "id": "russian_vagon_eas_waste",
@@ -153,7 +159,9 @@
    },
    "length_m": 14.08,
    "width_m": 3.05,
-   "height_m": 3.33
+   "height_m": 3.33,
+   "currency": "rub",
+   "preview": "img/russian_vagon_eas_waste.webp"
   },
   {
    "id": "russian_vagon_es_gravel",
@@ -183,7 +191,9 @@
    },
    "length_m": 9.98,
    "width_m": 3.02,
-   "height_m": 2.74
+   "height_m": 2.74,
+   "currency": "rub",
+   "preview": "img/russian_vagon_es_gravel.webp"
   },
   {
    "id": "russian_vagon_es_open",
@@ -213,7 +223,9 @@
    },
    "length_m": 9.98,
    "width_m": 3.02,
-   "height_m": 2.74
+   "height_m": 2.74,
+   "currency": "rub",
+   "preview": "img/russian_vagon_es_open.webp"
   },
   {
    "id": "russian_vagon_es_waste",
@@ -243,7 +255,9 @@
    },
    "length_m": 9.98,
    "width_m": 3.02,
-   "height_m": 2.74
+   "height_m": 2.74,
+   "currency": "rub",
+   "preview": "img/russian_vagon_es_waste.webp"
   },
   {
    "id": "w_100tOpenHopper",
@@ -275,7 +289,9 @@
    },
    "length_m": 15.65,
    "width_m": 3.17,
-   "height_m": 3.76
+   "height_m": 3.76,
+   "currency": "usd",
+   "preview": "img/w_100tOpenHopper.webp"
   },
   {
    "id": "w_40ftPS1",
@@ -307,7 +323,9 @@
    },
    "length_m": 13.75,
    "width_m": 3.19,
-   "height_m": 4.58
+   "height_m": 4.58,
+   "currency": "usd",
+   "preview": "img/w_40ftPS1.webp"
   },
   {
    "id": "w_50ftPS1",
@@ -339,7 +357,9 @@
    },
    "length_m": 16.81,
    "width_m": 3.19,
-   "height_m": 4.49
+   "height_m": 4.49,
+   "currency": "usd",
+   "preview": "img/w_50ftPS1.webp"
   },
   {
    "id": "w_50tconverted",
@@ -371,7 +391,9 @@
    },
    "length_m": 11.72,
    "width_m": 3.19,
-   "height_m": 3.66
+   "height_m": 3.66,
+   "currency": "usd",
+   "preview": "img/w_50tconverted.webp"
   },
   {
    "id": "w_50tOpenHopper",
@@ -403,7 +425,9 @@
    },
    "length_m": 11.72,
    "width_m": 3.19,
-   "height_m": 3.39
+   "height_m": 3.39,
+   "currency": "usd",
+   "preview": "img/w_50tOpenHopper.webp"
   },
   {
    "id": "w_66centerbeam",
@@ -435,7 +459,9 @@
    },
    "length_m": 22.11,
    "width_m": 2.8,
-   "height_m": 3.83
+   "height_m": 3.83,
+   "currency": "usd",
+   "preview": "img/w_66centerbeam.webp"
   },
   {
    "id": "w_70tOpenHopper",
@@ -467,7 +493,9 @@
    },
    "length_m": 12.54,
    "width_m": 3.17,
-   "height_m": 3.76
+   "height_m": 3.76,
+   "currency": "usd",
+   "preview": "img/w_70tOpenHopper.webp"
   },
   {
    "id": "w_73centerbeam",
@@ -499,7 +527,9 @@
    },
    "length_m": 24.23,
    "width_m": 2.8,
-   "height_m": 4.56
+   "height_m": 4.56,
+   "currency": "usd",
+   "preview": "img/w_73centerbeam.webp"
   },
   {
    "id": "w_80thopper",
@@ -531,7 +561,9 @@
    },
    "length_m": 16.81,
    "width_m": 3.24,
-   "height_m": 4.39
+   "height_m": 4.39,
+   "currency": "usd",
+   "preview": "img/w_80thopper.webp"
   },
   {
    "id": "w_ACF506",
@@ -563,7 +595,9 @@
    },
    "length_m": 16.9,
    "width_m": 3.28,
-   "height_m": 4.47
+   "height_m": 4.47,
+   "currency": "usd",
+   "preview": "img/w_ACF506.webp"
   },
   {
    "id": "w_ACFF7081",
@@ -595,7 +629,9 @@
    },
    "length_m": 17.54,
    "width_m": 2.79,
-   "height_m": 3.04
+   "height_m": 3.04,
+   "currency": "usd",
+   "preview": "img/w_ACFF7081.webp"
   },
   {
    "id": "w_Backpacker",
@@ -627,7 +663,9 @@
    },
    "length_m": 17.68,
    "width_m": 2.87,
-   "height_m": 1.69
+   "height_m": 1.69,
+   "currency": "usd",
+   "preview": "img/w_Backpacker.webp"
   },
   {
    "id": "w_CoilCarCovered",
@@ -659,7 +697,9 @@
    },
    "length_m": 14.07,
    "width_m": 3.04,
-   "height_m": 4.31
+   "height_m": 4.31,
+   "currency": "usd",
+   "preview": "img/w_CoilCarCovered.webp"
   },
   {
    "id": "w_CoilCarOpen",
@@ -691,7 +731,9 @@
    },
    "length_m": 14.07,
    "width_m": 2.98,
-   "height_m": 2.22
+   "height_m": 2.22,
+   "currency": "usd",
+   "preview": "img/w_CoilCarOpen.webp"
   },
   {
    "id": "w_CWBhopper",
@@ -716,7 +758,9 @@
    },
    "length_m": 17.95,
    "width_m": 3.12,
-   "height_m": 4.47
+   "height_m": 4.47,
+   "currency": "usd",
+   "preview": "img/w_CWBhopper.webp"
   },
   {
    "id": "w_MaxiIV",
@@ -748,7 +792,9 @@
    },
    "length_m": 20.22,
    "width_m": 2.74,
-   "height_m": 1.81
+   "height_m": 1.81,
+   "currency": "usd",
+   "preview": "img/w_MaxiIV.webp"
   },
   {
    "id": "25d49",
@@ -778,7 +824,8 @@
    },
    "length_m": 6.77,
    "width_m": 2.87,
-   "height_m": 4.22
+   "height_m": 4.22,
+   "currency": "rub"
   },
   {
    "id": "32d43",
@@ -808,7 +855,8 @@
    },
    "length_m": 9.14,
    "width_m": 3.06,
-   "height_m": 4.0
+   "height_m": 4.0,
+   "currency": "rub"
   },
   {
    "id": "34d44",
@@ -838,7 +886,8 @@
    },
    "length_m": 8.84,
    "width_m": 2.87,
-   "height_m": 4.0
+   "height_m": 4.0,
+   "currency": "rub"
   },
   {
    "id": "bbotender",
@@ -861,7 +910,8 @@
    },
    "length_m": 7.96,
    "width_m": 3.05,
-   "height_m": 3.96
+   "height_m": 3.96,
+   "currency": "usd"
   },
   {
    "id": "Ci28",
@@ -890,7 +940,9 @@
    },
    "length_m": 13.91,
    "width_m": 3.12,
-   "height_m": 3.85
+   "height_m": 3.85,
+   "currency": "rub",
+   "preview": "img/Ci28.webp"
   },
   {
    "id": "Dresden",
@@ -920,7 +972,9 @@
    },
    "length_m": 12.06,
    "width_m": 3.09,
-   "height_m": 4.04
+   "height_m": 4.04,
+   "currency": "rub",
+   "preview": "img/Dresden.webp"
   },
   {
    "id": "Essen",
@@ -950,7 +1004,9 @@
    },
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "currency": "rub",
+   "preview": "img/Essen.webp"
   },
   {
    "id": "EssenO",
@@ -980,7 +1036,9 @@
    },
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "currency": "rub",
+   "preview": "img/EssenO.webp"
   },
   {
    "id": "EssenW",
@@ -1010,7 +1068,9 @@
    },
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "currency": "rub",
+   "preview": "img/EssenW.webp"
   },
   {
    "id": "Etender",
@@ -1040,7 +1100,8 @@
    },
    "length_m": 10.27,
    "width_m": 3.31,
-   "height_m": 4.64
+   "height_m": 4.64,
+   "currency": "rub"
   },
   {
    "id": "FDtender",
@@ -1070,7 +1131,8 @@
    },
    "length_m": 14.63,
    "width_m": 3.3,
-   "height_m": 4.5
+   "height_m": 4.5,
+   "currency": "rub"
   },
   {
    "id": "Hannover",
@@ -1100,7 +1162,9 @@
    },
    "length_m": 9.1,
    "width_m": 3.07,
-   "height_m": 3.52
+   "height_m": 3.52,
+   "currency": "rub",
+   "preview": "img/Hannover.webp"
   },
   {
    "id": "IStender",
@@ -1130,7 +1194,8 @@
    },
    "length_m": 14.63,
    "width_m": 3.3,
-   "height_m": 4.5
+   "height_m": 4.5,
+   "currency": "rub"
   },
   {
    "id": "Kassel",
@@ -1160,7 +1225,9 @@
    },
    "length_m": 9.1,
    "width_m": 3.09,
-   "height_m": 3.52
+   "height_m": 3.52,
+   "currency": "rub",
+   "preview": "img/Kassel.webp"
   },
   {
    "id": "KasselHorse",
@@ -1190,7 +1257,9 @@
    },
    "length_m": 9.1,
    "width_m": 3.09,
-   "height_m": 3.52
+   "height_m": 3.52,
+   "currency": "rub",
+   "preview": "img/KasselHorse.webp"
   },
   {
    "id": "Klagenfurt",
@@ -1220,7 +1289,9 @@
    },
    "length_m": 10.04,
    "width_m": 2.98,
-   "height_m": 2.96
+   "height_m": 2.96,
+   "currency": "rub",
+   "preview": "img/Klagenfurt.webp"
   },
   {
    "id": "KlagenfurtO",
@@ -1250,7 +1321,9 @@
    },
    "length_m": 10.04,
    "width_m": 2.98,
-   "height_m": 2.96
+   "height_m": 2.96,
+   "currency": "rub",
+   "preview": "img/KlagenfurtO.webp"
   },
   {
    "id": "KlagenfurtW",
@@ -1280,7 +1353,9 @@
    },
    "length_m": 10.04,
    "width_m": 2.98,
-   "height_m": 2.96
+   "height_m": 2.96,
+   "currency": "rub",
+   "preview": "img/KlagenfurtW.webp"
   },
   {
    "id": "Konigsberg",
@@ -1310,7 +1385,9 @@
    },
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "currency": "rub",
+   "preview": "img/Konigsberg.webp"
   },
   {
    "id": "KonigsbergO",
@@ -1340,7 +1417,9 @@
    },
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "currency": "rub",
+   "preview": "img/KonigsbergO.webp"
   },
   {
    "id": "KonigsbergW",
@@ -1370,7 +1449,9 @@
    },
    "length_m": 9.1,
    "width_m": 2.97,
-   "height_m": 2.8
+   "height_m": 2.8,
+   "currency": "rub",
+   "preview": "img/KonigsbergW.webp"
   },
   {
    "id": "Oppeln",
@@ -1400,7 +1481,9 @@
    },
    "length_m": 9.11,
    "width_m": 3.09,
-   "height_m": 4.04
+   "height_m": 4.04,
+   "currency": "rub",
+   "preview": "img/Oppeln.webp"
   },
   {
    "id": "otuatender",
@@ -1429,7 +1512,8 @@
    },
    "length_m": 7.51,
    "width_m": 2.72,
-   "height_m": 3.79
+   "height_m": 3.79,
+   "currency": "rub"
   },
   {
    "id": "russian_metro_ABv",
@@ -1457,7 +1541,8 @@
    },
    "length_m": 19.0,
    "width_m": 2.75,
-   "height_m": 3.72
+   "height_m": 3.72,
+   "currency": null
   },
   {
    "id": "russian_service_BR_kassel",
@@ -1486,7 +1571,8 @@
    },
    "length_m": 9.1,
    "width_m": 3.09,
-   "height_m": 3.52
+   "height_m": 3.52,
+   "currency": "rub"
   },
   {
    "id": "russian_service_dampfdrehkran_vagon",
@@ -1513,7 +1599,8 @@
    },
    "length_m": 8.08,
    "width_m": 2.62,
-   "height_m": 2.0
+   "height_m": 2.0,
+   "currency": "rub"
   },
   {
    "id": "russian_service_manual_machine_vagon",
@@ -1541,7 +1628,8 @@
    },
    "length_m": 3.93,
    "width_m": 1.89,
-   "height_m": 0.56
+   "height_m": 0.56,
+   "currency": "rub"
   },
   {
    "id": "russian_service_tbm_9p_vagon",
@@ -1570,7 +1658,8 @@
    },
    "length_m": 14.18,
    "width_m": 3.01,
-   "height_m": 3.9
+   "height_m": 3.9,
+   "currency": "rub"
   },
   {
    "id": "russian_service_tbm_9p_vagon2",
@@ -1599,7 +1688,8 @@
    },
    "length_m": 14.18,
    "width_m": 3.01,
-   "height_m": 2.48
+   "height_m": 2.48,
+   "currency": "rub"
   },
   {
    "id": "russian_service_weimar_vagon",
@@ -1626,7 +1716,8 @@
    },
    "length_m": 8.63,
    "width_m": 2.62,
-   "height_m": 2.01
+   "height_m": 2.01,
+   "currency": "rub"
   },
   {
    "id": "russian_service_weimar_vagon2",
@@ -1655,7 +1746,8 @@
    },
    "length_m": 8.08,
    "width_m": 2.62,
-   "height_m": 2.0
+   "height_m": 2.0,
+   "currency": "rub"
   },
   {
    "id": "russian_service_ya3_vagon",
@@ -1684,7 +1776,8 @@
    },
    "length_m": 14.18,
    "width_m": 3.01,
-   "height_m": 1.87
+   "height_m": 1.87,
+   "currency": "rub"
   },
   {
    "id": "russian_service_ya3_vagon2",
@@ -1713,7 +1806,8 @@
    },
    "length_m": 14.18,
    "width_m": 3.01,
-   "height_m": 1.87
+   "height_m": 1.87,
+   "currency": "rub"
   },
   {
    "id": "russian_steam_ov_tender",
@@ -1740,7 +1834,8 @@
    },
    "length_m": 6.67,
    "width_m": 3.24,
-   "height_m": 3.12
+   "height_m": 3.12,
+   "currency": "rub"
   },
   {
    "id": "russian_steam_p36_tender",
@@ -1766,7 +1861,8 @@
    },
    "length_m": 13.93,
    "width_m": 3.19,
-   "height_m": 4.55
+   "height_m": 4.55,
+   "currency": "rub"
   },
   {
    "id": "russian_steam_su_tender",
@@ -1792,7 +1888,8 @@
    },
    "length_m": 10.04,
    "width_m": 3.14,
-   "height_m": 4.87
+   "height_m": 4.87,
+   "currency": "rub"
   },
   {
    "id": "russian_tram_bakuemu_v",
@@ -1820,7 +1917,8 @@
    },
    "length_m": 18.72,
    "width_m": 3.2,
-   "height_m": 4.15
+   "height_m": 4.15,
+   "currency": null
   },
   {
    "id": "russian_vagon_2axle",
@@ -1849,7 +1947,9 @@
    },
    "length_m": 16.02,
    "width_m": 3.3,
-   "height_m": 4.83
+   "height_m": 4.83,
+   "currency": "rub",
+   "preview": "img/russian_vagon_2axle.webp"
   },
   {
    "id": "russian_vagon_4axle",
@@ -1878,7 +1978,9 @@
    },
    "length_m": 21.89,
    "width_m": 3.27,
-   "height_m": 4.81
+   "height_m": 4.81,
+   "currency": "rub",
+   "preview": "img/russian_vagon_4axle.webp"
   },
   {
    "id": "SOtender",
@@ -1908,7 +2010,8 @@
    },
    "length_m": 7.97,
    "width_m": 2.93,
-   "height_m": 4.4
+   "height_m": 4.4,
+   "currency": "rub"
   },
   {
    "id": "SSyms",
@@ -1938,7 +2041,9 @@
    },
    "length_m": 13.1,
    "width_m": 3.14,
-   "height_m": 2.3
+   "height_m": 2.3,
+   "currency": "rub",
+   "preview": "img/SSyms.webp"
   },
   {
    "id": "SSys",
@@ -1968,7 +2073,9 @@
    },
    "length_m": 10.7,
    "width_m": 3.14,
-   "height_m": 2.3
+   "height_m": 2.3,
+   "currency": "rub",
+   "preview": "img/SSys.webp"
   },
   {
    "id": "Stuttgart",
@@ -1998,7 +2105,9 @@
    },
    "length_m": 11.5,
    "width_m": 3.0,
-   "height_m": 1.64
+   "height_m": 1.64,
+   "currency": "rub",
+   "preview": "img/Stuttgart.webp"
   },
   {
    "id": "Villach",
@@ -2028,7 +2137,9 @@
    },
    "length_m": 10.1,
    "width_m": 2.97,
-   "height_m": 2.99
+   "height_m": 2.99,
+   "currency": "rub",
+   "preview": "img/Villach.webp"
   },
   {
    "id": "VillachO",
@@ -2058,7 +2169,9 @@
    },
    "length_m": 10.1,
    "width_m": 2.97,
-   "height_m": 2.99
+   "height_m": 2.99,
+   "currency": "rub",
+   "preview": "img/VillachO.webp"
   },
   {
    "id": "VillachW",
@@ -2088,7 +2201,9 @@
    },
    "length_m": 10.1,
    "width_m": 2.97,
-   "height_m": 2.99
+   "height_m": 2.99,
+   "currency": "rub",
+   "preview": "img/VillachW.webp"
   },
   {
    "id": "west_service_steamcrane_vagon",
@@ -2117,7 +2232,8 @@
    },
    "length_m": 12.67,
    "width_m": 3.03,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "currency": "usd"
   },
   {
    "id": "west_service_steamcrane_vagon2",
@@ -2146,7 +2262,8 @@
    },
    "length_m": 12.67,
    "width_m": 2.99,
-   "height_m": 2.01
+   "height_m": 2.01,
+   "currency": "usd"
   },
   {
    "id": "west_set_EN80_v_end",
@@ -2175,7 +2292,8 @@
    },
    "length_m": 14.05,
    "width_m": 2.44,
-   "height_m": 3.36
+   "height_m": 3.36,
+   "currency": "usd"
   },
   {
    "id": "west_set_EN80_v_middle",
@@ -2205,7 +2323,8 @@
    },
    "length_m": 14.05,
    "width_m": 2.44,
-   "height_m": 3.36
+   "height_m": 3.36,
+   "currency": "usd"
   },
   {
    "id": "Wismar",
@@ -2235,7 +2354,9 @@
    },
    "length_m": 8.86,
    "width_m": 2.82,
-   "height_m": 4.22
+   "height_m": 4.22,
+   "currency": "rub",
+   "preview": "img/Wismar.webp"
   },
   {
    "id": "Wuppertal",
@@ -2265,7 +2386,9 @@
    },
    "length_m": 8.1,
    "width_m": 2.99,
-   "height_m": 3.09
+   "height_m": 3.09,
+   "currency": "rub",
+   "preview": "img/Wuppertal.webp"
   },
   {
    "id": "russian_crane_vagon",
@@ -2290,7 +2413,8 @@
    },
    "length_m": 16.32,
    "width_m": 2.69,
-   "height_m": 1.37
+   "height_m": 1.37,
+   "currency": "rub"
   },
   {
    "id": "russian_metro_717_5_vagon",
@@ -2318,7 +2442,8 @@
    },
    "length_m": 19.44,
    "width_m": 2.93,
-   "height_m": 3.74
+   "height_m": 3.74,
+   "currency": null
   },
   {
    "id": "russian_metro_717_vagon",
@@ -2346,7 +2471,8 @@
    },
    "length_m": 19.44,
    "width_m": 2.93,
-   "height_m": 3.74
+   "height_m": 3.74,
+   "currency": null
   },
   {
    "id": "russian_metro_720_vagon",
@@ -2374,7 +2500,8 @@
    },
    "length_m": 19.39,
    "width_m": 2.89,
-   "height_m": 3.72
+   "height_m": 3.72,
+   "currency": null
   },
   {
    "id": "russian_metro_astra_vagon",
@@ -2402,7 +2529,8 @@
    },
    "length_m": 19.43,
    "width_m": 3.23,
-   "height_m": 3.68
+   "height_m": 3.68,
+   "currency": null
   },
   {
    "id": "russian_metro_Ecs_vagon",
@@ -2430,7 +2558,8 @@
    },
    "length_m": 19.44,
    "width_m": 2.93,
-   "height_m": 3.74
+   "height_m": 3.74,
+   "currency": null
   },
   {
    "id": "russian_metro_mfav_vagon",
@@ -2459,7 +2588,8 @@
    },
    "length_m": 11.63,
    "width_m": 2.34,
-   "height_m": 2.73
+   "height_m": 2.73,
+   "currency": null
   },
   {
    "id": "russian_metro_mfav_vagon2",
@@ -2487,7 +2617,8 @@
    },
    "length_m": 10.35,
    "width_m": 2.34,
-   "height_m": 2.89
+   "height_m": 2.89,
+   "currency": null
   },
   {
    "id": "russian_service_agmu_vagon",
@@ -2513,7 +2644,8 @@
    },
    "length_m": 9.6,
    "width_m": 2.93,
-   "height_m": 1.2
+   "height_m": 1.2,
+   "currency": "rub"
   },
   {
    "id": "russian_service_dkgu5_vagon",
@@ -2539,7 +2671,8 @@
    },
    "length_m": 12.65,
    "width_m": 3.18,
-   "height_m": 1.8
+   "height_m": 1.8,
+   "currency": "rub"
   },
   {
    "id": "russian_service_edk300_vagon",
@@ -2565,7 +2698,8 @@
    },
    "length_m": 17.29,
    "width_m": 3.14,
-   "height_m": 2.09
+   "height_m": 2.09,
+   "currency": "rub"
   },
   {
    "id": "russian_service_edk300_vagon_2",
@@ -2591,7 +2725,8 @@
    },
    "length_m": 17.29,
    "width_m": 3.14,
-   "height_m": 1.86
+   "height_m": 1.86,
+   "currency": "rub"
   },
   {
    "id": "russian_service_muv69_vagon",
@@ -2617,7 +2752,8 @@
    },
    "length_m": 7.74,
    "width_m": 2.91,
-   "height_m": 1.79
+   "height_m": 1.79,
+   "currency": "rub"
   },
   {
    "id": "russian_service_tbm_kt1_platform",
@@ -2647,7 +2783,8 @@
    },
    "length_m": 18.74,
    "width_m": 3.15,
-   "height_m": 4.91
+   "height_m": 4.91,
+   "currency": "rub"
   },
   {
    "id": "russian_service_uk25_vagon",
@@ -2674,7 +2811,8 @@
    },
    "length_m": 19.03,
    "width_m": 3.45,
-   "height_m": 1.71
+   "height_m": 1.71,
+   "currency": "rub"
   },
   {
    "id": "russian_set_d1_v",
@@ -2701,7 +2839,8 @@
    },
    "length_m": 25.74,
    "width_m": 3.15,
-   "height_m": 4.39
+   "height_m": 4.39,
+   "currency": "rub"
   },
   {
    "id": "russian_set_dp_v",
@@ -2728,7 +2867,8 @@
    },
    "length_m": 26.78,
    "width_m": 3.16,
-   "height_m": 4.08
+   "height_m": 4.08,
+   "currency": "rub"
   },
   {
    "id": "russian_set_dr1a_v",
@@ -2758,7 +2898,8 @@
    },
    "length_m": 26.82,
    "width_m": 3.14,
-   "height_m": 4.25
+   "height_m": 4.25,
+   "currency": "rub"
   },
   {
    "id": "russian_set_er1_v",
@@ -2785,7 +2926,8 @@
    },
    "length_m": 20.98,
    "width_m": 3.51,
-   "height_m": 4.23
+   "height_m": 4.23,
+   "currency": "rub"
   },
   {
    "id": "russian_tram_102na_v",
@@ -2815,7 +2957,8 @@
    },
    "length_m": 11.05,
    "width_m": 2.34,
-   "height_m": 3.01
+   "height_m": 3.01,
+   "currency": "rub"
   },
   {
    "id": "russian_tram_ganz_v1",
@@ -2846,7 +2989,8 @@
    },
    "length_m": 6.95,
    "width_m": 2.35,
-   "height_m": 2.85
+   "height_m": 2.85,
+   "currency": "rub"
   },
   {
    "id": "russian_tram_ganz_v2",
@@ -2876,7 +3020,8 @@
    },
    "length_m": 11.91,
    "width_m": 2.42,
-   "height_m": 3.38
+   "height_m": 3.38,
+   "currency": "rub"
   },
   {
    "id": "russian_tram_kt8_v",
@@ -2907,7 +3052,8 @@
    },
    "length_m": 10.12,
    "width_m": 2.5,
-   "height_m": 3.11
+   "height_m": 3.11,
+   "currency": "rub"
   },
   {
    "id": "russian_tram_ktm_v",
@@ -2936,7 +3082,8 @@
    },
    "length_m": 10.26,
    "width_m": 2.62,
-   "height_m": 3.3
+   "height_m": 3.3,
+   "currency": "rub"
   },
   {
    "id": "russian_vagon_armen",
@@ -2966,7 +3113,9 @@
    },
    "length_m": 24.48,
    "width_m": 3.26,
-   "height_m": 4.45
+   "height_m": 4.45,
+   "currency": "rub",
+   "preview": "img/russian_vagon_armen.webp"
   },
   {
    "id": "russian_vagon_box066",
@@ -2998,7 +3147,9 @@
    },
    "length_m": 15.04,
    "width_m": 3.29,
-   "height_m": 4.54
+   "height_m": 4.54,
+   "currency": "rub",
+   "preview": "img/russian_vagon_box066.webp"
   },
   {
    "id": "russian_vagon_box270",
@@ -3030,7 +3181,9 @@
    },
    "length_m": 15.04,
    "width_m": 3.31,
-   "height_m": 4.54
+   "height_m": 4.54,
+   "currency": "rub",
+   "preview": "img/russian_vagon_box270.webp"
   },
   {
    "id": "russian_vagon_box280",
@@ -3062,7 +3215,9 @@
    },
    "length_m": 16.78,
    "width_m": 3.31,
-   "height_m": 4.59
+   "height_m": 4.59,
+   "currency": "rub",
+   "preview": "img/russian_vagon_box280.webp"
   },
   {
    "id": "russian_vagon_cement",
@@ -3094,7 +3249,9 @@
    },
    "length_m": 11.87,
    "width_m": 3.44,
-   "height_m": 4.77
+   "height_m": 4.77,
+   "currency": "rub",
+   "preview": "img/russian_vagon_cement.webp"
   },
   {
    "id": "russian_vagon_cooler",
@@ -3122,7 +3279,8 @@
    },
    "length_m": 22.06,
    "width_m": 3.4,
-   "height_m": 5.08
+   "height_m": 5.08,
+   "currency": "rub"
   },
   {
    "id": "russian_vagon_cooler_iso",
@@ -3154,7 +3312,9 @@
    },
    "length_m": 22.25,
    "width_m": 3.24,
-   "height_m": 4.66
+   "height_m": 4.66,
+   "currency": "rub",
+   "preview": "img/russian_vagon_cooler_iso.webp"
   },
   {
    "id": "russian_vagon_cooler_zb5",
@@ -3186,7 +3346,9 @@
    },
    "length_m": 22.2,
    "width_m": 3.91,
-   "height_m": 4.65
+   "height_m": 4.65,
+   "currency": "rub",
+   "preview": "img/russian_vagon_cooler_zb5.webp"
   },
   {
    "id": "russian_vagon_covered",
@@ -3214,7 +3376,8 @@
    },
    "length_m": 14.95,
    "width_m": 3.24,
-   "height_m": 4.42
+   "height_m": 4.42,
+   "currency": "rub"
   },
   {
    "id": "russian_vagon_covered_uzd7889",
@@ -3244,7 +3407,8 @@
    },
    "length_m": 14.95,
    "width_m": 3.35,
-   "height_m": 3.93
+   "height_m": 3.93,
+   "currency": "rub"
   },
   {
    "id": "russian_vagon_faccs_gravel",
@@ -3274,7 +3438,9 @@
    },
    "length_m": 12.73,
    "width_m": 2.96,
-   "height_m": 3.96
+   "height_m": 3.96,
+   "currency": "rub",
+   "preview": "img/russian_vagon_faccs_gravel.webp"
   },
   {
    "id": "russian_vagon_falls_gravel",
@@ -3304,7 +3470,9 @@
    },
    "length_m": 13.52,
    "width_m": 3.11,
-   "height_m": 4.0
+   "height_m": 4.0,
+   "currency": "rub",
+   "preview": "img/russian_vagon_falls_gravel.webp"
   },
   {
    "id": "russian_vagon_gravel",
@@ -3334,7 +3502,8 @@
    },
    "length_m": 11.58,
    "width_m": 3.13,
-   "height_m": 3.96
+   "height_m": 3.96,
+   "currency": "rub"
   },
   {
    "id": "russian_vagon_gravel_12_132",
@@ -3366,7 +3535,9 @@
    },
    "length_m": 13.84,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "currency": "rub",
+   "preview": "img/russian_vagon_gravel_12_132.webp"
   },
   {
    "id": "russian_vagon_gravel_12_515",
@@ -3398,7 +3569,9 @@
    },
    "length_m": 14.22,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "currency": "rub",
+   "preview": "img/russian_vagon_gravel_12_515.webp"
   },
   {
    "id": "russian_vagon_open",
@@ -3428,7 +3601,8 @@
    },
    "length_m": 19.83,
    "width_m": 3.44,
-   "height_m": 3.47
+   "height_m": 3.47,
+   "currency": "rub"
   },
   {
    "id": "russian_vagon_open_12_132",
@@ -3460,7 +3634,9 @@
    },
    "length_m": 13.84,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "currency": "rub",
+   "preview": "img/russian_vagon_open_12_132.webp"
   },
   {
    "id": "russian_vagon_open_12_515",
@@ -3492,7 +3668,9 @@
    },
    "length_m": 14.22,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "currency": "rub",
+   "preview": "img/russian_vagon_open_12_515.webp"
   },
   {
    "id": "russian_vagon_open_13_401",
@@ -3524,7 +3702,9 @@
    },
    "length_m": 14.78,
    "width_m": 3.18,
-   "height_m": 1.86
+   "height_m": 1.86,
+   "currency": "rub",
+   "preview": "img/russian_vagon_open_13_401.webp"
   },
   {
    "id": "russian_vagon_open_13_4012",
@@ -3556,7 +3736,9 @@
    },
    "length_m": 14.78,
    "width_m": 3.17,
-   "height_m": 1.86
+   "height_m": 1.86,
+   "currency": "rub",
+   "preview": "img/russian_vagon_open_13_4012.webp"
   },
   {
    "id": "russian_vagon_open_13_926",
@@ -3588,7 +3770,9 @@
    },
    "length_m": 19.87,
    "width_m": 3.17,
-   "height_m": 1.86
+   "height_m": 1.86,
+   "currency": "rub",
+   "preview": "img/russian_vagon_open_13_926.webp"
   },
   {
    "id": "russian_vagon_passanger",
@@ -3616,7 +3800,8 @@
    },
    "length_m": 25.96,
    "width_m": 3.58,
-   "height_m": 4.83
+   "height_m": 4.83,
+   "currency": "rub"
   },
   {
    "id": "russian_vagon_raj_cement",
@@ -3646,7 +3831,9 @@
    },
    "length_m": 14.5,
    "width_m": 3.01,
-   "height_m": 4.69
+   "height_m": 4.69,
+   "currency": "rub",
+   "preview": "img/russian_vagon_raj_cement.webp"
   },
   {
    "id": "russian_vagon_ric",
@@ -3675,7 +3862,9 @@
    },
    "length_m": 24.83,
    "width_m": 3.03,
-   "height_m": 4.38
+   "height_m": 4.38,
+   "currency": "rub",
+   "preview": "img/russian_vagon_ric.webp"
   },
   {
    "id": "russian_vagon_rt200",
@@ -3704,7 +3893,9 @@
    },
    "length_m": 27.33,
    "width_m": 3.15,
-   "height_m": 4.25
+   "height_m": 4.25,
+   "currency": "rub",
+   "preview": "img/russian_vagon_rt200.webp"
   },
   {
    "id": "russian_vagon_tank",
@@ -3732,7 +3923,8 @@
    },
    "length_m": 11.77,
    "width_m": 3.07,
-   "height_m": 4.27
+   "height_m": 4.27,
+   "currency": "rub"
   },
   {
    "id": "russian_vagon_tank_15_1443",
@@ -3764,7 +3956,9 @@
    },
    "length_m": 12.08,
    "width_m": 3.2,
-   "height_m": 4.56
+   "height_m": 4.56,
+   "currency": "rub",
+   "preview": "img/russian_vagon_tank_15_1443.webp"
   },
   {
    "id": "russian_vagon_tank_15_1547",
@@ -3796,7 +3990,9 @@
    },
    "length_m": 12.08,
    "width_m": 3.25,
-   "height_m": 4.5
+   "height_m": 4.5,
+   "currency": "rub",
+   "preview": "img/russian_vagon_tank_15_1547.webp"
   },
   {
    "id": "russian_vagon_tank_15_871",
@@ -3828,7 +4024,9 @@
    },
    "length_m": 21.25,
    "width_m": 3.21,
-   "height_m": 4.7
+   "height_m": 4.7,
+   "currency": "rub",
+   "preview": "img/russian_vagon_tank_15_871.webp"
   },
   {
    "id": "russian_vagon_tank_sewage",
@@ -3856,7 +4054,8 @@
    },
    "length_m": 11.77,
    "width_m": 3.07,
-   "height_m": 4.27
+   "height_m": 4.27,
+   "currency": "rub"
   },
   {
    "id": "russian_vagon_tank_water",
@@ -3884,7 +4083,8 @@
    },
    "length_m": 11.77,
    "width_m": 3.07,
-   "height_m": 4.27
+   "height_m": 4.27,
+   "currency": "rub"
   },
   {
    "id": "russian_vagon_tvz50",
@@ -3913,7 +4113,9 @@
    },
    "length_m": 24.45,
    "width_m": 3.21,
-   "height_m": 4.66
+   "height_m": 4.66,
+   "currency": "rub",
+   "preview": "img/russian_vagon_tvz50.webp"
   },
   {
    "id": "russian_vagon_tvz61",
@@ -3942,7 +4144,9 @@
    },
    "length_m": 24.54,
    "width_m": 3.26,
-   "height_m": 4.49
+   "height_m": 4.49,
+   "currency": "rub",
+   "preview": "img/russian_vagon_tvz61.webp"
   },
   {
    "id": "russian_vagon_waste_12_132",
@@ -3974,7 +4178,9 @@
    },
    "length_m": 13.84,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "currency": "rub",
+   "preview": "img/russian_vagon_waste_12_132.webp"
   },
   {
    "id": "russian_vagon_waste_12_515",
@@ -4006,7 +4212,9 @@
    },
    "length_m": 14.22,
    "width_m": 3.07,
-   "height_m": 3.49
+   "height_m": 3.49,
+   "currency": "rub",
+   "preview": "img/russian_vagon_waste_12_515.webp"
   },
   {
    "id": "russian_vagon_ywagen",
@@ -4035,7 +4243,9 @@
    },
    "length_m": 25.31,
    "width_m": 2.88,
-   "height_m": 4.29
+   "height_m": 4.29,
+   "currency": "rub",
+   "preview": "img/russian_vagon_ywagen.webp"
   },
   {
    "id": "west_metro_ma51_vagon",
@@ -4065,7 +4275,8 @@
    },
    "length_m": 15.06,
    "width_m": 2.63,
-   "height_m": 3.51
+   "height_m": 3.51,
+   "currency": null
   },
   {
    "id": "west_metro_ma51_vagon2",
@@ -4093,7 +4304,8 @@
    },
    "length_m": 13.31,
    "width_m": 2.63,
-   "height_m": 3.51
+   "height_m": 3.51,
+   "currency": null
   },
   {
    "id": "west_metro_tube_vagon",
@@ -4121,7 +4333,8 @@
    },
    "length_m": 15.24,
    "width_m": 2.73,
-   "height_m": 3.01
+   "height_m": 3.01,
+   "currency": null
   },
   {
    "id": "west_vagon_cement",
@@ -4148,7 +4361,9 @@
    },
    "length_m": 8.49,
    "width_m": 2.73,
-   "height_m": 4.04
+   "height_m": 4.04,
+   "currency": "usd",
+   "preview": "img/west_vagon_cement.webp"
   }
  ]
 }

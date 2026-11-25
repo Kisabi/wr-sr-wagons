@@ -35,9 +35,23 @@ test("у вагонов со страной есть country_names на всех
   }
 });
 
+test("у покупаемых грузовых вагонов задана валюта", () => {
+  for (const w of data.wagons.filter(C.isListed)) {
+    assert.ok(w.currency === "rub" || w.currency === "usd", `${w.id}: currency ${w.currency}`);
+  }
+});
+
 test("у грузовых вагонов есть названия на всех языках", () => {
   for (const w of cargo) {
     assert.ok(w.names, w.id);
     for (const l of ["en", "ru", "pl", "uk"]) assert.ok(w.names[l] && w.names[l].length > 0, `${w.id}: ${l}`);
+  }
+});
+
+test("превью вагонов существуют и меньше 40 КБ", () => {
+  for (const w of data.wagons.filter(x => x.preview)) {
+    const f = path.join(__dirname, "../docs", w.preview);
+    assert.ok(fs.existsSync(f), `${w.id}: нет файла ${w.preview}`);
+    assert.ok(fs.statSync(f).size < 40 * 1024, `${w.id}: ${fs.statSync(f).size} байт`);
   }
 });

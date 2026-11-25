@@ -26,3 +26,6 @@ td small { color:var(--muted); }
 .how summary { cursor:pointer; color:var(--text); }
 footer { text-align:center; color:var(--muted); font-size:12px; padding:16px; border-top:1px solid var(--line); }
 footer a { color:var(--accent); }
+.wname { display:flex; align-items:center; gap:10px; }
+.thumb { flex:none; width:64px; height:40px; object-fit:contain; }
+footer p { margin:4px 0; }

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Извлекает характеристики вагонов WR:SR из файлов игры в data/wagons.json.
 
-Только читает папку игры, ничего в неё не пишет. Только стандартная библиотека.
+Только читает папку игры, ничего в неё не пишет. Для миниатюр нужен Pillow
+(pip install pillow); без него миниатюры пропускаются.
 
 Запуск:
     python tools/extract.py "D:\\Steam\\steamapps\\common\\SovietRepublic"
@@ -116,6 +117,33 @@ def localize_country(w, locs):
         return None
     return {code: locs.get(code, {}).get(cid) or locs.get("en", {}).get(cid) or "" for code in LANGS}
 
+PREVIEW_PAD, PREVIEW_MAX, PREVIEW_QUALITY = 4, 128, 80
+
+def is_listed(w):
+    return bool(w.get("cargo") and w.get("capacity") and w.get("length_m")) and not w.get("purchase_excluded")
+
+def make_preview(src, dst, Image):
+    """preview.dds -> обрезка по непрозрачным пикселям -> WebP. True, если файл создан/актуален."""
+    with Image.open(src) as im:
+        im = im.convert("RGBA")
+    bbox = im.getchannel("A").point(lambda v: 255 if v > 0 else 0).getbbox()
+    if not bbox:
+        return False
+    l, t, r, b = bbox
+    im = im.crop((max(0, l - PREVIEW_PAD), max(0, t - PREVIEW_PAD),
+                  min(im.width, r + PREVIEW_PAD), min(im.height, b + PREVIEW_PAD)))
+    k = PREVIEW_MAX / max(im.size)
+    if k < 1:
+        im = im.resize((max(1, round(im.width * k)), max(1, round(im.height * k))), Image.LANCZOS)
+    import io
+    buf = io.BytesIO()
+    im.save(buf, "WEBP", quality=PREVIEW_QUALITY, method=6)
+    data = buf.getvalue()
+    if not (dst.exists() and dst.read_bytes() == data):
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.write_bytes(data)
+    return True
+
 def game_build(game_root):
     acf = game_root.parent.parent / "appmanifest_784150.acf"
     if acf.exists():
@@ -156,10 +184,39 @@ def main():
             w.update(size)
         else:
             warnings.append(f"{w['id']}: не удалось определить размеры модели")
+        has_rub, has_usd = "cost_rub" in w, "cost_usd" in w
+        if has_rub != has_usd:
+            w["currency"] = "rub" if has_rub else "usd"
+        else:
+            w["currency"] = None
+            warnings.append(f"{w['id']}: валюта не определена ({'заданы обе цены' if has_rub else 'нет цены'})")
         for req in ("capacity", "length_m"):
             if not w.get(req):
                 warnings.append(f"{w['id']}: нет поля {req}")
         wagons.append(w)
+
+    try:
+        from PIL import Image
+    except ImportError:
+        Image = None
+        print("ВНИМАНИЕ: Pillow не установлен (pip install pillow) — миниатюры пропущены")
+    img_dir = a.out.parent.parent / "img"
+    created, no_preview = 0, []
+    for w in wagons:
+        if not is_listed(w):
+            continue
+        ok = False
+        src = media / w["path"] / "preview.dds"
+        if Image and src.exists():
+            try:
+                ok = make_preview(src, img_dir / f"{w['id']}.webp", Image)
+            except Exception as e:
+                warnings.append(f"{w['id']}: не удалось обработать preview.dds ({e})")
+        if ok:
+            w["preview"] = f"img/{w['id']}.webp"
+            created += 1
+        else:
+            no_preview.append(w["id"])
 
     ids = [w["id"] for w in wagons]
     dups = {i for i in ids if ids.count(i) > 1}
@@ -174,6 +231,10 @@ def main():
     print(f"Вагонов: {len(wagons)} -> {a.out}")
     for w in warnings:
         print("ВНИМАНИЕ:", w)
+    if Image:
+        print(f"Миниатюр: {created} -> {img_dir}")
+    if no_preview:
+        print(f"Вагоны без превью ({len(no_preview)}): " + ", ".join(no_preview))
 
 if __name__ == "__main__":
     main()

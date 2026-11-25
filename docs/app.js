@@ -8,12 +8,14 @@
       intro: "Введите длину станции, и калькулятор покажет, какой вагон за один заход увезёт больше всего. Сравнивать нужно вагоны одного типа груза.",
       station: "Длина станции, м", preset: "Станция", presetNone: "— своя длина —",
       cargo: "Тип груза", gap: "Зазор между вагонами, м", names: "Язык названий вагонов",
-      cols: ["Вагон", "Длина, м", "Вместимость", "Вагонов на станции", "Всего за заход", "На метр станции"],
+      cols: ["Вагон", "Валюта покупки", "Годы выпуска", "Длина, м", "Вместимость", "Вагонов на станции", "Всего за заход", "На метр станции"],
       status: function (n, meta) { return "Показано вагонов: " + n + ". Данные игры: сборка " + (meta.game_build || "?") + ", обновлено " + meta.extracted_at + "."; },
       empty: "Нет вагонов под выбранные условия.",
       howTitle: "Как считается",
       how: "<p>Вагон, который хотя бы частично попал на станцию, грузится вместе с остальными, поэтому число вагонов округляется вверх: <code>n = ⌈длина станции / (длина вагона + зазор)⌉</code>.</p><p>«Всего за заход» = <code>n × вместимость</code>. «На метр станции» = это значение, делённое на длину станции. Лучший вариант выделен цветом.</p><p>Длины берутся из моделей игры и могут отличаться от реальных на доли метра. Цена вагона не учитывается: в игре она зависит от стоимости ресурсов.</p>",
-      footer: "Неофициальный фанатский проект. Данные взяты из файлов игры Workers & Resources: Soviet Republic.",
+      footer: "Все изображения и данные принадлежат разработчикам игры Workers & Resources: Soviet Republic. Неофициальный фанатский проект, не связан с разработчиками.",
+      steam: "Игра в Steam",
+      takedown: "Если вы правообладатель и хотите убрать материалы — свяжитесь через GitHub Issues репозитория.",
       loadError: "Не удалось загрузить данные. Откройте сайт через http(s), а не как файл."
     },
     en: {
@@ -21,12 +23,14 @@
       intro: "Enter a station length to see which wagon carries the most per visit. Compare wagons of the same cargo type.",
       station: "Station length, m", preset: "Station", presetNone: "— custom length —",
       cargo: "Cargo type", gap: "Gap between wagons, m", names: "Wagon name language",
-      cols: ["Wagon", "Length, m", "Capacity", "Wagons at station", "Total per visit", "Per station metre"],
+      cols: ["Wagon", "Bought with", "Years", "Length, m", "Capacity", "Wagons at station", "Total per visit", "Per station metre"],
       status: function (n, meta) { return "Showing " + n + " wagons. Game data: build " + (meta.game_build || "?") + ", updated " + meta.extracted_at + "."; },
       empty: "No wagons match the selected filters.",
       howTitle: "How it is calculated",
       how: "<p>A wagon that is at least partly on the station is loaded together with the others, so the count is rounded up: <code>n = ⌈station length / (wagon length + gap)⌉</code>.</p><p>“Total per visit” = <code>n × capacity</code>. “Per station metre” is that value divided by the station length. The best option is highlighted.</p><p>Lengths come from the game models and may differ from real-life ones by fractions of a metre. Wagon price is not considered: in-game it depends on resource costs.</p>",
-      footer: "Unofficial fan project. Data comes from the files of Workers & Resources: Soviet Republic.",
+      footer: "All images and data belong to the developers of Workers & Resources: Soviet Republic. Unofficial fan project, not affiliated with the developers.",
+      steam: "Game on Steam",
+      takedown: "If you are a rights holder and want the materials removed, please get in touch via the repository's GitHub Issues.",
       loadError: "Could not load data. Open the site over http(s), not as a local file."
     }
   };
@@ -57,6 +61,15 @@
     var l = $("namelang").value; if (l === "auto") l = state.lang;
     return (w.names && w.names[l]) || w.name_str || w.id;
   }
+  var CURRENCY = {
+    rub: { sym: "₽", ru: "Советская сторона", en: "Soviet" },
+    usd: { sym: "$", ru: "Западная", en: "Western" }
+  };
+  function currencyLabel(w) {
+    var c = CURRENCY[w.currency];
+    if (!c) return "—";
+    return c.sym + " " + c[state.lang];
+  }
   function cargoName(c) { return CARGO[c] ? CARGO[c][li()] : c.replace("RESOURCE_TRANSPORT_", ""); }
 
   function applyTexts() {
@@ -69,7 +82,7 @@
     $("l-gap").textContent = x.gap;
     $("l-names").textContent = x.names;
     $("t-how-title").textContent = x.howTitle; $("t-how").innerHTML = x.how;
-    $("footer").textContent = x.footer;
+    $("footer").innerHTML = "<p>" + esc(x.footer) + " <a href='https://store.steampowered.com/app/784150' target='_blank' rel='noopener'>" + esc(x.steam) + "</a></p><p>" + esc(x.takedown) + "</p>";
     $("lang").textContent = state.lang === "ru" ? "EN" : "RU";
     $("head").innerHTML = x.cols.map(function (c) { return "<th>" + c + "</th>"; }).join("");
     fillPresets(); fillCargo();
@@ -95,6 +108,11 @@
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 
+  function thumb(w) {
+    if (!w.preview) return "<span class='thumb'></span>";
+    return "<img class='thumb' src='" + esc(w.preview) + "' alt='" + esc(wagonName(w)) + "' width='64' height='40' loading='lazy'>";
+  }
+
   function render() {
     if (!state.data) return;
     var station = parseFloat($("station").value);
@@ -104,7 +122,7 @@
     var tbody = document.querySelector("#result tbody");
     $("status").textContent = t().status(shown.length, state.data.meta);
     if (!(station > 0) || !shown.length) {
-      tbody.innerHTML = "<tr><td colspan='6'>" + t().empty + "</td></tr>"; return;
+      tbody.innerHTML = "<tr><td colspan='8'>" + t().empty + "</td></tr>"; return;
     }
     var rows = C.rank(shown, station, { gap: gap });
     rows.forEach(function (r) { r.name = wagonName(r.wagon); });
@@ -112,7 +130,8 @@
     tbody.innerHTML = rows.map(function (r, i) {
       var w = r.wagon;
       return "<tr" + (i === 0 && r.total > 0 ? " class='best'" : "") + ">" +
-        "<td>" + esc(wagonName(w)) + " <small>" + C.formatYears(w, state.lang) + "</small>" + "</td>" +
+        "<td><span class='wname'>" + thumb(w) + "<span>" + esc(wagonName(w)) + "</span></span></td>" +
+        "<td>" + currencyLabel(w) + "</td><td>" + C.formatYears(w, state.lang) + "</td>" +
         "<td>" + fmt(w.length_m) + "</td><td>" + fmt(w.capacity) + "</td><td>" + r.count + "</td>" +
         "<td>" + fmt(r.total) + "<span class='bar' style='width:" + Math.round(r.total / max * 100) + "%'></span></td>" +
         "<td>" + fmt(r.perMeter) + "</td></tr>";
