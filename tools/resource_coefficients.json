@@ -1,0 +1,50 @@
+{
+  "_comment": "источник: подсказки вагонов в игре. Вместимость для ресурса = floor(capacity * k + 1e-9). Таблица держится по типам груза: коэффициент относится к паре (тип груза, ресурс). Ключи верхнего уровня — типы груза; типы груза без списка ресурсов пока не заполнены.",
+  "RESOURCE_TRANSPORT_COVERED": {
+    "crops": 0.8,
+    "fabrics": 0.7,
+    "alcohol": 0.5,
+    "food": 0.5,
+    "clothes": 0.5,
+    "mechanical_components": 0.5,
+    "explosives": 0.4,
+    "electro_components": 0.35,
+    "electronics": 0.35,
+    "livestock": 0.35,
+    "chemicals": 0.3,
+    "plastics": 0.25
+  },
+  "RESOURCE_TRANSPORT_GRAVEL": {
+    "gravel": 1,
+    "quarried_stone": 1,
+    "coal": 1,
+    "coal_ore": 1,
+    "iron": 1,
+    "iron_ore": 1,
+    "bauxite": 1,
+    "raw_bauxite": 1,
+    "uranium_ore": 1,
+    "asphalt": 1,
+    "construction_waste": 1,
+    "metal_scrap": 0.6,
+    "aluminium_scrap": 0.7
+  },
+  "RESOURCE_TRANSPORT_OPEN": {
+    "steel": 1,
+    "aluminium": 1,
+    "wood": 1,
+    "boards": 1,
+    "prefab_panels": 0.9,
+    "bricks": 0.8,
+    "plastic_waste": 0.8,
+    "uranium_oxide": 0.6
+  },
+  "uniform": {
+    "_comment": "коэффициент 1 для всех ресурсов, селектор ресурса не нужен; подтверждено по подсказкам и панелям в игре. Коэффициент зависит от пары (тип груза, ресурс), значения между типами груза не переиспользуются (металлолом: 1 в WASTE, 0.6 в GRAVEL; пластиковые отходы: 1 в WASTE, 0.8 в OPEN).",
+    "cargo": [
+      "RESOURCE_TRANSPORT_OIL",
+      "RESOURCE_TRANSPORT_CEMENT",
+      "RESOURCE_TRANSPORT_WASTE"
+    ]
+  }
+}

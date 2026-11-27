@@ -71,3 +71,21 @@ test("сверка с игрой: 20 вагонов 11-066 по 14.779 м + ВЛ
   assert.strictEqual(Math.ceil(len), 328);
   assert.strictEqual(Math.round(len), 328);
 });
+
+test("вместимость по ресурсам (значения из игры), база 66", () => {
+  const w = { id: "c", length_m: 14, capacity: 66 };
+  const exp = { 0.8: 52, 0.7: 46, 0.5: 33, 0.4: 26, 0.35: 23, 0.3: 19, 0.25: 16, 1: 66 };
+  for (const k of Object.keys(exp)) assert.strictEqual(C.capacityFor(w, Number(k)), exp[k], `k=${k}`);
+});
+test("вместимость по ресурсам (значения из игры), база 69", () => {
+  const w = { id: "o", length_m: 14, capacity: 69 };
+  const exp = { 1: 69, 0.9: 62, 0.8: 55, 0.6: 41, 0.7: 48 };
+  for (const k of Object.keys(exp)) assert.strictEqual(C.capacityFor(w, Number(k)), exp[k], `k=${k}`);
+});
+test("evaluate с k: total и плотность считаются от вместимости ресурса", () => {
+  const r = C.evaluate({ id: "c", length_m: 14, capacity: 66 }, 115, 0.8);
+  assert.strictEqual(r.capacity, 52);
+  assert.strictEqual(r.total, 9 * 52);
+  assert.strictEqual(Number(r.density.toFixed(2)), 3.71);
+  assert.strictEqual(C.evaluate({ id: "c", length_m: 14, capacity: 66 }, 115).total, 9 * 66);
+});

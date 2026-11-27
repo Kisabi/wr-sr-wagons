@@ -1,6 +1,38 @@
 {
-  "note": "Пресеты длин станций, м. Дополняйте / Station length presets, m. Add more as needed.",
+  "note": "Пресеты длин станций, м. Поле cargo — ключи груза; без него станция универсальная / Station length presets, m. 'cargo' lists cargo keys; omitted = universal.",
   "stations": [
-    { "id": "customs_big", "ru": "Большая таможня", "en": "Large customs", "length_m": 115 }
+    {
+      "id": "customs_big",
+      "ru": "Большая таможня",
+      "en": "Large customs",
+      "length_m": 115
+    },
+    {
+      "id": "liquids",
+      "ru": "Станция наливных грузов",
+      "en": "Liquids station",
+      "length_m": 49,
+      "cargo": [
+        "RESOURCE_TRANSPORT_OIL"
+      ]
+    },
+    {
+      "id": "dry_bulk",
+      "ru": "Станция насыпных грузов (цемент, оксид алюминия)",
+      "en": "Dry bulk station (cement, aluminium oxide)",
+      "length_m": 93,
+      "cargo": [
+        "RESOURCE_TRANSPORT_CEMENT"
+      ]
+    },
+    {
+      "id": "aggregates",
+      "ru": "Станция навалочных грузов",
+      "en": "Aggregates station",
+      "length_m": 123,
+      "cargo": [
+        "RESOURCE_TRANSPORT_GRAVEL"
+      ]
+    }
   ]
 }

@@ -128,6 +128,54 @@ def localize_country(w, locs):
         return None
     return {code: locs.get(code, {}).get(cid) or locs.get("en", {}).get(cid) or "" for code in LANGS}
 
+# ключ типа груза -> id строки локализации игры
+CARGO_NAME_IDS = {
+    "RESOURCE_TRANSPORT_GRAVEL": 67012, "RESOURCE_TRANSPORT_OPEN": 6201,
+    "RESOURCE_TRANSPORT_COVERED": 2101, "RESOURCE_TRANSPORT_CEMENT": 67014,
+    "RESOURCE_TRANSPORT_OIL": 67013, "RESOURCE_TRANSPORT_WASTE": 4109,
+    "RESOURCE_TRANSPORT_COOLER": 1785, "RESOURCE_TRANSPORT_LIVESTOCK": 520,
+    "RESOURCE_TRANSPORT_PASSANGER": 586,
+}
+
+def localize_cargo(key, locs):
+    """Названия типа груза по языкам: локализация -> английское имя -> ключ."""
+    sid = CARGO_NAME_IDS.get(key)
+    return {code: (sid is not None and (locs.get(code, {}).get(sid) or locs.get("en", {}).get(sid))) or key
+            for code in LANGS}
+
+# id ресурса -> английская строка локализации (если отличается от id с подчёркиваниями -> пробелы)
+RESOURCE_EN_ALIASES = {
+    "fabrics": "Fabric", "mechanical_components": "Mechanic comp.", "electro_components": "Electro comp.",
+    "aluminium": "Aluminum", "aluminium_scrap": "Aluminum scrap",
+}
+RESOURCE_ID_RANGE = range(500, 564)  # id строк с названиями ресурсов
+
+def build_resources(coef_path, locs):
+    """resources.json: тип груза -> [{id, k, names}], лучшие коэффициенты первыми."""
+    coef = json.loads(coef_path.read_text(encoding="utf-8"))
+    en = locs.get("en", {})
+    by_en = {}
+    for sid in sorted(en):
+        if sid in RESOURCE_ID_RANGE:
+            by_en.setdefault(en[sid].strip().lower(), sid)
+    out, warns = {}, []
+    for cargo, items in coef.items():
+        if not cargo.startswith("RESOURCE_TRANSPORT_"):
+            continue  # служебные блоки: _comment, uniform
+        lst = []
+        for rid, k in items.items():
+            eng = RESOURCE_EN_ALIASES.get(rid, rid.replace("_", " "))
+            sid = by_en.get(eng.lower())
+            if sid is None:
+                warns.append(f"ресурс {rid}: не найдено название в локализации, подставлено английское")
+                names = {c: eng.capitalize() for c in LANGS}
+            else:
+                names = {c: (locs.get(c, {}).get(sid) or en[sid]).strip() for c in LANGS}
+            lst.append({"id": rid, "k": k, "names": names})
+        lst.sort(key=lambda r: -r["k"])
+        out[cargo] = lst
+    return out, warns
+
 PREVIEW_PAD, PREVIEW_MAX, PREVIEW_QUALITY = 4, 128, 80
 
 def is_listed(w):
@@ -185,7 +233,7 @@ def main():
         folder = ini.parent
         w = {"id": folder.name, "path": folder.relative_to(media).as_posix()}
         w.update({k: v for k, v in d.items() if k != "type"})
-        w["names"] = localize(w, locs)
+        w["names"] = {k: v.strip() for k, v in localize(w, locs).items()}
         cn = localize_country(w, locs)
         if cn:
             w["country_names"] = cn
@@ -241,10 +289,19 @@ def main():
         warnings.append(f"{i}: повторяющийся id")
     out = {"meta": {"game_build": game_build(a.game_root),
                     "extracted_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-                    "count": len(wagons)},
+                    "count": len(wagons),
+                    "cargo_names": {c: localize_cargo(c, locs)
+                                    for c in sorted({w["cargo"] for w in wagons if w.get("cargo")})}},
            "wagons": wagons}
     a.out.parent.mkdir(parents=True, exist_ok=True)
     a.out.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    coef = Path(__file__).resolve().parent / "resource_coefficients.json"
+    if coef.exists():
+        res, rwarn = build_resources(coef, locs)
+        warnings.extend(rwarn)
+        rpath = a.out.parent / "resources.json"
+        rpath.write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"Ресурсов: {sum(len(v) for v in res.values())} -> {rpath}")
     print(f"Вагонов: {len(wagons)} -> {a.out}")
     for w in warnings:
         print("ВНИМАНИЕ:", w)

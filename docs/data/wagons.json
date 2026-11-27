@@ -1,8 +1,76 @@
 {
  "meta": {
   "game_build": "26898154",
-  "extracted_at": "2026-11-25",
-  "count": 140
+  "extracted_at": "2026-11-27",
+  "count": 140,
+  "cargo_names": {
+   "RESOURCE_TRANSPORT_CEMENT": {
+    "en": "Dry bulk cargo",
+    "ru": "Насыпные грузы",
+    "pl": "Materiały suche",
+    "uk": "Сипкі вантажі"
+   },
+   "RESOURCE_TRANSPORT_COOLER": {
+    "en": "Refrigeration",
+    "ru": "Рефрижератор",
+    "pl": "Chłodnia",
+    "uk": "Рефрижератор"
+   },
+   "RESOURCE_TRANSPORT_COVERED": {
+    "en": "Warehouse",
+    "ru": "Склад",
+    "pl": "Magazyn",
+    "uk": "Склад"
+   },
+   "RESOURCE_TRANSPORT_GRAVEL": {
+    "en": "Aggregates",
+    "ru": "Навалочные грузы",
+    "pl": "Materiały sypkie",
+    "uk": "Навалочні вантажі"
+   },
+   "RESOURCE_TRANSPORT_LIVESTOCK": {
+    "en": "Livestock",
+    "ru": "Скот",
+    "pl": "Żywiec",
+    "uk": "Худоба"
+   },
+   "RESOURCE_TRANSPORT_OIL": {
+    "en": "Liquids",
+    "ru": "Наливные грузы",
+    "pl": "Płyny",
+    "uk": "Наливні вантажі"
+   },
+   "RESOURCE_TRANSPORT_OPEN": {
+    "en": "Open storage",
+    "ru": "Открытое хранилище",
+    "pl": "Otwarty skład",
+    "uk": "Вiдкрите сховище"
+   },
+   "RESOURCE_TRANSPORT_PASSANGER": {
+    "en": "Passengers",
+    "ru": "Пассажиры",
+    "pl": "Pasażerowie",
+    "uk": "Пасажири"
+   },
+   "RESOURCE_TRANSPORT_SEWAGE": {
+    "en": "RESOURCE_TRANSPORT_SEWAGE",
+    "ru": "RESOURCE_TRANSPORT_SEWAGE",
+    "pl": "RESOURCE_TRANSPORT_SEWAGE",
+    "uk": "RESOURCE_TRANSPORT_SEWAGE"
+   },
+   "RESOURCE_TRANSPORT_WASTE": {
+    "en": "Waste",
+    "ru": "Отходы",
+    "pl": "Odpady",
+    "uk": "Відходи"
+   },
+   "RESOURCE_TRANSPORT_WATER": {
+    "en": "RESOURCE_TRANSPORT_WATER",
+    "ru": "RESOURCE_TRANSPORT_WATER",
+    "pl": "RESOURCE_TRANSPORT_WATER",
+    "uk": "RESOURCE_TRANSPORT_WATER"
+   }
+  }
  },
  "wagons": [
   {
@@ -528,7 +596,7 @@
    "country": 39018,
    "cargo": "RESOURCE_TRANSPORT_COVERED",
    "names": {
-    "en": "4180 open hopper ",
+    "en": "4180 open hopper",
     "ru": "Крытый хоппер 4180",
     "pl": "Węglarka kryta 4180",
     "uk": "Критий бункер ГА-4180"
@@ -807,7 +875,7 @@
    "country": 39006,
    "names": {
     "en": "32D43 (Ty45) Tender",
-    "ru": "Тендер 32Д43 (ТИ-45) ",
+    "ru": "Тендер 32Д43 (ТИ-45)",
     "pl": "32D43 (Ty45) Tender",
     "uk": "Тендер 32D43 (ТИ-45)"
    },

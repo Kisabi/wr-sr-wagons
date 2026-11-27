@@ -32,16 +32,24 @@
     return Math.ceil(stationLen / wagonLen - 1e-9);
   }
 
-  /** Результат для одного вагона на станции заданной длины. */
-  function evaluate(w, stationLen) {
+  /** Вместимость вагона для ресурса с коэффициентом k: целая часть capacity × k (правило игры). */
+  function capacityFor(w, k) {
+    if (!(k > 0)) return w.capacity;
+    return Math.floor(w.capacity * k + 1e-9);
+  }
+
+  /** Результат для одного вагона на станции заданной длины; k — необязательный коэффициент ресурса. */
+  function evaluate(w, stationLen, k) {
     var n = wagonsOnStation(stationLen, w.length_m);
-    var total = n * w.capacity;
+    var cap = capacityFor(w, k);
+    var total = n * cap;
     var trainLength = n * w.length_m;
     return {
       wagon: w,
+      capacity: cap,
       count: n,
       total: total,                              // вместимость за один заход
-      density: w.capacity / w.length_m,          // вместимость на метр вагона
+      density: cap / w.length_m,          // вместимость на метр вагона
       trainLength: trainLength,
       // на сколько метров состав выходит за станцию (убираем шум float)
       overhang: Math.max(0, Math.round((trainLength - stationLen) * 1e6) / 1e6)
@@ -49,8 +57,8 @@
   }
 
   /** Отсортированный список результатов, лучшие первыми. */
-  function rank(wagons, stationLen) {
-    return wagons.map(function (w) { return evaluate(w, stationLen); })
+  function rank(wagons, stationLen, k) {
+    return wagons.map(function (w) { return evaluate(w, stationLen, k); })
       .sort(function (a, b) {
         return b.total - a.total || a.overhang - b.overhang ||
           a.wagon.length_m - b.wagon.length_m ||
@@ -59,7 +67,7 @@
   }
 
   var api = { isCargoWagon: isCargoWagon, isListed: isListed, formatYears: formatYears,
-    wagonsOnStation: wagonsOnStation, evaluate: evaluate, rank: rank };
+    wagonsOnStation: wagonsOnStation, capacityFor: capacityFor, evaluate: evaluate, rank: rank };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.WagonCalc = api;
 })(typeof self !== "undefined" ? self : this);

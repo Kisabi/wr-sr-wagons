@@ -1,0 +1,338 @@
+{
+ "RESOURCE_TRANSPORT_COVERED": [
+  {
+   "id": "crops",
+   "k": 0.8,
+   "names": {
+    "en": "Crops",
+    "ru": "Зерно",
+    "pl": "Płody rolne",
+    "uk": "Збiжжя"
+   }
+  },
+  {
+   "id": "fabrics",
+   "k": 0.7,
+   "names": {
+    "en": "Fabric",
+    "ru": "Ткань",
+    "pl": "Tkaniny",
+    "uk": "Тканина"
+   }
+  },
+  {
+   "id": "alcohol",
+   "k": 0.5,
+   "names": {
+    "en": "Alcohol",
+    "ru": "Алкоголь",
+    "pl": "Alkohol",
+    "uk": "Спиртне"
+   }
+  },
+  {
+   "id": "food",
+   "k": 0.5,
+   "names": {
+    "en": "Food",
+    "ru": "Пища",
+    "pl": "Żywność",
+    "uk": "Їжа"
+   }
+  },
+  {
+   "id": "clothes",
+   "k": 0.5,
+   "names": {
+    "en": "Clothes",
+    "ru": "Одежда",
+    "pl": "Ubrania",
+    "uk": "Одяг"
+   }
+  },
+  {
+   "id": "mechanical_components",
+   "k": 0.5,
+   "names": {
+    "en": "Mechanic comp.",
+    "ru": "Механ. детали",
+    "pl": "Części mech.",
+    "uk": "Механiчнi деталi"
+   }
+  },
+  {
+   "id": "explosives",
+   "k": 0.4,
+   "names": {
+    "en": "Explosives",
+    "ru": "Взрывчатка",
+    "pl": "Mat. wybuchowe",
+    "uk": "Вибухівка"
+   }
+  },
+  {
+   "id": "electro_components",
+   "k": 0.35,
+   "names": {
+    "en": "Electro comp.",
+    "ru": "Электродетали",
+    "pl": "Części elektr.",
+    "uk": "Електродеталi"
+   }
+  },
+  {
+   "id": "electronics",
+   "k": 0.35,
+   "names": {
+    "en": "Electronics",
+    "ru": "Электроника",
+    "pl": "Elektronika",
+    "uk": "Електронiка"
+   }
+  },
+  {
+   "id": "livestock",
+   "k": 0.35,
+   "names": {
+    "en": "Livestock",
+    "ru": "Скот",
+    "pl": "Żywiec",
+    "uk": "Худоба"
+   }
+  },
+  {
+   "id": "chemicals",
+   "k": 0.3,
+   "names": {
+    "en": "Chemicals",
+    "ru": "Химикаты",
+    "pl": "Chemikalia",
+    "uk": "Хiмiкати"
+   }
+  },
+  {
+   "id": "plastics",
+   "k": 0.25,
+   "names": {
+    "en": "Plastics",
+    "ru": "Пластик",
+    "pl": "Tworzywa szt.",
+    "uk": "Пластмаса"
+   }
+  }
+ ],
+ "RESOURCE_TRANSPORT_GRAVEL": [
+  {
+   "id": "gravel",
+   "k": 1,
+   "names": {
+    "en": "Gravel",
+    "ru": "Гравий",
+    "pl": "Żwir",
+    "uk": "Гравiй"
+   }
+  },
+  {
+   "id": "quarried_stone",
+   "k": 1,
+   "names": {
+    "en": "Quarried stone",
+    "ru": "Камень",
+    "pl": "Kamienie",
+    "uk": "Камiнь"
+   }
+  },
+  {
+   "id": "coal",
+   "k": 1,
+   "names": {
+    "en": "Coal",
+    "ru": "Уголь",
+    "pl": "Węgiel",
+    "uk": "Вугiлля"
+   }
+  },
+  {
+   "id": "coal_ore",
+   "k": 1,
+   "names": {
+    "en": "Coal ore",
+    "ru": "Уголь-сырец",
+    "pl": "Ruda węgla",
+    "uk": "Руда (вугiлля)"
+   }
+  },
+  {
+   "id": "iron",
+   "k": 1,
+   "names": {
+    "en": "Iron",
+    "ru": "Железо",
+    "pl": "Żelazo",
+    "uk": "Залiзо"
+   }
+  },
+  {
+   "id": "iron_ore",
+   "k": 1,
+   "names": {
+    "en": "Iron ore",
+    "ru": "Железная руда",
+    "pl": "Ruda żelaza",
+    "uk": "Руда (залiзо)"
+   }
+  },
+  {
+   "id": "bauxite",
+   "k": 1,
+   "names": {
+    "en": "Bauxite",
+    "ru": "Бокситы",
+    "pl": "Boksyt",
+    "uk": "Боксит"
+   }
+  },
+  {
+   "id": "raw_bauxite",
+   "k": 1,
+   "names": {
+    "en": "Raw bauxite",
+    "ru": "Бокситы-сырцы",
+    "pl": "Ruda boksytu",
+    "uk": "Руда (боксит)"
+   }
+  },
+  {
+   "id": "uranium_ore",
+   "k": 1,
+   "names": {
+    "en": "Uranium ore",
+    "ru": "Урановая руда",
+    "pl": "Ruda uranu",
+    "uk": "Руда (уран)"
+   }
+  },
+  {
+   "id": "asphalt",
+   "k": 1,
+   "names": {
+    "en": "Asphalt",
+    "ru": "Асфальт",
+    "pl": "Asfalt",
+    "uk": "Асфальт"
+   }
+  },
+  {
+   "id": "construction_waste",
+   "k": 1,
+   "names": {
+    "en": "Construction waste",
+    "ru": "Строительный мусор",
+    "pl": "Odpady budowlane",
+    "uk": "Будівельне сміття"
+   }
+  },
+  {
+   "id": "aluminium_scrap",
+   "k": 0.7,
+   "names": {
+    "en": "Aluminum scrap",
+    "ru": "Алюминиевый лом",
+    "pl": "Złom aluminiowy",
+    "uk": "Алюмінієвий брухт"
+   }
+  },
+  {
+   "id": "metal_scrap",
+   "k": 0.6,
+   "names": {
+    "en": "Metal scrap",
+    "ru": "Железный лом",
+    "pl": "Złom",
+    "uk": "Металобрухт"
+   }
+  }
+ ],
+ "RESOURCE_TRANSPORT_OPEN": [
+  {
+   "id": "steel",
+   "k": 1,
+   "names": {
+    "en": "Steel",
+    "ru": "Сталь",
+    "pl": "Stal",
+    "uk": "Сталь"
+   }
+  },
+  {
+   "id": "aluminium",
+   "k": 1,
+   "names": {
+    "en": "Aluminum",
+    "ru": "Алюминий",
+    "pl": "Aluminium",
+    "uk": "Алюмiнiй"
+   }
+  },
+  {
+   "id": "wood",
+   "k": 1,
+   "names": {
+    "en": "Wood",
+    "ru": "Древесина",
+    "pl": "Drewno",
+    "uk": "Лiс-кругляк"
+   }
+  },
+  {
+   "id": "boards",
+   "k": 1,
+   "names": {
+    "en": "Boards",
+    "ru": "Доски",
+    "pl": "Deski",
+    "uk": "Деревина"
+   }
+  },
+  {
+   "id": "prefab_panels",
+   "k": 0.9,
+   "names": {
+    "en": "Prefab panels",
+    "ru": "Панели",
+    "pl": "Prefabrykaty",
+    "uk": "Панелi"
+   }
+  },
+  {
+   "id": "bricks",
+   "k": 0.8,
+   "names": {
+    "en": "Bricks",
+    "ru": "Кирпичи",
+    "pl": "Cegły",
+    "uk": "Цегла"
+   }
+  },
+  {
+   "id": "plastic_waste",
+   "k": 0.8,
+   "names": {
+    "en": "Plastic waste",
+    "ru": "Пластиковые отходы",
+    "pl": "Odpady plastikowe",
+    "uk": "Пластикове сміття"
+   }
+  },
+  {
+   "id": "uranium_oxide",
+   "k": 0.6,
+   "names": {
+    "en": "Uranium oxide",
+    "ru": "Оксид урана",
+    "pl": "Tlenek uranu",
+    "uk": "Оксид урану"
+   }
+  }
+ ]
+}

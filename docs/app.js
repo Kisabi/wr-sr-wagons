@@ -7,12 +7,12 @@
       title: "WR:SR — выгода вагонов для станции заданной длины",
       intro: "Введите длину станции, и калькулятор покажет, какой вагон за один заход увезёт больше всего. Сравнивать нужно вагоны одного типа груза.",
       station: "Длина станции, м", preset: "Станция", presetNone: "— своя длина —",
-      cargo: "Тип груза", names: "Язык названий вагонов", autoOpt: "Как в интерфейсе",
+      cargo: "Тип груза", resource: "Ресурс", names: "Язык названий вагонов", autoOpt: "Как в интерфейсе",
       cols: ["Вагон", "Валюта покупки", "Годы выпуска", "Длина, м", "Вместимость", "Вагонов на станции", "Всего за заход", "Вместимость на метр вагона", "Выступ за станцию, м"],
       status: function (n, meta) { return "Показано вагонов: " + n + ". Данные игры: сборка " + (meta.game_build || "?") + ", обновлено " + meta.extracted_at + "."; },
       empty: "Нет вагонов под выбранные условия.",
       howTitle: "Как считается",
-      how: "<p>Вагон, который хотя бы частично попал на станцию, грузится вместе с остальными, поэтому число вагонов округляется вверх: <code>n = ⌈длина станции / длина вагона⌉</code>.</p><p>«Всего за заход» = <code>n × вместимость</code>. «Вместимость на метр вагона» = <code>вместимость / длина вагона</code>: это плотность самого вагона, она не зависит от станции. «Выступ за станцию» — на сколько метров последний вагон выходит за границу станции из-за округления вверх (<code>длина состава − длина станции</code>, где длина состава = <code>n × длина вагона</code>); если выступа нет, показано «—». Прежняя колонка «на метр станции» убрана: она пропорциональна «Всего за заход» и только дублировала её. Сортировка: по «Всего за заход» (по убыванию), при равенстве — по меньшему выступу, затем по меньшей длине. Лучший вариант выделен цветом.</p><p>Длина вагона берётся из файла bbox.bin в папке вагона (габарит, который использует игра) и сверена с игрой: вагоны стоят вплотную, зазора между ними нет. Цена вагона не учитывается: в игре она зависит от стоимости ресурсов.</p>",
+      how: "<p>Вместимость вагона зависит от ресурса: <code>вместимость для ресурса = ⌊вместимость вагона × k⌋</code>, где k — коэффициент ресурса для данного типа груза. Коэффициенты взяты из подсказок вагонов в игре. Если для типа груза есть список ресурсов, выберите ресурс; во всех расчётах ниже используется вместимость для выбранного ресурса.</p><p>Вагон, который хотя бы частично попал на станцию, грузится вместе с остальными, поэтому число вагонов округляется вверх: <code>n = ⌈длина станции / длина вагона⌉</code>.</p><p>«Всего за заход» = <code>n × вместимость</code>. «Вместимость на метр вагона» = <code>вместимость / длина вагона</code>: это плотность самого вагона, она не зависит от станции. «Выступ за станцию» — на сколько метров последний вагон выходит за границу станции из-за округления вверх (<code>длина состава − длина станции</code>, где длина состава = <code>n × длина вагона</code>); если выступа нет, показано «—». Прежняя колонка «на метр станции» убрана: она пропорциональна «Всего за заход» и только дублировала её. Сортировка: по «Всего за заход» (по убыванию), при равенстве — по меньшему выступу, затем по меньшей длине. Лучший вариант выделен цветом.</p><p>Длина вагона берётся из файла bbox.bin в папке вагона (габарит, который использует игра) и сверена с игрой: вагоны стоят вплотную, зазора между ними нет. Цена вагона не учитывается: в игре она зависит от стоимости ресурсов.</p>",
       footer: "Все изображения и данные принадлежат разработчикам игры Workers & Resources: Soviet Republic. Неофициальный фанатский проект, не связан с разработчиками.",
       steam: "Игра в Steam",
       takedown: "Если вы правообладатель и хотите убрать материалы — свяжитесь через GitHub Issues репозитория.",
@@ -22,12 +22,12 @@
       title: "WR:SR — wagon efficiency for a given station length",
       intro: "Enter a station length to see which wagon carries the most per visit. Compare wagons of the same cargo type.",
       station: "Station length, m", preset: "Station", presetNone: "— custom length —",
-      cargo: "Cargo type", names: "Wagon name language", autoOpt: "Same as interface",
+      cargo: "Cargo type", resource: "Resource", names: "Wagon name language", autoOpt: "Same as interface",
       cols: ["Wagon", "Bought with", "Years", "Length, m", "Capacity", "Wagons at station", "Total per visit", "Capacity per wagon metre", "Overhang, m"],
       status: function (n, meta) { return "Showing " + n + " wagons. Game data: build " + (meta.game_build || "?") + ", updated " + meta.extracted_at + "."; },
       empty: "No wagons match the selected filters.",
       howTitle: "How it is calculated",
-      how: "<p>A wagon that is at least partly on the station is loaded together with the others, so the count is rounded up: <code>n = ⌈station length / wagon length⌉</code>.</p><p>“Total per visit” = <code>n × capacity</code>. “Capacity per wagon metre” = <code>capacity / wagon length</code>: the density of the wagon itself, independent of the station. “Overhang” is how many metres the last wagon sticks out past the station boundary because of rounding up (<code>train length − station length</code>, where train length = <code>n × wagon length</code>); “—” means no overhang. The former “per station metre” column was removed: it is proportional to “Total per visit” and only duplicated it. Sorting: by “Total per visit” (descending), ties broken by smaller overhang, then by shorter length. The best option is highlighted.</p><p>Wagon length is read from bbox.bin in the wagon's folder (the dimensions the game itself uses) and checked against the game: wagons stand flush, with no gap between them. Wagon price is not considered: in-game it depends on resource costs.</p>",
+      how: "<p>Wagon capacity depends on the resource: <code>capacity for a resource = ⌊wagon capacity × k⌋</code>, where k is the resource coefficient for that cargo type. The coefficients come from the in-game wagon tooltips. When a cargo type has a resource list, pick a resource; all calculations below use the capacity for the selected resource.</p><p>A wagon that is at least partly on the station is loaded together with the others, so the count is rounded up: <code>n = ⌈station length / wagon length⌉</code>.</p><p>“Total per visit” = <code>n × capacity</code>. “Capacity per wagon metre” = <code>capacity / wagon length</code>: the density of the wagon itself, independent of the station. “Overhang” is how many metres the last wagon sticks out past the station boundary because of rounding up (<code>train length − station length</code>, where train length = <code>n × wagon length</code>); “—” means no overhang. The former “per station metre” column was removed: it is proportional to “Total per visit” and only duplicated it. Sorting: by “Total per visit” (descending), ties broken by smaller overhang, then by shorter length. The best option is highlighted.</p><p>Wagon length is read from bbox.bin in the wagon's folder (the dimensions the game itself uses) and checked against the game: wagons stand flush, with no gap between them. Wagon price is not considered: in-game it depends on resource costs.</p>",
       footer: "All images and data belong to the developers of Workers & Resources: Soviet Republic. Unofficial fan project, not affiliated with the developers.",
       steam: "Game on Steam",
       takedown: "If you are a rights holder and want the materials removed, please get in touch via the repository's GitHub Issues.",
@@ -35,22 +35,8 @@
     }
   };
 
-  var CARGO = {
-    RESOURCE_TRANSPORT_OPEN: ["Открытые (навалочные)", "Open (bulk)"],
-    RESOURCE_TRANSPORT_GRAVEL: ["Сыпучие (гравий и т. п.)", "Gravel / loose"],
-    RESOURCE_TRANSPORT_COVERED: ["Крытые", "Covered"],
-    RESOURCE_TRANSPORT_PASSANGER: ["Пассажирские", "Passenger"],
-    RESOURCE_TRANSPORT_WASTE: ["Мусор", "Waste"],
-    RESOURCE_TRANSPORT_OIL: ["Нефть и жидкости", "Oil / liquids"],
-    RESOURCE_TRANSPORT_COOLER: ["Рефрижераторные", "Refrigerated"],
-    RESOURCE_TRANSPORT_CEMENT: ["Цемент", "Cement"],
-    RESOURCE_TRANSPORT_LIVESTOCK: ["Скот", "Livestock"],
-    RESOURCE_TRANSPORT_SEWAGE: ["Сточные воды", "Sewage"],
-    RESOURCE_TRANSPORT_WATER: ["Вода", "Water"]
-  };
-
   var $ = function (id) { return document.getElementById(id); };
-  var state = { lang: "ru", data: null, stations: [] };
+  var state = { lang: "ru", data: null, stations: [], resources: {} };
 
   try { var saved = localStorage.getItem("lang"); if (saved === "ru" || saved === "en") state.lang = saved; else if (!/^ru|uk|be/.test(navigator.language || "")) state.lang = "en"; } catch (e) { if (!/^ru|uk|be/.test(navigator.language || "")) state.lang = "en"; }
 
@@ -59,7 +45,7 @@
   function fmt(x) { return Number(x.toFixed(2)).toLocaleString(state.lang === "ru" ? "ru-RU" : "en-US"); }
   function wagonName(w) {
     var l = $("namelang").value; if (l === "auto") l = state.lang;
-    return (w.names && w.names[l]) || w.name_str || w.id;
+    return ((w.names && w.names[l]) || w.name_str || w.id).trim();
   }
   var CURRENCY = {
     rub: { sym: "₽", ru: "Советский", en: "Soviet" },
@@ -70,7 +56,10 @@
     if (!c) return "—";
     return c.sym + " " + c[state.lang];
   }
-  function cargoName(c) { return CARGO[c] ? CARGO[c][li()] : c.replace("RESOURCE_TRANSPORT_", ""); }
+  function cargoName(c) {
+    var n = state.data && state.data.meta.cargo_names && state.data.meta.cargo_names[c];
+    return (n && (n[state.lang] || n.en)) || c.replace("RESOURCE_TRANSPORT_", "");
+  }
 
   function applyTexts() {
     var x = t();
@@ -78,20 +67,23 @@
     $("t-title").textContent = x.title; document.title = x.title;
     $("t-intro").textContent = x.intro;
     $("l-station").textContent = x.station; $("l-preset").textContent = x.preset;
-    $("l-cargo").textContent = x.cargo;
+    $("l-cargo").textContent = x.cargo; $("l-resource").textContent = x.resource;
     $("l-names").textContent = x.names;
     $("o-auto").textContent = x.autoOpt;
     $("t-how-title").textContent = x.howTitle; $("t-how").innerHTML = x.how;
     $("footer").innerHTML = "<p>" + esc(x.footer) + " <a href='https://store.steampowered.com/app/784150' target='_blank' rel='noopener'>" + esc(x.steam) + "</a></p><p>" + esc(x.takedown) + "</p>";
     $("lang").textContent = state.lang === "ru" ? "EN" : "RU";
     $("head").innerHTML = x.cols.map(function (c) { return "<th>" + c + "</th>"; }).join("");
-    fillPresets(); fillCargo();
+    fillCargo(); fillResources(); fillPresets();
   }
 
   function fillPresets() {
     var sel = $("preset"), cur = sel.value;
-    sel.innerHTML = "<option value=''>" + t().presetNone + "</option>" + state.stations.map(function (s) {
-      return "<option value='" + s.length_m + "'>" + s[state.lang] + " (" + s.length_m + " м)</option>";
+    var cargo = $("cargo").value;
+    sel.innerHTML = "<option value=''>" + t().presetNone + "</option>" + state.stations.filter(function (s) {
+      return !s.cargo || !s.cargo.length || !cargo || s.cargo.indexOf(cargo) >= 0;
+    }).map(function (s) {
+      return "<option value='" + s.length_m + "'>" + esc(s[state.lang]) + " (" + s.length_m + " " + (state.lang === "ru" ? "м" : "m") + ")</option>";
     }).join("");
     sel.value = cur;
   }
@@ -104,6 +96,25 @@
     var list = Object.keys(kinds).sort(function (a, b) { return cargoName(a).localeCompare(cargoName(b)); });
     sel.innerHTML = list.map(function (c) { return "<option value='" + c + "'>" + cargoName(c) + "</option>"; }).join("");
     sel.value = (cur && kinds[cur]) ? cur : (kinds.RESOURCE_TRANSPORT_OPEN ? "RESOURCE_TRANSPORT_OPEN" : list[0]);
+  }
+
+  function nameLang() { var l = $("namelang").value; return l === "auto" ? state.lang : l; }
+
+  function fillResources() {
+    var list = state.resources[$("cargo").value] || [], sel = $("resource"), cur = sel.value;
+    $("resource-wrap").hidden = !list.length;
+    var l = nameLang();
+    sel.innerHTML = list.map(function (r) {
+      return "<option value='" + esc(r.id) + "'>" + esc(r.names[l] || r.names.en) + (r.k < 1 ? " (×" + r.k + ")" : "") + "</option>";
+    }).join("");
+    var keep = list.some(function (r) { return r.id === cur; });
+    sel.value = keep ? cur : (list.length ? list[0].id : "");
+  }
+
+  function currentK() {
+    var list = state.resources[$("cargo").value] || [], id = $("resource").value;
+    for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i].k;
+    return undefined;
   }
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
@@ -124,7 +135,7 @@
     if (!(station > 0) || !shown.length) {
       tbody.innerHTML = "<tr><td colspan='9'>" + t().empty + "</td></tr>"; return;
     }
-    var rows = C.rank(shown, station);
+    var rows = C.rank(shown, station, currentK());
     rows.forEach(function (r) { r.name = wagonName(r.wagon); });
     var max = rows[0].total || 1;
     tbody.innerHTML = rows.map(function (r, i) {
@@ -132,7 +143,7 @@
       return "<tr" + (i === 0 && r.total > 0 ? " class='best'" : "") + ">" +
         "<td><span class='wname'>" + thumb(w) + "<span>" + esc(wagonName(w)) + "</span></span></td>" +
         "<td>" + currencyLabel(w) + "</td><td>" + C.formatYears(w, state.lang) + "</td>" +
-        "<td>" + fmt(w.length_m) + "</td><td>" + fmt(w.capacity) + "</td><td>" + r.count + "</td>" +
+        "<td>" + fmt(w.length_m) + "</td><td>" + fmt(r.capacity) + "</td><td>" + r.count + "</td>" +
         "<td>" + fmt(r.total) + "<span class='bar' style='width:" + Math.round(r.total / max * 100) + "%'></span></td>" +
         "<td>" + fmt(r.density) + "</td>" +
         "<td>" + (r.overhang > 0 ? fmt(r.overhang) : "—") + "</td></tr>";
@@ -148,10 +159,12 @@
   });
   $("preset").addEventListener("change", function () { if (this.value) { $("station").value = this.value; } render(); });
   $("station").addEventListener("input", function () { $("preset").value = ""; render(); });
-  ["cargo", "namelang"].forEach(function (id) { $(id).addEventListener("input", render); $(id).addEventListener("change", render); });
+  $("cargo").addEventListener("change", function () { fillResources(); fillPresets(); });
+  $("namelang").addEventListener("change", fillResources);
+  ["cargo", "namelang", "resource"].forEach(function (id) { $(id).addEventListener("input", render); $(id).addEventListener("change", render); });
 
   applyTexts();
-  Promise.all([load("data/wagons.json"), load("data/stations.json").catch(function () { return { stations: [] }; })])
-    .then(function (res) { state.data = res[0]; state.stations = res[1].stations || []; applyTexts(); render(); })
+  Promise.all([load("data/wagons.json"), load("data/stations.json").catch(function () { return { stations: [] }; }), load("data/resources.json").catch(function () { return {}; })])
+    .then(function (res) { state.data = res[0]; state.stations = res[1].stations || []; state.resources = res[2]; applyTexts(); render(); })
     .catch(function () { $("status").textContent = t().loadError; });
 })();

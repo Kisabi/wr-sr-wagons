@@ -61,3 +61,43 @@ test("у каждого покупаемого грузового вагона l
   assert.ok(listed.length > 50);
   for (const w of listed) assert.ok(w.length_m >= 3 && w.length_m <= 40, `${w.id}: длина ${w.length_m}`);
 });
+
+test("для каждого cargo есть cargo_names на всех языках", () => {
+  const kinds = new Set(data.wagons.map(w => w.cargo).filter(Boolean));
+  assert.ok(kinds.size > 0);
+  for (const c of kinds) {
+    const n = data.meta.cargo_names && data.meta.cargo_names[c];
+    assert.ok(n, c);
+    for (const l of ["en", "ru", "pl", "uk"]) assert.ok(n[l] && n[l].length > 0, `${c}: ${l}`);
+  }
+});
+
+test("названия вагонов без пробелов по краям", () => {
+  for (const w of data.wagons) for (const v of Object.values(w.names || {})) assert.strictEqual(v, v.trim(), w.id);
+});
+
+test("станции: length_m > 0, есть названия ru/en", () => {
+  const st = JSON.parse(fs.readFileSync(path.join(__dirname, "../docs/data/stations.json"), "utf8")).stations;
+  assert.ok(st.length >= 4);
+  for (const s of st) {
+    assert.ok(s.length_m > 0, s.id);
+    assert.ok(s.ru && s.en, s.id);
+  }
+});
+
+test("resources.json: у каждого ресурса 0 < k <= 1 и названия на 4 языках", () => {
+  const res = JSON.parse(fs.readFileSync(path.join(__dirname, "../docs/data/resources.json"), "utf8"));
+  assert.ok(Object.keys(res).length >= 3);
+  for (const [c, list] of Object.entries(res)) for (const r of list) {
+    assert.ok(r.k > 0 && r.k <= 1, `${c}/${r.id}`);
+    for (const l of ["en", "ru", "pl", "uk"]) assert.ok(r.names[l], `${r.id}: ${l}`);
+  }
+});
+
+test("uniform-типы груза не попадают в resources.json", () => {
+  const coef = JSON.parse(fs.readFileSync(path.join(__dirname, "../tools/resource_coefficients.json"), "utf8"));
+  const res = JSON.parse(fs.readFileSync(path.join(__dirname, "../docs/data/resources.json"), "utf8"));
+  assert.deepStrictEqual(coef.uniform.cargo, ["RESOURCE_TRANSPORT_OIL", "RESOURCE_TRANSPORT_CEMENT", "RESOURCE_TRANSPORT_WASTE"]);
+  for (const c of [...coef.uniform.cargo, "RESOURCE_TRANSPORT_COOLER", "RESOURCE_TRANSPORT_LIVESTOCK", "RESOURCE_TRANSPORT_PASSANGER"])
+    assert.strictEqual(res[c], undefined, c);
+});
