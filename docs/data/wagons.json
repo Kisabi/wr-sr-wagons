@@ -18,9 +18,9 @@
    },
    "RESOURCE_TRANSPORT_COVERED": {
     "en": "Warehouse",
-    "ru": "Склад",
+    "ru": "Крытые грузы",
     "pl": "Magazyn",
-    "uk": "Склад"
+    "uk": "Криті вантажі"
    },
    "RESOURCE_TRANSPORT_GRAVEL": {
     "en": "Aggregates",
